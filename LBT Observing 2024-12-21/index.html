@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Observing Files</title>
+    <title>LBT Observing List 2024-12-21</title>
   </head>
   <body>
     <h1>LBT Observing List 2024-12-21</h1>
@@ -13,11 +13,7 @@
       </tr>
       <tr>
         <td>Available Time</td>
-        <td>99.1 hours</td>
-      </tr>
-      <tr>
-        <td>Observing Segments</td>
-        <td>7</td>
+        <td>99.1 hours in 7 observing segments</td>
       </tr>
       <tr>
         <td>UTC Range</td>
@@ -25,7 +21,7 @@
       </tr>
     </table><br>
     <h2>Target List (28 targets)
-      <a href="LBT Observing List 2024-12-21.html">Link to table</a>
+      <a href="LBT Observing List 2024-12-21.html" id="targets">View target table</a>
     </h2>
     <table border="1" cellpadding="10">
       <tr>
@@ -60,72 +56,84 @@
         <td>2024-12-21 01:00:00</td>
         <td>2024-12-21 14:00:00</td>
         <td>
-          <a href="Numerical Priorities 2024-12-21.html">Numerical</a>
+          <a href="Numerical Priorities 2024-12-21.html" id="numerical">Numerical</a>
         </td>
         <td>
-          <a href="Categorical Priorities 2024-12-21.html">Categorical</a>
+          <a href="Categorical Priorities 2024-12-21.html" id="categorical">Categorical</a>
         </td>
       </tr>
       <tr>
         <td>2024-12-22 01:00:00</td>
         <td>2024-12-22 14:00:00</td>
         <td>
-          <a href="Numerical Priorities 2024-12-22.html">Numerical</a>
+          <a href="Numerical Priorities 2024-12-22.html" id="numerical_other">Numerical</a>
         </td>
         <td>
-          <a href="Categorical Priorities 2024-12-22.html">Categorical</a>
+          <a href="Categorical Priorities 2024-12-22.html" id="categorical_other">Categorical</a>
         </td>
       </tr>
       <tr>
         <td>2024-12-23 01:00:00</td>
         <td>2024-12-23 14:00:00</td>
         <td>
-          <a href="Numerical Priorities 2024-12-23.html">Numerical</a>
+          <a href="Numerical Priorities 2024-12-23.html" id="numerical_other">Numerical</a>
         </td>
         <td>
-          <a href="Categorical Priorities 2024-12-23.html">Categorical</a>
+          <a href="Categorical Priorities 2024-12-23.html" id="categorical_other">Categorical</a>
         </td>
       </tr>
       <tr>
         <td>2024-12-24 01:00:00</td>
         <td>2024-12-24 14:00:00</td>
         <td>
-          <a href="Numerical Priorities 2024-12-24.html">Numerical</a>
+          <a href="Numerical Priorities 2024-12-24.html" id="numerical_other">Numerical</a>
         </td>
         <td>
-          <a href="Categorical Priorities 2024-12-24.html">Categorical</a>
+          <a href="Categorical Priorities 2024-12-24.html" id="categorical_other">Categorical</a>
         </td>
       </tr>
       <tr>
         <td>2024-12-25 01:00:00</td>
         <td>2024-12-25 14:00:00</td>
         <td>
-          <a href="Numerical Priorities 2024-12-25.html">Numerical</a>
+          <a href="Numerical Priorities 2024-12-25.html" id="numerical_other">Numerical</a>
         </td>
         <td>
-          <a href="Categorical Priorities 2024-12-25.html">Categorical</a>
+          <a href="Categorical Priorities 2024-12-25.html" id="categorical_other">Categorical</a>
         </td>
       </tr>
       <tr>
         <td>2024-12-26 01:00:00</td>
         <td>2024-12-26 14:00:00</td>
         <td>
-          <a href="Numerical Priorities 2024-12-26.html">Numerical</a>
+          <a href="Numerical Priorities 2024-12-26.html" id="numerical_other">Numerical</a>
         </td>
         <td>
-          <a href="Categorical Priorities 2024-12-26.html">Categorical</a>
+          <a href="Categorical Priorities 2024-12-26.html" id="categorical_other">Categorical</a>
         </td>
       </tr>
       <tr>
         <td>2024-12-27 01:00:00</td>
         <td>2024-12-27 14:00:00</td>
         <td>
-          <a href="Numerical Priorities 2024-12-27.html">Numerical</a>
+          <a href="Numerical Priorities 2024-12-27.html" id="numerical_other">Numerical</a>
         </td>
         <td>
-          <a href="Categorical Priorities 2024-12-27.html">Categorical</a>
+          <a href="Categorical Priorities 2024-12-27.html" id="categorical_other">Categorical</a>
         </td>
       </tr>
     </table>
+    <script>
+document.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowRight") { document.getElementById("nextDay").click(); }
+    if (event.key === "ArrowLeft")  { document.getElementById("prevDay").click(); }
+    if (event.key === "s")          { document.getElementById("summary").click(); }
+    if (event.key === "c")          { document.getElementById("categorical").click(); }
+    if (event.key === "n")          { document.getElementById("numerical").click(); }
+    if (event.key === "t")          { document.getElementById("targets").click(); }
+    if (event.key === "j")          { document.getElementById("nextTarget").click(); }
+    if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+});
+</script>
   </body>
 </html>

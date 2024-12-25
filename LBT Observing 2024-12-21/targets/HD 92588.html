@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>HD 92588</title>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../index.html" id="summary">Summary Page</a>
   </head>
   <body>
     <h1 style="text-align: center">HD 92588</h1>
@@ -24,6 +26,22 @@
       </tr>
     </table>
     <h2>Speckle Entries</h2>
+    <h2>PEPSI Entries</h2>
     <h2>Ephem Entries</h2>
+    <h2>Phase Events Entries</h2>
+    <script>
+document.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowRight") { document.getElementById("nextDay").click(); }
+    if (event.key === "ArrowLeft")  { document.getElementById("prevDay").click(); }
+    if (event.key === "s")          { document.getElementById("summary").click(); }
+    if (event.key === "c")          { document.getElementById("categorical").click(); }
+    if (event.key === "n")          { document.getElementById("numerical").click(); }
+    if (event.key === "t")          { document.getElementById("targets").click(); }
+    if (event.key === "j")          { document.getElementById("nextTarget").click(); }
+    if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+});
+</script>
+  
+    <p style="text-align: left; font-style: italic;">Created 2024-12-25 12:18:03-05:00 on Dell-XPS15-Paul</p>
   </body>
 </html>
