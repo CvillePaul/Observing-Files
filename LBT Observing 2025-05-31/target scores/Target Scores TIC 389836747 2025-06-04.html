@@ -21,8 +21,8 @@
       <a href="../targets/TIC 389836747.html" id="targets">TIC 389836747</a>
       <span style="display: inline-block; width: 10px;"></span>Target Scores for 2025-06-04 UTC
     </h1>
-    <p><table id="Target_Scores" class="compact cell-border hover" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
-<caption style="white-space: nowrap; overflow: hidden">Created 2025-04-09 14:20:20-04:00 on Dell-XPS15-Paul</caption><thead>
+    <p><table id="Target_Scores" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
+<thead>
     <tr style="text-align: right;">
       <th></th>
       <th>Moon Illumination</th>
@@ -32,8 +32,8 @@
       <th>Altitude Value</th>
       <th>Altitude Priority</th>
       <th>HQND Priority</th>
-      <th>Phase System B State</th>
       <th>Phase System A State</th>
+      <th>Phase System B State</th>
       <th>Phase Priority</th>
       <th>Overall Priority</th>
     </tr>
@@ -146,10 +146,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["03:00", 0.595861, "Gray", 112.998073, 1, 5.277306, 0.0, 0.75, "R", "B", 0.8, 0.0], ["04:00", 0.599819, "Gray", 113.29907, 1, 4.415657, 0.0, 0.75, "R", "B", 0.8, 0.0], ["05:00", 0.603767, "Gray", 113.605794, 1, 5.125025, 0.0, 0.75, "R", "B", 0.8, 0.0], ["06:00", 0.607706, "Gray", 113.920014, 1, 7.362372, 0.0, 0.75, "R", "B", 0.8, 0.0], ["07:00", 0.611634, "Gray", 114.242898, 1, 10.998122, 0.0, 0.75, "R", "B", 0.8, 0.0], ["08:00", 0.615552, "Gray", 114.574951, 1, 15.83901, 0.0, 0.75, "B", "B", 0.5, 0.0], ["09:00", 0.619459, "Gray", 114.916006, 1, 21.653359, 0.0, 0.75, "B", "B", 0.5, 0.0], ["10:00", 0.623356, "Gray", 115.265269, 1, 28.187605, 0.0, 0.75, "B", "B", 0.5, 0.0], ["11:00", 0.627242, "Gray", 115.621411, 1, 35.16702, 0.95, 0.75, "B", "R", 0.8, 0.57]];
+        const data = [["03:00", 0.595861, "Gray", 112.998075, 1, 5.277306, 0.0, 0.75, "B", "R", 0.8, 0.0], ["04:00", 0.599819, "Gray", 113.299072, 1, 4.415658, 0.0, 0.75, "B", "R", 0.8, 0.0], ["05:00", 0.603767, "Gray", 113.605796, 1, 5.125027, 0.0, 0.75, "B", "R", 0.8, 0.0], ["06:00", 0.607706, "Gray", 113.920016, 1, 7.362375, 0.0, 0.75, "B", "R", 0.8, 0.0], ["07:00", 0.611634, "Gray", 114.2429, 1, 10.998127, 0.0, 0.75, "B", "R", 0.8, 0.0], ["08:00", 0.615552, "Gray", 114.574953, 1, 15.839015, 0.0, 0.75, "B", "B", 0.5, 0.0], ["09:00", 0.619459, "Gray", 114.916008, 1, 21.653365, 0.0, 0.75, "B", "B", 0.5, 0.0], ["10:00", 0.623356, "Gray", 115.265271, 1, 28.187611, 0.0, 0.75, "B", "B", 0.5, 0.0], ["11:00", 0.627242, "Gray", 115.621413, 1, 35.167026, 0.95, 0.75, "R", "B", 0.8, 0.57]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": false, "layout": {"topStart": null, "topEnd": null, "bottomStart": null, "bottomEnd": null}, "sort": false, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -167,6 +167,11 @@ td {text-align: center}
 caption {
     text-align: left;
     font-style: italic;
+}
+button.exportButton,
+a.exportButton {
+    padding: 0px 4px !important;
+    font-size: 12px !important;
 }
 </style>
 </p>
