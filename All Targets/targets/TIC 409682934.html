@@ -11,77 +11,321 @@
       <tr>
         <th>RA</th>
         <th>Dec</th>
+        <th>RA HMS</th>
+        <th>Dec DMS</th>
         <th>Vmag</th>
         <th>Teff</th>
-        <th>ra</th>
-        <th>dec</th>
+        <th>Distance</th>
       </tr>
       <tr>
+        <td>110.37179166666665</td>
+        <td>-15.436972222222222</td>
         <td>07:21:29.23</td>
-        <td>-15:26:13.10</td>
+        <td>-15:26:13.1</td>
         <td>14.524</td>
         <td>nan</td>
-        <td>110.371789488871</td>
-        <td>-15.4369716849736</td>
+        <td>2260.41</td>
       </tr>
     </table>
-    <h2>Ephemerides (3)</h2><style type="text/css">
-#T_565b5 td {
-  padding: 10px;
-  border: 1px solid black;
-  text-align: center;
+    <h2>Catalog Membership (3)</h2><table id="Catalog_Membership" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
+<thead>
+    <tr style="text-align: right;">
+      
+      <th>Catalog Name</th>
+      <th>Catalog ID</th>
+    </tr>
+  </thead><tbody><tr>
+<td style="vertical-align:middle; text-align:left">
+<div style="float:left; margin-right: 10px;">
+<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+</div>
+<div>
+Loading ITables v2.2.3 from the internet...
+(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
+</div>
+</tr></tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
+
+    document.querySelectorAll("#Catalog_Membership:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        // Define the table data
+        const data = [["GAIA DR2", "3031177464121463424"], ["TESS TICv8", "409682934"], ["twomass", "07212922-1526129"]];
+
+        // Define the dt_args
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        dt_args["data"] = data;
+
+        
+        new DataTable(table, dt_args);
+    });
+</script>
+
+<style>
+td {text-align: center}
+#Catalog_Membership th {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+}
+caption {
+    text-align: left;
+    font-style: italic;
+}
+button.exportButton,
+a.exportButton {
+    padding: 0px 4px !important;
+    font-size: 12px !important;
 }
 </style>
-<table id="T_565b5">
-  <thead>
-    <tr>
-      <th id="T_565b5_level0_col0" class="col_heading level0 col0" >System</th>
-      <th id="T_565b5_level0_col1" class="col_heading level0 col1" >Member</th>
-      <th id="T_565b5_level0_col2" class="col_heading level0 col2" >Period</th>
-      <th id="T_565b5_level0_col3" class="col_heading level0 col3" >T0</th>
-      <th id="T_565b5_level0_col4" class="col_heading level0 col4" >Duration</th>
-      <th id="T_565b5_level0_col5" class="col_heading level0 col5" >Depth</th>
-      <th id="T_565b5_level0_col6" class="col_heading level0 col6" >Duration (hours)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td id="T_565b5_row0_col0" class="data row0 col0" >A</td>
-      <td id="T_565b5_row0_col1" class="data row0 col1" >a</td>
-      <td id="T_565b5_row0_col2" class="data row0 col2" >4.774180</td>
-      <td id="T_565b5_row0_col3" class="data row0 col3" >2458501.098700</td>
-      <td id="T_565b5_row0_col4" class="data row0 col4" >0.091667</td>
-      <td id="T_565b5_row0_col5" class="data row0 col5" >0.143000</td>
-      <td id="T_565b5_row0_col6" class="data row0 col6" >2.2</td>
-    </tr>
-    <tr>
-      <td id="T_565b5_row1_col0" class="data row1 col0" >B</td>
-      <td id="T_565b5_row1_col1" class="data row1 col1" >a</td>
-      <td id="T_565b5_row1_col2" class="data row1 col2" >13.494320</td>
-      <td id="T_565b5_row1_col3" class="data row1 col3" >2459232.662900</td>
-      <td id="T_565b5_row1_col4" class="data row1 col4" >0.170833</td>
-      <td id="T_565b5_row1_col5" class="data row1 col5" >0.054000</td>
-      <td id="T_565b5_row1_col6" class="data row1 col6" >4.1</td>
-    </tr>
-    <tr>
-      <td id="T_565b5_row2_col0" class="data row2 col0" >B</td>
-      <td id="T_565b5_row2_col1" class="data row2 col1" >b</td>
-      <td id="T_565b5_row2_col2" class="data row2 col2" >13.494320</td>
-      <td id="T_565b5_row2_col3" class="data row2 col3" >2459231.840100</td>
-      <td id="T_565b5_row2_col4" class="data row2 col4" >0.195833</td>
-      <td id="T_565b5_row2_col5" class="data row2 col5" >0.052000</td>
-      <td id="T_565b5_row2_col6" class="data row2 col6" >4.7</td>
-    </tr>
-  </tbody>
-</table>
 
-    <h2>Speckle Observations (0)</h2>
+    <h2>Ephemerides (3)</h2><table id="Ephemerides" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
+<thead>
+    <tr style="text-align: right;">
+      
+      <th>System</th>
+      <th>Member</th>
+      <th>T0</th>
+      <th>Period</th>
+      <th>Duration</th>
+      <th>Depth</th>
+    </tr>
+  </thead><tbody><tr>
+<td style="vertical-align:middle; text-align:left">
+<div style="float:left; margin-right: 10px;">
+<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+</div>
+<div>
+Loading ITables v2.2.3 from the internet...
+(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
+</div>
+</tr></tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
+
+    document.querySelectorAll("#Ephemerides:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        // Define the table data
+        const data = [["A", "a", 2458501.0987, 4.77418, 2.2, 0.143], ["B", "a", 2459232.6629, 13.49432, 4.1, 0.054], ["B", "b", 2459231.8401, 13.49432, 4.7, 0.052]];
+
+        // Define the dt_args
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        dt_args["data"] = data;
+
+        
+        new DataTable(table, dt_args);
+    });
+</script>
+
+<style>
+td {text-align: center}
+#Ephemerides th {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+}
+caption {
+    text-align: left;
+    font-style: italic;
+}
+button.exportButton,
+a.exportButton {
+    padding: 0px 4px !important;
+    font-size: 12px !important;
+}
+</style>
+
+    <h2>DSSI Observations (0)</h2>
     <span>(Empty Table)</span>
-    <h2>PEPSI (0)</h2>
+    <h2>Speckle Detections (0)</h2>
     <span>(Empty Table)</span>
-    <h2>Speckle Phases (0)</h2>
-    <span>(Empty Table)</span>
-    <h2>SIDE Observations (0)</h2>
+    <h2>PEPSI Observations (0)</h2>
     <span>(Empty Table)</span>
     <script>
 document.addEventListener("keydown", function(event) {
@@ -96,6 +340,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2025-03-26 11:47:00-04:00 on Dell-XPS15-Paul</p>
+    <p style="text-align: left; font-style: italic;">Created 2025-05-15 12:08:20-04:00 on Dell-XPS15-Paul</p>
   </body>
 </html>
