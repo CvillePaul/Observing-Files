@@ -6,7 +6,7 @@
     <span style="display: inline-block; width: 20px;"></span>
     <a href="Target Scores TIC 282005870 2025-06-08.html" id="nextDay">Next Day-&gt;</a>
     <span style="display: inline-block; width: 20px;"></span>
-    <a href="Target Scores TIC 356318101 2025-06-07.html" id="prevTarget">&lt;-Prev Target</a>
+    <a href="Target Scores TIC 123098844 2025-06-07.html" id="prevTarget">&lt;-Prev Target</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="Target Scores TIC 89278612 2025-06-07.html" id="nextTarget">Next Target-&gt;</a>
     <span style="display: inline-block; width: 20px;"></span>
@@ -142,7 +142,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["03:00", 3.461426, 0, "", 0.0, "", 0.0, 0.0], ["03:30", 9.006288, 0, "", 0.0, "", 0.0, 0.0], ["04:00", 14.73208, 0, "", 0.0, "", 0.0, 0.0], ["04:30", 20.607524, 0, "", 0.0, "", 0.0, 0.0], ["05:00", 26.606333, 0, "", 0.0, "", 0.0, 0.0], ["05:30", 32.706092, 0, "Aa", 1.0, "", 0.5, 0.0], ["06:00", 38.887209, 1, "Aa", 1.0, "", 0.5, 0.5], ["06:30", 45.131826, 1, "Aa", 1.0, "", 0.5, 0.5], ["07:00", 51.422444, 1, "Aa", 1.0, "", 0.5, 0.5], ["07:30", 57.739691, 1, "", 0.0, "", 0.0, 0.0], ["08:00", 64.057568, 1, "", 0.0, "", 0.0, 0.0], ["08:30", 70.330417, 1, "", 0.0, "", 0.0, 0.0], ["09:00", 76.445655, 1, "", 0.0, "", 0.0, 0.0], ["09:30", 81.974245, 1, "", 0.0, "", 0.0, 0.0], ["10:00", 84.568913, 1, "Ba", 1.0, "", 0.5, 0.5], ["10:30", 81.104801, 1, "Ba", 1.0, "", 0.5, 0.5], ["11:00", 75.402755, 1, "Ba", 1.0, "", 0.5, 0.5]];
+        const data = [["03:00", 3.461, 0, "", 0.0, "", 0.0, 0.0], ["03:30", 9.006, 0, "", 0.0, "", 0.0, 0.0], ["04:00", 14.732, 0, "", 0.0, "", 0.0, 0.0], ["04:30", 20.608, 0, "", 0.0, "", 0.0, 0.0], ["05:00", 26.606, 0, "", 0.0, "", 0.0, 0.0], ["05:30", 32.706, 0, "Aa", 1.0, "", 0.5, 0.0], ["06:00", 38.887, 1, "Aa", 1.0, "", 0.5, 0.5], ["06:30", 45.132, 1, "Aa", 1.0, "", 0.5, 0.5], ["07:00", 51.422, 1, "Aa", 1.0, "", 0.5, 0.5], ["07:30", 57.74, 1, "", 0.0, "", 0.0, 0.0], ["08:00", 64.058, 1, "", 0.0, "", 0.0, 0.0], ["08:30", 70.33, 1, "", 0.0, "", 0.0, 0.0], ["09:00", 76.446, 1, "", 0.0, "", 0.0, 0.0], ["09:30", 81.974, 1, "", 0.0, "", 0.0, 0.0], ["10:00", 84.569, 1, "Ba", 1.0, "", 0.5, 0.5], ["10:30", 81.105, 1, "Ba", 1.0, "", 0.5, 0.5], ["11:00", 75.403, 1, "Ba", 1.0, "", 0.5, 0.5]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -154,11 +154,14 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #Target_Scores th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;

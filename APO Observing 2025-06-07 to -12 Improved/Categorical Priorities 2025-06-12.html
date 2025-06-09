@@ -17,6 +17,7 @@
       <th></th>
       <th>TIC 2194...</th>
       <th>TIC 3563...</th>
+      <th>TIC 1230...</th>
       <th>TIC 2820...</th>
       <th>TIC 8927...</th>
       <th>TIC 4270...</th>
@@ -132,7 +133,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["RA", "16:04:11", "17:23:17", "19:57:15", "20:04:52", "21:24:26", "23:47:25", "00:47:27"], ["Dec", "+43:01:49", "+22:18:29", "+27:18:47", "+32:38:34", "+64:22:50", "+57:21:38", "+64:49:04"], ["Vmag", "12.5", "10.7", "11.8", "11.2", "12.4", "10.1", "12.4"], ["08:00", "", "", "* *", "", "* *", "", ""], ["08:30", "* *", "", "* *", "", "* *", "* *", ""], ["09:00", "* *", "", "* *", "", "* *", "* *", ""], ["09:30", "* *", "", "* *", "", "* *", "* *", "<span style=\"background-color: #EBF4FA\">* * *</span>"], ["10:00", "* *", "* *", "* *", "", "* *", "* *", "<span style=\"background-color: #EBF4FA\">* * *</span>"], ["10:30", "", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>"], ["11:00", "", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>"]];
+        const data = [["RA", "16:04:11", "17:23:17", "18:38:17", "19:57:15", "20:04:52", "21:24:26", "23:47:25", "00:47:27"], ["Dec", "+43:01:49", "+22:18:29", "+44:41:54", "+27:18:47", "+32:38:34", "+64:22:50", "+57:21:38", "+64:49:04"], ["Vmag", "12.5", "10.7", "11.1", "11.8", "11.2", "12.4", "10.1", "12.4"], ["08:00", "", "", "", "* *", "", "* *", "", ""], ["08:30", "* *", "", "* *", "* *", "", "* *", "* *", ""], ["09:00", "* *", "", "", "* *", "", "* *", "* *", ""], ["09:30", "* *", "", "", "* *", "", "* *", "* *", "<span style=\"background-color: #EBF4FA\">* * *</span>"], ["10:00", "* *", "* *", "", "* *", "", "* *", "* *", "<span style=\"background-color: #EBF4FA\">* * *</span>"], ["10:30", "", "* *", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>"], ["11:00", "", "* *", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": null, "topEnd": null, "bottomStart": null, "bottomEnd": null}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -144,11 +145,14 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #Categorical_Priority th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;

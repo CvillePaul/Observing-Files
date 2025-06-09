@@ -6,7 +6,7 @@
     <span style="display: inline-block; width: 20px;"></span>
     <span>Next Day-&gt;</span>
     <span style="display: inline-block; width: 20px;"></span>
-    <a href="Target Scores TIC 356318101 2025-06-12.html" id="prevTarget">&lt;-Prev Target</a>
+    <a href="Target Scores TIC 123098844 2025-06-12.html" id="prevTarget">&lt;-Prev Target</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="Target Scores TIC 89278612 2025-06-12.html" id="nextTarget">Next Target-&gt;</a>
     <span style="display: inline-block; width: 20px;"></span>
@@ -142,7 +142,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["08:00", 68.177616, 1, "Ab", 1.0, "", 0.5, 0.5], ["08:30", 74.369104, 1, "Ab", 1.0, "", 0.5, 0.5], ["09:00", 80.200693, 1, "Ab", 1.0, "", 0.5, 0.5], ["09:30", 84.34488, 1, "Ab", 1.0, "", 0.5, 0.5], ["10:00", 82.756585, 1, "Ab", 1.0, "", 0.5, 0.5], ["10:30", 77.454197, 1, "", 0.0, "", 0.0, 0.0], ["11:00", 71.390627, 1, "", 0.0, "", 0.0, 0.0]];
+        const data = [["08:00", 68.178, 1, "Ab", 1.0, "", 0.5, 0.5], ["08:30", 74.369, 1, "Ab", 1.0, "", 0.5, 0.5], ["09:00", 80.201, 1, "Ab", 1.0, "", 0.5, 0.5], ["09:30", 84.345, 1, "Ab", 1.0, "", 0.5, 0.5], ["10:00", 82.757, 1, "Ab", 1.0, "", 0.5, 0.5], ["10:30", 77.454, 1, "", 0.0, "", 0.0, 0.0], ["11:00", 71.391, 1, "", 0.0, "", 0.0, 0.0]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -154,11 +154,14 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #Target_Scores th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;

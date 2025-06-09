@@ -159,11 +159,14 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #Ephemerides th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;
@@ -176,7 +179,7 @@ a.exportButton {
 }
 </style>
 
-    <h2>Phase Events (3)</h2><table id="Phase_Events" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
+    <h2>Phase Events (28)</h2><table id="Phase_Events" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
 <thead>
     <tr style="text-align: right;">
       
@@ -188,7 +191,6 @@ a.exportButton {
       <th>Event</th>
       <th>End JD</th>
       <th>Beg UTC</th>
-      <th>Mid UTC</th>
       <th>End UTC</th>
     </tr>
   </thead><tbody><tr>
@@ -300,7 +302,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["B", "a", 407, "2460833.737966", 0.428512, "Eclipse", "2460833.9754660004", "2025-06-07 05:42:40", "2025-06-07 06:44:45", "2025-06-07 11:24:40"], ["A", "b", 498, "2460833.9545", 0.227803, "Eclipse", "2460833.999566507", "2025-06-07 10:54:28", "2025-06-07 07:02:06", "2025-06-07 11:59:22"], ["B", "a", 408, "2460838.793830541", NaN, "Eclipse", "2460838.962443", "2025-06-12 07:03:06", "2025-06-12 09:04:31", "2025-06-12 11:05:55"]];
+        const data = [["A", "a", 499, "2460833.5866880515", "NaN", "Not in Eclipse", "2460833.999566507", "2025-06-07 02:04:49", "2025-06-07 11:59:22"], ["A", "a", 499, "2460834.587019435", "NaN", "Not in Eclipse", "2460834.999503133", "2025-06-08 02:05:18", "2025-06-08 11:59:17"], ["A", "a", 500, "2460836.5876520714", "NaN", "Not in Eclipse", "2460836.9994286257", "2025-06-10 02:06:13", "2025-06-10 11:59:10"], ["A", "a", 500, "2460837.5879514706", "NaN", "Not in Eclipse", "2460837.999417208", "2025-06-11 02:06:39", "2025-06-11 11:59:09"], ["A", "a", 500, "2460838.7938305414", "NaN", "Not in Eclipse", "2460838.9994228133", "2025-06-12 07:03:06", "2025-06-12 11:59:10"], ["A", "b", 498, "2460833.5866880515", "NaN", "Not in Eclipse", "2460833.9545", "2025-06-07 02:04:49", "2025-06-07 10:54:28"], ["A", "b", 498, "2460833.9545", "0.9678251097991111", "Eclipse", "2460833.999566507", "2025-06-07 10:54:28", "2025-06-07 11:59:22"], ["A", "b", 499, "2460834.587019435", "NaN", "Not in Eclipse", "2460834.999503133", "2025-06-08 02:05:18", "2025-06-08 11:59:17"], ["A", "b", 499, "2460836.5876520714", "NaN", "Not in Eclipse", "2460836.9994286257", "2025-06-10 02:06:13", "2025-06-10 11:59:10"], ["A", "b", 499, "2460837.5879514706", "NaN", "Not in Eclipse", "2460837.999417208", "2025-06-11 02:06:39", "2025-06-11 11:59:09"], ["A", "b", 500, "2460838.7938305414", "NaN", "Not in Eclipse", "2460838.9994228133", "2025-06-12 07:03:06", "2025-06-12 11:59:10"], ["B", "a", 407, "2460833.5866880515", "NaN", "Not in Eclipse", "2460833.737966", "2025-06-07 02:04:49", "2025-06-07 05:42:40"], ["B", "a", 407, "2460833.737966", "0.976187979210652", "Eclipse", "2460833.856716", "2025-06-07 05:42:40", "2025-06-07 08:33:40"], ["B", "a", 408, "2460833.856716", "0.000", "Mid Eclipse", "2460833.856716", "2025-06-07 08:33:40", "2025-06-07 08:33:40"], ["B", "a", 408, "2460833.856716", "0.000", "Eclipse", "2460833.9754660004", "2025-06-07 08:33:40", "2025-06-07 11:24:40"], ["B", "a", 408, "2460833.9754660004", "0.02381202078934793", "Not in Eclipse", "2460833.999566507", "2025-06-07 11:24:40", "2025-06-07 11:59:22"], ["B", "a", 408, "2460834.587019435", "NaN", "Not in Eclipse", "2460834.999503133", "2025-06-08 02:05:18", "2025-06-08 11:59:17"], ["B", "a", 408, "2460836.5876520714", "NaN", "Not in Eclipse", "2460836.9994286257", "2025-06-10 02:06:13", "2025-06-10 11:59:10"], ["B", "a", 408, "2460837.5879514706", "NaN", "Not in Eclipse", "2460837.999417208", "2025-06-11 02:06:39", "2025-06-11 11:59:09"], ["B", "a", 408, "2460838.7938305414", "NaN", "Eclipse", "2460838.8436930003", "2025-06-12 07:03:06", "2025-06-12 08:14:55"], ["B", "a", 409, "2460838.8436930003", "0.000", "Mid Eclipse", "2460838.8436930003", "2025-06-12 08:14:55", "2025-06-12 08:14:55"], ["B", "a", 409, "2460838.8436930003", "0.000", "Eclipse", "2460838.962443", "2025-06-12 08:14:55", "2025-06-12 11:05:55"], ["B", "a", 409, "2460838.962443", "0.02381202078934793", "Not in Eclipse", "2460838.9994228133", "2025-06-12 11:05:55", "2025-06-12 11:59:10"], ["B", "b", 407, "2460833.5866880515", "NaN", "Not in Eclipse", "2460833.999566507", "2025-06-07 02:04:49", "2025-06-07 11:59:22"], ["B", "b", 407, "2460834.587019435", "NaN", "Not in Eclipse", "2460834.999503133", "2025-06-08 02:05:18", "2025-06-08 11:59:17"], ["B", "b", 408, "2460836.5876520714", "NaN", "Not in Eclipse", "2460836.9994286257", "2025-06-10 02:06:13", "2025-06-10 11:59:10"], ["B", "b", 408, "2460837.5879514706", "NaN", "Not in Eclipse", "2460837.999417208", "2025-06-11 02:06:39", "2025-06-11 11:59:09"], ["B", "b", 408, "2460838.7938305414", "NaN", "Not in Eclipse", "2460838.9994228133", "2025-06-12 07:03:06", "2025-06-12 11:59:10"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -312,11 +314,14 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #Phase_Events th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;
@@ -454,7 +459,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [[195, "2459850.8583333334", "2459850.8583333334", "2459850.8583333334", "2022-09-28 08:36:00", 1, "692, 880", "Ab", 0.959511, "", NaN], [196, "2459850.859027778", "2459850.860763889", "2459850.8625", "2022-09-28 08:39:30", 4, "692, 880", "Ab", 0.959897, "", NaN]];
+        const data = [[195, "2459850.8583333334", "2459850.8583333334", "2459850.8583333334", "2022-09-28 08:36:00", 1, "692, 880", "Ab", "0.02827174590267867", "", "NaN"], [196, "2459850.859027778", "2459850.860763889", "2459850.8625", "2022-09-28 08:39:30", 4, "692, 880", "Ab", "0.037531004610043106", "", "NaN"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -466,11 +471,14 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #DSSI_Observations th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;
@@ -602,7 +610,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [[2459851.0, "2022-09-28 08:36:00", "A", "b", "Real duration"], [2459851.0, "2022-09-28 08:39:30", "A", "b", "Real duration"]];
+        const data = [[2459850.858, "2022-09-28 08:36:00", "A", "b", "Real duration"], [2459850.861, "2022-09-28 08:39:30", "A", "b", "Real duration"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -614,11 +622,14 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #SIDE_Observations th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;
@@ -646,6 +657,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2025-06-08 18:10:14-04:00 on Dell-XPS15-Paul</p>
+    <p style="text-align: left; font-style: italic;">Created 2025-06-09 18:16:24-04:00 on Dell-XPS15-Paul</p>
   </body>
 </html>

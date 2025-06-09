@@ -142,7 +142,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["08:00", 61.662058, 1, "", 0.0, "", 0.0, 0.0], ["08:30", 56.196311, 1, "Ab", 1.0, "", 0.5, 0.5], ["09:00", 50.695123, 1, "Ab", 1.0, "", 0.5, 0.5], ["09:30", 45.207223, 1, "Ab", 1.0, "", 0.5, 0.5], ["10:00", 39.767342, 1, "Ab", 1.0, "", 0.5, 0.5], ["10:30", 34.404149, 0, "Ab", 1.0, "", 0.5, 0.0], ["11:00", 29.144177, 0, "Ab", 1.0, "", 0.5, 0.0]];
+        const data = [["08:00", 61.662, 1, "", 0.0, "", 0.0, 0.0], ["08:30", 56.196, 1, "Ab", 1.0, "", 0.5, 0.5], ["09:00", 50.695, 1, "Ab", 1.0, "", 0.5, 0.5], ["09:30", 45.207, 1, "Ab", 1.0, "", 0.5, 0.5], ["10:00", 39.767, 1, "Ab", 1.0, "", 0.5, 0.5], ["10:30", 34.404, 0, "Ab", 1.0, "", 0.5, 0.0], ["11:00", 29.144, 0, "Ab", 1.0, "", 0.5, 0.0]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -154,11 +154,14 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #Target_Scores th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;
