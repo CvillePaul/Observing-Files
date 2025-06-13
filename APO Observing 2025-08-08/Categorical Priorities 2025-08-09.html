@@ -15,18 +15,10 @@
 <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>TIC 2021...</th>
-      <th>TIC 2820...</th>
-      <th>TIC 3872...</th>
       <th>TIC 3227...</th>
       <th>TIC 3753...</th>
       <th>TIC 3445...</th>
-      <th>TIC 2644...</th>
-      <th>TIC 4177...</th>
-      <th>TIC 2848...</th>
-      <th>TIC 5285...</th>
       <th>TIC 3898...</th>
-      <th>TIC 3922...</th>
     </tr>
   </thead><tbody><tr>
 <td style="vertical-align:middle; text-align:left">
@@ -137,7 +129,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["RA", "15:08:09", "19:57:15", "20:38:19", "20:38:51", "21:03:10", "21:11:24", "21:32:21", "23:44:35", "00:41:37", "01:09:20", "01:33:10", "03:39:04"], ["Dec", "+39:58:12", "+27:18:47", "+69:21:44", "+50:28:00", "+55:28:09", "+57:37:13", "+78:41:42", "+74:10:23", "+64:28:49", "+61:02:28", "+61:35:07", "+61:03:51"], ["Vmag", "10.6", "11.8", "12.8", "11.0", "12.7", "7.9", "12.5", "12.9", "11.5", "11.0", "10.7", "10.6"], ["02:00", "<span style=\"background-color: #EBF4FA\">* * *</span>", "* *", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "", "", "", "", ""], ["02:30", "<span style=\"background-color: #EBF4FA\">* * *</span>", "* *", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "", "", "", "", ""], ["03:00", "<span style=\"background-color: #EBF4FA\">* * *</span>", "* *", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "", "", "", "", ""], ["03:30", "", "* *", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "", "", "", "", ""], ["04:00", "", "* *", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "", "", "", "", ""], ["04:30", "", "", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "", "", "", "", ""], ["05:00", "", "", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "", "", "", "", ""], ["05:30", "", "* *", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "* *", "", "", "", "", ""], ["06:00", "", "* *", "", "* *", "", "", "", "", "* *", "", "", ""], ["06:30", "", "* *", "", "* *", "", "", "", "", "* *", "", "", ""], ["07:00", "", "* *", "", "* *", "", "", "", "", "* *", "", "", ""], ["07:30", "", "", "", "* *", "", "", "", "", "* *", "* *", "", ""], ["08:00", "", "", "", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "* *", "* *", "* *", ""], ["08:30", "", "", "", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "* *", "* *", "* *", ""], ["09:00", "", "", "", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "* *", "* *", "", ""], ["09:30", "", "", "", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "* *", "* *", "", ""], ["10:00", "", "", "", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "", "* *", "", ""], ["10:30", "", "", "", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", "", "", "* *", "", ""], ["11:00", "", "", "", "* *", "", "", "", "* *", "", "* *", "", ""], ["11:30", "", "", "", "", "", "", "", "* *", "", "* *", "", "* *"]];
+        const data = [["RA", "20:38:51", "21:03:10", "21:11:24", "01:33:10"], ["Dec", "+50:28:00", "+55:28:09", "+57:37:13", "+61:35:07"], ["Vmag", "11.0", "12.7", "7.9", "10.7"], ["02:00", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", ""], ["02:30", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", ""], ["03:00", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", ""], ["03:30", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", ""], ["04:00", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", ""], ["04:30", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", ""], ["05:00", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", ""], ["05:30", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", ""], ["06:00", "* *", "", "", ""], ["06:30", "* *", "", "", ""], ["07:00", "* *", "", "", ""], ["07:30", "* *", "", "", ""], ["08:00", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "* *"], ["08:30", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "* *"], ["09:00", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", ""], ["09:30", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", ""], ["10:00", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", ""], ["10:30", "* *", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", ""], ["11:00", "* *", "", "", ""], ["11:30", "", "", "", ""]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": null, "topEnd": null, "bottomStart": null, "bottomEnd": null}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
