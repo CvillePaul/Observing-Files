@@ -143,7 +143,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["GAIA DR2", "430724884089973376"], ["Kostov group VSG candidate id", "TGV-48"], ["TESS TICv8", "283940788"], ["twomass", "00352434+6254057"]];
+        const data = [["Kostov group VSG candidate id", "TGV-48"], ["TESS TICv8", "283940788"], ["GAIA DR2", "430724884089973376"], ["twomass", "00352434+6254057"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -155,11 +155,161 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #Catalog_Membership th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
+}
+caption {
+    text-align: left;
+    font-style: italic;
+}
+button.exportButton,
+a.exportButton {
+    padding: 0px 4px !important;
+    font-size: 12px !important;
+}
+</style>
+
+    <h2>List Memberships (7)</h2><table id="List_Memberships" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
+<thead>
+    <tr style="text-align: right;">
+      
+      <th>List</th>
+    </tr>
+  </thead><tbody><tr>
+<td style="vertical-align:middle; text-align:left">
+<div style="float:left; margin-right: 10px;">
+<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+</div>
+<div>
+Loading ITables v2.2.3 from the internet...
+(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
+</div>
+</tr></tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
+
+    document.querySelectorAll("#List_Memberships:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        // Define the table data
+        const data = [["List Kostov 2022"], ["List LBT 2023-12-06"], ["List LBT 2023B"], ["List LBT 2024B"], ["List LBT 2025A"], ["List Speckle Resolved"], ["List Table 1 Targets"]];
+
+        // Define the dt_args
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        dt_args["data"] = data;
+
+        
+        new DataTable(table, dt_args);
+    });
+</script>
+
+<style>
+#List_Memberships th {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;
@@ -292,7 +442,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["A", "a", 2458766.0, 0.876867, 6.5, 0.03], ["A", "b", 2458766.0, 0.876867, 6.5, 0.01], ["B", "a", 2458770.0, 8.167894, 6.6, 0.165], ["B", "b", 2458772.0, 8.167894, 8.5, 0.13]];
+        const data = [["A", "a", "2458765.7469", "0.876867 d", "6.5 h", 0.03], ["A", "b", "2458766.180072", "0.876867 d", "6.5 h", 0.01], ["B", "a", "2458769.557", "8.167894 d", "6.6 h", 0.165], ["B", "b", "2458772.043307", "8.167894 d", "8.5 h", 0.13]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -304,11 +454,14 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #Ephemerides th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;
@@ -448,7 +601,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [[193, 2459851.0, 2459851.0, 2459851.0, "2022-09-28 08:22:00", 1, "692, 880", "Ab", 0.441145, "", NaN, "", NaN], [194, 2459851.0, 2459851.0, 2459851.0, "2022-09-28 08:25:30", 4, "692, 880", "Ab", 0.450119, "", NaN, "", NaN], [509, 2459899.0, 2459899.0, 2459899.0, "2022-11-15 04:13:30", 3, "692, 880", "Aa", 0.562687, "", NaN, "", NaN], [1287, 2460192.0, 2460192.0, 2460192.0, "2023-09-04 09:52:30", 2, "1450", "Ab", 0.299302, "", NaN, "", NaN], [1287, 2460192.0, 2460192.0, 2460192.0, "2023-09-04 09:52:30", 8, "692, 880", "Ab", 0.299302, "", NaN, "", NaN]];
+        const data = [[193, "2459850.8486111118", "2459850.8486111118", "2459850.8486111118", "2022-09-28 08:22:00", 1, "692, 880", "Ab", "0.44114502880536455", "", "NaN", "", "NaN"], [194, "2459850.849305556", "2459850.8510416667", "2459850.8527777777", "2022-09-28 08:25:30", 4, "692, 880", "Ab", "0.4501193855254453", "", "NaN", "", "NaN"], [509, "2459898.675", "2459898.6760416664", "2459898.677083333", "2022-11-15 04:13:30", 3, "692, 880", "Aa", "0.5626867677833967", "", "NaN", "", "NaN"], [1287, "2460191.9090277776", "2460191.911458333", "2460191.913888889", "2023-09-04 09:52:30", 2, "1450", "Ab", "0.29930215349528355", "", "NaN", "", "NaN"], [1287, "2460191.9090277776", "2460191.911458333", "2460191.913888889", "2023-09-04 09:52:30", 8, "692, 880", "Ab", "0.29930215349528355", "", "NaN", "", "NaN"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -460,11 +613,14 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #DSSI_Observations th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;
@@ -601,7 +757,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [[2459851.0, "2022-09-28 08:22:00", 7.13, 0.99, 245.4, 0.489, 3.76, 692, "h300032.fa", "None"], [2459851.0, "2022-09-28 08:22:00", 0.21, 0.83, 245.1, 0.4929, 3.82, 880, "h300032.fb", "None"]];
+        const data = [[2459851.0, "2022-09-28 08:22:00", 7.13, "0.99 arcsec", "245.4 deg", "0.489 arcsec", "3.76 mag", "692.0 nm", "h300032.fa", "None"], [2459851.0, "2022-09-28 08:22:00", 0.21, "0.83 arcsec", "245.1 deg", "0.4929 arcsec", "3.82 mag", "880.0 nm", "h300032.fb", "None"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -613,11 +769,14 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #Speckle_Detections th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;
@@ -760,7 +919,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["2023-06-18", "10:30:57.474", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", 804.0, 2460114.0, "pepsib.20230618.007.dxt.nor", "Ab", 0.567078, "", NaN], ["2023-06-18", "10:30:57.631", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Red", "5: 6278 - 7419", "300", 804.0, 2460114.0, "pepsir.20230618.017.dxt.nor", "Ab", 0.567085, "", NaN], ["2023-09-15", "12:28:13.035", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", 132.0, 2460203.0, "pepsir.20230915.065.dxt.bwl", "Aa", 0.826571, "", NaN], ["2023-09-15", "12:28:13.038", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", 132.0, 2460203.0, "pepsib.20230915.067.dxt.bwl", "Aa", 0.826571, "", NaN], ["2023-11-02", "05:33:23.254", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", 132.0, 2460251.0, "pepsir.20231102.018.dxt.bwl", "Ab", 0.56048, "", NaN], ["2023-11-02", "05:33:23.258", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", 132.0, 2460251.0, "pepsib.20231102.018.dxt.bwl", "Ab", 0.56048, "", NaN], ["2024-11-23", "05:06:13.211", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", 378.0, 2460638.0, "pepsir.20241123.060.sxt.nor", "", NaN, "", NaN], ["2024-11-23", "05:06:13.222", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", 378.0, 2460638.0, "pepsib.20241123.064.sxt.nor", "", NaN, "", NaN], ["2024-12-24", "05:04:33.344", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", 328.0, 2460669.0, "pepsib.20241224.024.dxt.bwl", "", NaN, "", NaN], ["2024-12-24", "05:04:33.349", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", 328.0, 2460669.0, "pepsir.20241224.020.dxt.bwl", "", NaN, "", NaN]];
+        const data = [["2023-06-18", "10:30:57.474", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "804.0 s", "2460113.942817986", "pepsib.20230618.007.dxt.nor", "Ab", "0.5670781029920572", "", "NaN"], ["2023-06-18", "10:30:57.631", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Red", "5: 6278 - 7419", "300", "804.0 s", "2460113.942819803", "pepsir.20230618.017.dxt.nor", "Ab", "0.5670848119533239", "", "NaN"], ["2023-09-15", "12:28:13.038", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "132.0 s", "2460203.020359236", "pepsib.20230915.067.dxt.bwl", "Aa", "0.8265707163269467", "", "NaN"], ["2023-09-15", "12:28:13.035", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "132.0 s", "2460203.020359201", "pepsir.20230915.065.dxt.bwl", "Aa", "0.8265705873745902", "", "NaN"], ["2023-11-02", "05:33:23.258", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "132.0 s", "2460250.732283079", "pepsib.20231102.018.dxt.bwl", "Ab", "0.560480292729503", "", "NaN"], ["2023-11-02", "05:33:23.254", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "132.0 s", "2460250.732283032", "pepsir.20231102.018.dxt.bwl", "Ab", "0.5604801190736629", "", "NaN"], ["2024-11-23", "05:06:13.222", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "378.0 s", "2460637.714840532", "pepsib.20241123.064.sxt.nor", "", "NaN", "", "NaN"], ["2024-11-23", "05:06:13.211", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "378.0 s", "2460637.714840405", "pepsir.20241123.060.sxt.nor", "", "NaN", "", "NaN"], ["2024-12-24", "05:04:33.344", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "328.0 s", "2460668.713395185", "pepsib.20241224.024.dxt.bwl", "", "NaN", "", "NaN"], ["2024-12-24", "05:04:33.349", "00:35:24.34", "+62:54:05.80", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "328.0 s", "2460668.713395243", "pepsir.20241224.020.dxt.bwl", "", "NaN", "", "NaN"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -772,11 +931,165 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #PEPSI_Observations th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
+}
+caption {
+    text-align: left;
+    font-style: italic;
+}
+button.exportButton,
+a.exportButton {
+    padding: 0px 4px !important;
+    font-size: 12px !important;
+}
+</style>
+
+    <h2>SIDE Observations (5)</h2><table id="SIDE_Observations" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
+<thead>
+    <tr style="text-align: right;">
+      
+      <th>Mid JD</th>
+      <th>Mid UTC</th>
+      <th>System</th>
+      <th>Member</th>
+      <th>Type</th>
+    </tr>
+  </thead><tbody><tr>
+<td style="vertical-align:middle; text-align:left">
+<div style="float:left; margin-right: 10px;">
+<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+</div>
+<div>
+Loading ITables v2.2.3 from the internet...
+(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
+</div>
+</tr></tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
+
+    document.querySelectorAll("#SIDE_Observations:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        // Define the table data
+        const data = [[2459851.0, "2022-09-28 08:22:00", "A", "b", "Real duration"], [2459851.0, "2022-09-28 08:25:30", "A", "b", "Real duration"], [2459899.0, "2022-11-15 04:13:30", "A", "a", "Real duration"], [2460192.0, "2023-09-04 09:52:30", "A", "b", "Real duration"], [2460192.0, "2023-09-04 09:52:30", "A", "b", "Real duration"]];
+
+        // Define the dt_args
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        dt_args["data"] = data;
+
+        
+        new DataTable(table, dt_args);
+    });
+</script>
+
+<style>
+#SIDE_Observations th {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
 }
 caption {
     text-align: left;
@@ -802,6 +1115,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2025-05-15 12:08:17-04:00 on Dell-XPS15-Paul</p>
+    <p style="text-align: left; font-style: italic;">Created 2025-07-09 11:39:04-04:00 on Dell-XPS15-Paul</p>
   </body>
 </html>
