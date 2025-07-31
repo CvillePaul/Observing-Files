@@ -143,7 +143,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["Kostov group VSG candidate id", "TGV-75"], ["TESS TICv8", "389836747"], ["GAIA DR2", "510748306734957568"], ["twomass", "01331089+6135070"]];
+        const data = [["TESS TICv8", "389836747"], ["Kostov group VSG candidate id", "TGV-75"], ["GAIA DR2", " 510748306734957568.0"], ["twomass", "01331089+6135070"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -805,6 +805,8 @@ a.exportButton {
       <th>Exposure Time</th>
       <th>Mid JD</th>
       <th>Spectrum File</th>
+      <th>Evaluation</th>
+      <th>RV Status</th>
       <th>System A Eclipse</th>
       <th>System A Duration Percent</th>
       <th>System B Eclipse</th>
@@ -919,7 +921,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["2023-06-18", "10:53:01.101", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "600.0 s", "2460113.956957188", "pepsib.20230618.010.dxt.nor", "", "NaN", "", "NaN"], ["2023-06-18", "10:53:01.089", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Red", "5: 6278 - 7419", "300", "600.0 s", "2460113.956957048", "pepsir.20230618.020.dxt.nor", "", "NaN", "", "NaN"], ["2023-09-15", "12:25:01.239", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "60.0 s", "2460203.017722674", "pepsib.20230915.066.dxt.bwl", "Ab", "0.9329912418094266", "", "NaN"], ["2023-09-15", "12:25:01.239", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460203.017722674", "pepsir.20230915.064.dxt.bwl", "Ab", "0.9329912418094266", "", "NaN"], ["2023-11-02", "05:48:28.258", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "60.0 s", "2460250.742340949", "pepsib.20231102.021.dxt.bwl", "", "NaN", "", "NaN"], ["2023-11-02", "05:48:28.258", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460250.742340949", "pepsir.20231102.021.dxt.bwl", "", "NaN", "", "NaN"], ["2024-11-24", "06:29:23.605", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "213.0 s", "2460638.771644734", "pepsib.20241124.017.sxt.nor", "", "NaN", "", "NaN"], ["2024-11-24", "06:29:23.617", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "213.0 s", "2460638.771644873", "pepsir.20241124.013.sxt.nor", "", "NaN", "", "NaN"]];
+        const data = [["2023-06-18", "10:53:01.101", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "600.0 s", "2460113.956957188", "pepsib.20230618.010.dxt.nor", 4, "B|?", "", "NaN", "", "NaN"], ["2023-06-18", "10:53:01.089", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Red", "5: 6278 - 7419", "300", "600.0 s", "2460113.956957048", "pepsir.20230618.020.dxt.nor", 5, "B|?", "", "NaN", "", "NaN"], ["2023-09-15", "12:25:01.239", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "60.0 s", "2460203.017722674", "pepsib.20230915.066.dxt.bwl", 2, "B|?", "Ab", "0.9329912418094266", "", "NaN"], ["2023-09-15", "12:25:01.239", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460203.017722674", "pepsir.20230915.064.dxt.bwl", 3, "B|?", "Ab", "0.9329912418094266", "", "NaN"], ["2023-11-02", "05:48:28.258", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "60.0 s", "2460250.742340949", "pepsib.20231102.021.dxt.bwl", 1, "B|?", "", "NaN", "", "NaN"], ["2023-11-02", "05:48:28.258", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460250.742340949", "pepsir.20231102.021.dxt.bwl", 4, "B|?", "", "NaN", "", "NaN"], ["2024-11-24", "06:29:23.605", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "213.0 s", "2460638.771644734", "pepsib.20241124.017.sxt.nor", 4, "R|?", "", "NaN", "", "NaN"], ["2024-11-24", "06:29:23.617", "01:33:10.91", "+61:35:07.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "213.0 s", "2460638.771644873", "pepsir.20241124.013.sxt.nor", 4, "R|?", "", "NaN", "", "NaN"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -953,6 +955,8 @@ a.exportButton {
 
     <h2>SIDE Observations (0)</h2>
     <span>(Empty Table)</span>
+    <h2>Zorroalopeke Observations (0)</h2>
+    <span>(Empty Table)</span>
     <script>
 document.addEventListener("keydown", function(event) {
     if (event.key === "ArrowRight") { document.getElementById("nextDay").click(); }
@@ -966,6 +970,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2025-07-09 11:39:06-04:00 on Dell-XPS15-Paul</p>
+    <p style="text-align: left; font-style: italic;">Created 2025-07-31 19:18:13-04:00 on Dell-XPS15-Paul</p>
   </body>
 </html>

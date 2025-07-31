@@ -143,7 +143,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["Kostov group VSG candidate id", "TGV-65"], ["TESS TICv8", "328181241"], ["GAIA DR2", "4657501191249536"], ["twomass", "02523694+0320522"]];
+        const data = [["TESS TICv8", "328181241"], ["Kostov group VSG candidate id", "TGV-65"], ["GAIA DR2", " 4657501191249536.0"], ["twomass", "02523694+0320522"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -805,6 +805,8 @@ a.exportButton {
       <th>Exposure Time</th>
       <th>Mid JD</th>
       <th>Spectrum File</th>
+      <th>Evaluation</th>
+      <th>RV Status</th>
       <th>System A Eclipse</th>
       <th>System A Duration Percent</th>
       <th>System B Eclipse</th>
@@ -919,7 +921,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["2023-12-06", "05:12:13.273", "02:52:36.95", "+03:20:52.40", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "78.0 s", "2460284.717271678", "pepsib.20231206.007.dxt.bwl", "", "NaN", "", "NaN"], ["2023-12-06", "05:12:13.270", "02:52:36.95", "+03:20:52.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "78.0 s", "2460284.717271643", "pepsir.20231206.007.dxt.bwl", "", "NaN", "", "NaN"]];
+        const data = [["2023-12-06", "05:12:13.273", "02:52:36.95", "+03:20:52.40", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "78.0 s", "2460284.717271678", "pepsib.20231206.007.dxt.bwl", 0, "T|T", "", "NaN", "", "NaN"], ["2023-12-06", "05:12:13.270", "02:52:36.95", "+03:20:52.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "78.0 s", "2460284.717271643", "pepsir.20231206.007.dxt.bwl", 2, "T|T", "", "NaN", "", "NaN"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -953,6 +955,8 @@ a.exportButton {
 
     <h2>SIDE Observations (0)</h2>
     <span>(Empty Table)</span>
+    <h2>Zorroalopeke Observations (0)</h2>
+    <span>(Empty Table)</span>
     <script>
 document.addEventListener("keydown", function(event) {
     if (event.key === "ArrowRight") { document.getElementById("nextDay").click(); }
@@ -966,6 +970,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2025-07-09 11:39:05-04:00 on Dell-XPS15-Paul</p>
+    <p style="text-align: left; font-style: italic;">Created 2025-07-31 19:18:13-04:00 on Dell-XPS15-Paul</p>
   </body>
 </html>

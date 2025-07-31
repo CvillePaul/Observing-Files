@@ -143,7 +143,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["Kostov group VSG candidate id", "TGV-47"], ["TESS TICv8", "278352276"], ["GAIA DR2", "2083748704155705856"], ["twomass", "20300086+4836254"]];
+        const data = [["TESS TICv8", "278352276"], ["Kostov group VSG candidate id", "TGV-47"], ["GAIA DR2", " 2083748704155705856.0"], ["twomass", "20300086+4836254"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -651,6 +651,8 @@ a.exportButton {
       <th>Exposure Time</th>
       <th>Mid JD</th>
       <th>Spectrum File</th>
+      <th>Evaluation</th>
+      <th>RV Status</th>
       <th>System A Eclipse</th>
       <th>System A Duration Percent</th>
       <th>System B Eclipse</th>
@@ -765,7 +767,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["2023-05-01", "22:33:43.886", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "960.0 s", "2460066.445646829", "pepsib.20230501.039.dxt.nor", "", "NaN", "", "NaN"], ["2023-05-01", "22:33:43.875", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "960.0 s", "2460066.445646701", "pepsir.20230501.048.dxt.nor", "", "NaN", "", "NaN"], ["2023-06-14", "10:32:57.428", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "60.0 s", "2460109.939900787", "pepsib.20230614.011.dxt.nor", "", "NaN", "", "NaN"], ["2023-06-14", "10:32:57.418", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460109.939900671", "pepsir.20230614.079.dxt.nor", "", "NaN", "", "NaN"], ["2024-10-30", "01:34:24.062", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "148.0 s", "2460613.566412755", "pepsib.20241030.001.sxt.bwl", "", "NaN", "", "NaN"], ["2024-10-30", "01:34:24.066", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "148.0 s", "2460613.566412801", "pepsir.20241030.001.sxt.bwl", "", "NaN", "", "NaN"], ["2024-12-23", "00:51:54.792", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "94.0 s", "2460667.536594815", "pepsib.20241223.005.dxt.bwl", "", "NaN", "", "NaN"], ["2024-12-23", "00:51:54.791", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "94.0 s", "2460667.536594803", "pepsir.20241223.001.dxt.bwl", "", "NaN", "", "NaN"], ["2025-04-07", "10:36:10.753", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "94.0 s", "2460772.942335104", "pepsib.20250407.021.dxt.bwl", "", "NaN", "", "NaN"], ["2025-04-07", "10:36:10.744", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "94.0 s", "2460772.942335", "pepsir.20250407.021.dxt.bwl", "", "NaN", "", "NaN"]];
+        const data = [["2023-05-01", "22:33:43.886", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "960.0 s", "2460066.445646829", "pepsib.20230501.039.dxt.nor", 2, "R|T", "", "NaN", "", "NaN"], ["2023-05-01", "22:33:43.875", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "960.0 s", "2460066.445646701", "pepsir.20230501.048.dxt.nor", 5, "R|T", "", "NaN", "", "NaN"], ["2023-06-14", "10:32:57.428", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Blue", "2: 4265 - 4800", "300", "60.0 s", "2460109.939900787", "pepsib.20230614.011.dxt.nor", 0, "R|R", "", "NaN", "", "NaN"], ["2023-06-14", "10:32:57.418", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460109.939900671", "pepsir.20230614.079.dxt.nor", 4, "R|R", "", "NaN", "", "NaN"], ["2024-10-30", "01:34:24.062", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "148.0 s", "2460613.566412755", "pepsib.20241030.001.sxt.bwl", 3, "B|T", "", "NaN", "", "NaN"], ["2024-10-30", "01:34:24.066", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "148.0 s", "2460613.566412801", "pepsir.20241030.001.sxt.bwl", 5, "B|T", "", "NaN", "", "NaN"], ["2024-12-23", "00:51:54.792", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "94.0 s", "2460667.536594815", "pepsib.20241223.005.dxt.bwl", 3, "R|B", "", "NaN", "", "NaN"], ["2024-12-23", "00:51:54.791", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "94.0 s", "2460667.536594803", "pepsir.20241223.001.dxt.bwl", 5, "R|B", "", "NaN", "", "NaN"], ["2025-04-07", "10:36:10.753", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "94.0 s", "2460772.942335104", "pepsib.20250407.021.dxt.bwl", 3, "R|T", "", "NaN", "", "NaN"], ["2025-04-07", "10:36:10.744", "20:30:00.87", "+48:36:25.40", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "94.0 s", "2460772.942335", "pepsir.20250407.021.dxt.bwl", 4, "R|T", "", "NaN", "", "NaN"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -948,6 +950,155 @@ a.exportButton {
 }
 </style>
 
+    <h2>Zorroalopeke Observations (1)</h2><table id="Zorroalopeke_Observations" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
+<thead>
+    <tr style="text-align: right;">
+      
+      <th>Telescope</th>
+      <th>Instrument</th>
+      <th>Date UTC</th>
+    </tr>
+  </thead><tbody><tr>
+<td style="vertical-align:middle; text-align:left">
+<div style="float:left; margin-right: 10px;">
+<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+</div>
+<div>
+Loading ITables v2.2.3 from the internet...
+(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
+</div>
+</tr></tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
+
+    document.querySelectorAll("#Zorroalopeke_Observations:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        // Define the table data
+        const data = [["Gemini-North", "ALOPEKE", "2025-06-11"]];
+
+        // Define the dt_args
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        dt_args["data"] = data;
+
+        
+        new DataTable(table, dt_args);
+    });
+</script>
+
+<style>
+#Zorroalopeke_Observations th {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+}
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
+}
+caption {
+    text-align: left;
+    font-style: italic;
+}
+button.exportButton,
+a.exportButton {
+    padding: 0px 4px !important;
+    font-size: 12px !important;
+}
+</style>
+
     <script>
 document.addEventListener("keydown", function(event) {
     if (event.key === "ArrowRight") { document.getElementById("nextDay").click(); }
@@ -961,6 +1112,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2025-07-09 11:39:04-04:00 on Dell-XPS15-Paul</p>
+    <p style="text-align: left; font-style: italic;">Created 2025-07-31 19:18:12-04:00 on Dell-XPS15-Paul</p>
   </body>
 </html>
