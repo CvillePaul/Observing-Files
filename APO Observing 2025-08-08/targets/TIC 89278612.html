@@ -7,6 +7,17 @@
   </head>
   <body>
     <h1 style="text-align: center">TIC 89278612 Target Details</h1>
+    <table cellpadding="10">
+      <tr>
+        <td>Target Type</td>
+        <td>QuadEB</td>
+      </tr>
+      <tr>
+        <td>Source</td>
+        <td>Kostov 2022 arXiv:2202.05790</td>
+      </tr>
+    </table>
+    <div style="margin-bottom: 40px;"></div>
     <table border="1" cellpadding="10">
       <tr>
         <th>RA</th>
@@ -164,7 +175,7 @@ Loading ITables v2.2.3 from the internet...
     word-wrap: break-word;
     text-align: center;
 }
-#{table_id} td {
+#Ephemerides td {
     text-align: center;
     word-wrap: normal;
 }
@@ -304,7 +315,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [[271, "2459851.7194444444", "2459851.7215277776", "2459851.7236111118", "2022-09-29 05:19:00", 5, "692, 880", "", "NaN", "", "NaN"], [1261, "2460191.601388889", "2460191.6118055554", "2460191.6222222224", "2023-09-04 02:41:00", 4, "1450", "Ab", "0.5015942028154393", "", "NaN"], [1261, "2460191.601388889", "2460191.6118055554", "2460191.6222222224", "2023-09-04 02:41:00", 16, "692, 880", "Ab", "0.5015942028154393", "", "NaN"], [1266, "2460191.707638889", "2460191.7100694445", "2460191.7125", "2023-09-04 05:02:30", 2, "1450", "", "NaN", "", "NaN"], [1266, "2460191.707638889", "2460191.7100694445", "2460191.7125", "2023-09-04 05:02:30", 8, "692, 880", "", "NaN", "", "NaN"], [1268, "2460191.740277778", "2460191.7427083333", "2460191.7451388887", "2023-09-04 05:49:30", 2, "1450", "", "NaN", "", "NaN"], [1268, "2460191.740277778", "2460191.7427083333", "2460191.7451388887", "2023-09-04 05:49:30", 8, "692, 880", "", "NaN", "", "NaN"], [1270, "2460191.7590277777", "2460191.7614583336", "2460191.763888889", "2023-09-04 06:16:30", 2, "1450", "", "NaN", "", "NaN"], [1270, "2460191.7590277777", "2460191.7614583336", "2460191.763888889", "2023-09-04 06:16:30", 8, "692, 880", "", "NaN", "", "NaN"], [1278, "2460191.833333333", "2460191.840625", "2460191.847916667", "2023-09-04 08:10:30", 4, "1450", "", "NaN", "", "NaN"], [1278, "2460191.833333333", "2460191.840625", "2460191.847916667", "2023-09-04 08:10:30", 16, "692, 880", "", "NaN", "", "NaN"]];
+        const data = [[271, "2459851.7194444444", "2459851.7215277776", "2459851.7236111118", "2022-09-29 05:19:00", 5, "692, 880", "", "NaN", "", "NaN"], [1261, "2460191.601388889", "2460191.6118055554", "2460191.6222222224", "2023-09-04 02:41:00", 4, "1500", "Ab", "0.5015942028154393", "", "NaN"], [1261, "2460191.601388889", "2460191.6118055554", "2460191.6222222224", "2023-09-04 02:41:00", 16, "692, 880", "Ab", "0.5015942028154393", "", "NaN"], [1266, "2460191.707638889", "2460191.7100694445", "2460191.7125", "2023-09-04 05:02:30", 2, "1500", "", "NaN", "", "NaN"], [1266, "2460191.707638889", "2460191.7100694445", "2460191.7125", "2023-09-04 05:02:30", 8, "692, 880", "", "NaN", "", "NaN"], [1268, "2460191.740277778", "2460191.7427083333", "2460191.7451388887", "2023-09-04 05:49:30", 8, "692, 880", "", "NaN", "", "NaN"], [1268, "2460191.740277778", "2460191.7427083333", "2460191.7451388887", "2023-09-04 05:49:30", 2, "1500", "", "NaN", "", "NaN"], [1270, "2460191.7590277777", "2460191.7614583336", "2460191.763888889", "2023-09-04 06:16:30", 2, "1500", "", "NaN", "", "NaN"], [1270, "2460191.7590277777", "2460191.7614583336", "2460191.763888889", "2023-09-04 06:16:30", 8, "692, 880", "", "NaN", "", "NaN"], [1278, "2460191.833333333", "2460191.840625", "2460191.847916667", "2023-09-04 08:10:30", 4, "1500", "", "NaN", "", "NaN"], [1278, "2460191.833333333", "2460191.840625", "2460191.847916667", "2023-09-04 08:10:30", 16, "692, 880", "", "NaN", "", "NaN"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -321,7 +332,7 @@ Loading ITables v2.2.3 from the internet...
     word-wrap: break-word;
     text-align: center;
 }
-#{table_id} td {
+#DSSI_Observations td {
     text-align: center;
     word-wrap: normal;
 }
@@ -472,7 +483,7 @@ Loading ITables v2.2.3 from the internet...
     word-wrap: break-word;
     text-align: center;
 }
-#{table_id} td {
+#SIDE_Observations td {
     text-align: center;
     word-wrap: normal;
 }
@@ -628,7 +639,7 @@ Loading ITables v2.2.3 from the internet...
     word-wrap: break-word;
     text-align: center;
 }
-#{table_id} td {
+#Speckle_Detections td {
     text-align: center;
     word-wrap: normal;
 }
@@ -783,7 +794,7 @@ Loading ITables v2.2.3 from the internet...
     word-wrap: break-word;
     text-align: center;
 }
-#{table_id} td {
+#Phase_Events td {
     text-align: center;
     word-wrap: normal;
 }
@@ -811,6 +822,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2025-07-31 16:12:30-04:00 on Dell-XPS15-Paul</p>
+    <p style="text-align: left; font-style: italic;">Created 2025-08-07 17:19:38-04:00 on Dell-XPS15-Paul</p>
   </body>
 </html>
