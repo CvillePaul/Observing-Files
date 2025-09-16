@@ -145,7 +145,7 @@ Loading ITables v2.2.3 from the internet...
         const data = [["01:00", -27.942444, 0, "", 0.0, 0.0], ["01:30", -23.093949, 0, "", 0.0, 0.0], ["02:00", -17.866225, 0, "", 0.0, 0.0], ["02:30", -12.340517, 0, "", 0.0, 0.0], ["03:00", -6.581602, 0, "", 0.0, 0.0], ["03:30", -0.641227, 0, "", 0.0, 0.0], ["04:00", 5.438659, 0, "", 0.0, 0.0], ["04:30", 11.623089, 0, "", 0.0, 0.0], ["05:00", 17.881605, 0, "", 0.0, 0.0], ["05:30", 24.185924, 0, "", 0.0, 0.0], ["06:00", 30.507443, 0, "", 0.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
