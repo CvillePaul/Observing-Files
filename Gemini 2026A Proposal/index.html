@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Merged Target List</title>
+    <a href="../index.html" id="home">Home</a>
+  </head>
+  <body>
+    <h1>Merged Target List</h1><br>
+    <h2>Target List (79 targets)
+      <a href="Merged Target List.html" id="targets">View target table</a>
+    </h2>
+    <table border="1" cellpadding="10">
+      <tr>
+        <td>77</td>
+        <td>QuadEB</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>SextEB</td>
+      </tr>
+    </table><br>
+    <h2>List Criteria</h2>
+    <ul></ul>
+    <script>
+document.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowRight") { document.getElementById("nextDay").click(); }
+    if (event.key === "ArrowLeft")  { document.getElementById("prevDay").click(); }
+    if (event.key === "s")          { document.getElementById("summary").click(); }
+    if (event.key === "c")          { document.getElementById("categorical").click(); }
+    if (event.key === "n")          { document.getElementById("numerical").click(); }
+    if (event.key === "t")          { document.getElementById("targets").click(); }
+    if (event.key === "j")          { document.getElementById("nextTarget").click(); }
+    if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
+});
+</script>
+  
+    <p style="text-align: left; font-style: italic;">Created 2025-09-30 13:01:02-04:00 on Dell-XPS15-Paul</p>
+  </body>
+</html>
