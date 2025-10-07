@@ -15,6 +15,8 @@
     <a href="../Categorical Priorities 2025-12-28.html" id="categorical">Categorical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">
@@ -140,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["22:00", 21.058856, 0, "", 0.0, 0.0], ["22:30", 26.309918, 0, "", 0.0, 0.0], ["23:00", 31.712847, 0, "", 0.0, 0.0], ["23:30", 37.244432, 1, "", 0.0, 0.0], ["00:00", 42.884322, 1, "", 0.0, 0.0], ["00:30", 48.614482, 1, "", 0.0, 0.0], ["01:00", 54.418622, 1, "", 0.0, 0.0], ["01:30", 60.281501, 1, "", 0.0, 0.0], ["02:00", 66.187784, 1, "", 0.0, 0.0], ["02:30", 72.119311, 1, "", 0.0, 0.0], ["03:00", 78.045106, 1, "Ba", 1.0, 1.0], ["03:30", 83.855359, 1, "Ba", 1.0, 1.0], ["04:00", 87.788608, 1, "Ba", 1.0, 1.0], ["04:30", 83.327331, 1, "Ba", 1.0, 1.0], ["05:00", 77.493474, 1, "Ba", 1.0, 1.0], ["05:30", 71.564893, 1, "Ba", 1.0, 1.0], ["06:00", 65.634751, 1, "Ba", 1.0, 1.0], ["06:30", 59.731824, 1, "Ba", 1.0, 1.0], ["07:00", 53.873788, 1, "", 0.0, 0.0], ["07:30", 48.075894, 1, "", 0.0, 0.0], ["08:00", 42.353445, 1, "", 0.0, 0.0], ["08:30", 36.722865, 1, "", 0.0, 0.0], ["09:00", 31.202386, 0, "", 0.0, 0.0], ["09:30", 25.812602, 0, "", 0.0, 0.0], ["10:00", 20.577017, 0, "", 0.0, 0.0], ["10:30", 15.522586, 0, "", 0.0, 0.0], ["11:00", 10.680249, 0, "", 0.0, 0.0], ["11:30", 6.085408, 0, "", 0.0, 0.0], ["12:00", 1.778268, 0, "", 0.0, 0.0]];
+        const data = [["22:00", 21.05887, 0, "", 0.0, 0.0], ["22:30", 26.309933, 0, "", 0.0, 0.0], ["23:00", 31.712862, 0, "", 0.0, 0.0], ["23:30", 37.244447, 1, "", 0.0, 0.0], ["00:00", 42.884338, 1, "", 0.0, 0.0], ["00:30", 48.614498, 1, "", 0.0, 0.0], ["01:00", 54.418638, 1, "", 0.0, 0.0], ["01:30", 60.281517, 1, "", 0.0, 0.0], ["02:00", 66.1878, 1, "", 0.0, 0.0], ["02:30", 72.119327, 1, "", 0.0, 0.0], ["03:00", 78.045122, 1, "Ba", 1.0, 1.0], ["03:30", 83.855374, 1, "Ba", 1.0, 1.0], ["04:00", 87.788606, 1, "Ba", 1.0, 1.0], ["04:30", 83.327316, 1, "Ba", 1.0, 1.0], ["05:00", 77.493458, 1, "Ba", 1.0, 1.0], ["05:30", 71.564877, 1, "Ba", 1.0, 1.0], ["06:00", 65.634735, 1, "Ba", 1.0, 1.0], ["06:30", 59.731808, 1, "Ba", 1.0, 1.0], ["07:00", 53.873772, 1, "", 0.0, 0.0], ["07:30", 48.075879, 1, "", 0.0, 0.0], ["08:00", 42.353429, 1, "", 0.0, 0.0], ["08:30", 36.72285, 1, "", 0.0, 0.0], ["09:00", 31.202371, 0, "", 0.0, 0.0], ["09:30", 25.812588, 0, "", 0.0, 0.0], ["10:00", 20.577003, 0, "", 0.0, 0.0], ["10:30", 15.522573, 0, "", 0.0, 0.0], ["11:00", 10.680237, 0, "", 0.0, 0.0], ["11:30", 6.085396, 0, "", 0.0, 0.0], ["12:00", 1.778257, 0, "", 0.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -182,6 +184,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   </body>

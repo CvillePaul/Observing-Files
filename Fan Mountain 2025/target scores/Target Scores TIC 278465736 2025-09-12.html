@@ -6,7 +6,7 @@
     <span style="display: inline-block; width: 20px;"></span>
     <a href="Target Scores TIC 278465736 2025-09-13.html" id="nextDay">Next Day-&gt;</a>
     <span style="display: inline-block; width: 20px;"></span>
-    <span>&lt;-Prev Target</span>
+    <a href="Target Scores TIC 344541836 2025-09-12.html" id="prevTarget">&lt;-Prev Target</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="Target Scores TIC 470710327 2025-09-12.html" id="nextTarget">Next Target-&gt;</a>
     <span style="display: inline-block; width: 20px;"></span>
@@ -15,6 +15,8 @@
     <a href="../Categorical Priorities 2025-09-12.html" id="categorical">Categorical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">
@@ -140,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["00:00", 51.245169, 1, "", 0.0, 0.0], ["00:30", 55.923857, 1, "", 0.0, 0.0], ["01:00", 60.548067, 1, "", 0.0, 0.0], ["01:30", 65.029514, 1, "", 0.0, 0.0], ["02:00", 69.219928, 1, "Aa", 1.0, 1.0], ["02:30", 72.852866, 1, "Aa", 1.0, 1.0], ["03:00", 75.460762, 1, "Aa", 1.0, 1.0], ["03:30", 76.412138, 1, "Aa", 1.0, 1.0], ["04:00", 75.372014, 1, "Aa", 1.0, 1.0], ["04:30", 72.703216, 1, "Aa", 1.0, 1.0], ["05:00", 69.036064, 1, "Aa", 1.0, 1.0], ["05:30", 64.827553, 1, "Aa", 1.0, 1.0], ["06:00", 60.336872, 1, "", 0.0, 0.0], ["06:30", 55.708511, 1, "", 0.0, 0.0], ["07:00", 51.028867, 1, "", 0.0, 0.0], ["07:30", 46.355095, 1, "", 0.0, 0.0], ["08:00", 41.729353, 1, "", 0.0, 0.0], ["08:30", 37.186107, 1, "", 0.0, 0.0], ["09:00", 32.756078, 0, "", 0.0, 0.0], ["09:30", 28.468512, 0, "Ab", 1.0, 0.0], ["10:00", 24.352529, 0, "Ab", 1.0, 0.0]];
+        const data = [["00:00", 51.245167, 1, "", 0.0, 0.0], ["00:30", 55.923855, 1, "", 0.0, 0.0], ["01:00", 60.548066, 1, "", 0.0, 0.0], ["01:30", 65.029512, 1, "", 0.0, 0.0], ["02:00", 69.219927, 1, "Aa", 1.0, 1.0], ["02:30", 72.852865, 1, "Aa", 1.0, 1.0], ["03:00", 75.460761, 1, "Aa", 1.0, 1.0], ["03:30", 76.412139, 1, "Aa", 1.0, 1.0], ["04:00", 75.372016, 1, "Aa", 1.0, 1.0], ["04:30", 72.703218, 1, "Aa", 1.0, 1.0], ["05:00", 69.036066, 1, "Aa", 1.0, 1.0], ["05:30", 64.827555, 1, "Aa", 1.0, 1.0], ["06:00", 60.336874, 1, "", 0.0, 0.0], ["06:30", 55.708514, 1, "", 0.0, 0.0], ["07:00", 51.02887, 1, "", 0.0, 0.0], ["07:30", 46.355097, 1, "", 0.0, 0.0], ["08:00", 41.729356, 1, "", 0.0, 0.0], ["08:30", 37.186109, 1, "", 0.0, 0.0], ["09:00", 32.75608, 0, "", 0.0, 0.0], ["09:30", 28.468514, 0, "Ab", 1.0, 0.0], ["10:00", 24.352532, 0, "Ab", 1.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -182,6 +184,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   </body>

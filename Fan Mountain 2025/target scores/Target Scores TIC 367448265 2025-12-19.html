@@ -15,6 +15,8 @@
     <a href="../Categorical Priorities 2025-12-19.html" id="categorical">Categorical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">
@@ -140,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["22:00", 15.096638, 0, "Ba", 1.0, 0.0], ["22:30", 20.134086, 0, "Ba", 1.0, 0.0], ["23:00", 25.355186, 0, "Ba", 1.0, 0.0], ["23:30", 30.732663, 0, "", 0.0, 0.0], ["00:00", 36.242736, 1, "", 0.0, 0.0], ["00:30", 41.864581, 1, "", 0.0, 0.0], ["01:00", 47.579787, 1, "", 0.0, 0.0], ["01:30", 53.371795, 1, "", 0.0, 0.0], ["02:00", 59.225242, 1, "", 0.0, 0.0], ["02:30", 65.124935, 1, "", 0.0, 0.0], ["03:00", 71.053588, 1, "", 0.0, 0.0], ["03:30", 76.984175, 1, "", 0.0, 0.0], ["04:00", 82.835794, 1, "", 0.0, 0.0], ["04:30", 87.665008, 1, "", 0.0, 0.0], ["05:00", 84.336441, 1, "", 0.0, 0.0], ["05:30", 78.553089, 1, "", 0.0, 0.0], ["06:00", 72.630494, 1, "", 0.0, 0.0], ["06:30", 66.697895, 1, "", 0.0, 0.0], ["07:00", 60.788635, 1, "", 0.0, 0.0], ["07:30", 54.921386, 1, "", 0.0, 0.0], ["08:00", 49.11158, 1, "", 0.0, 0.0], ["08:30", 43.37441, 1, "", 0.0, 0.0], ["09:00", 37.726046, 1, "", 0.0, 0.0], ["09:30", 32.18435, 0, "", 0.0, 0.0], ["10:00", 26.769452, 0, "", 0.0, 0.0], ["10:30", 21.504296, 0, "", 0.0, 0.0], ["11:00", 16.415175, 0, "", 0.0, 0.0], ["11:30", 11.532278, 0, "", 0.0, 0.0], ["12:00", 6.890173, 0, "", 0.0, 0.0]];
+        const data = [["22:00", 15.096653, 0, "Ba", 1.0, 0.0], ["22:30", 20.134102, 0, "Ba", 1.0, 0.0], ["23:00", 25.355203, 0, "Ba", 1.0, 0.0], ["23:30", 30.73268, 0, "", 0.0, 0.0], ["00:00", 36.242753, 1, "", 0.0, 0.0], ["00:30", 41.864599, 1, "", 0.0, 0.0], ["01:00", 47.579805, 1, "", 0.0, 0.0], ["01:30", 53.371814, 1, "", 0.0, 0.0], ["02:00", 59.22526, 1, "", 0.0, 0.0], ["02:30", 65.124953, 1, "", 0.0, 0.0], ["03:00", 71.053606, 1, "", 0.0, 0.0], ["03:30", 76.984193, 1, "", 0.0, 0.0], ["04:00", 82.835812, 1, "", 0.0, 0.0], ["04:30", 87.665014, 1, "", 0.0, 0.0], ["05:00", 84.336424, 1, "", 0.0, 0.0], ["05:30", 78.553071, 1, "", 0.0, 0.0], ["06:00", 72.630476, 1, "", 0.0, 0.0], ["06:30", 66.697877, 1, "", 0.0, 0.0], ["07:00", 60.788617, 1, "", 0.0, 0.0], ["07:30", 54.921368, 1, "", 0.0, 0.0], ["08:00", 49.111562, 1, "", 0.0, 0.0], ["08:30", 43.374393, 1, "", 0.0, 0.0], ["09:00", 37.726029, 1, "", 0.0, 0.0], ["09:30", 32.184333, 0, "", 0.0, 0.0], ["10:00", 26.769436, 0, "", 0.0, 0.0], ["10:30", 21.50428, 0, "", 0.0, 0.0], ["11:00", 16.41516, 0, "", 0.0, 0.0], ["11:30", 11.532263, 0, "", 0.0, 0.0], ["12:00", 6.89016, 0, "", 0.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -182,6 +184,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   </body>

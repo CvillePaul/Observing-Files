@@ -15,6 +15,8 @@
     <a href="../Categorical Priorities 2025-12-29.html" id="categorical">Categorical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">
@@ -140,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["22:00", -6.006381, 0, "", 0.0, 0.0], ["22:30", -0.090331, 0, "", 0.0, 0.0], ["23:00", 5.844129, 0, "", 0.0, 0.0], ["23:30", 11.758043, 0, "", 0.0, 0.0], ["00:00", 17.610186, 0, "", 0.0, 0.0], ["00:30", 23.353565, 0, "", 0.0, 0.0], ["01:00", 28.931146, 0, "", 0.0, 0.0], ["01:30", 34.270403, 0, "", 0.0, 0.0], ["02:00", 39.276399, 1, "", 0.0, 0.0], ["02:30", 43.823809, 1, "", 0.0, 0.0], ["03:00", 47.750209, 1, "", 0.0, 0.0], ["03:30", 50.856988, 1, "", 0.0, 0.0], ["04:00", 52.929205, 1, "", 0.0, 0.0], ["04:30", 53.783701, 1, "", 0.0, 0.0], ["05:00", 53.333271, 1, "", 0.0, 0.0], ["05:30", 51.624818, 1, "", 0.0, 0.0], ["06:00", 48.818222, 1, "", 0.0, 0.0], ["06:30", 45.124975, 1, "", 0.0, 0.0], ["07:00", 40.75216, 1, "", 0.0, 0.0], ["07:30", 35.874225, 1, "", 0.0, 0.0], ["08:00", 30.627542, 0, "", 0.0, 0.0], ["08:30", 25.115663, 0, "", 0.0, 0.0], ["09:00", 19.417301, 0, "", 0.0, 0.0], ["09:30", 13.593675, 0, "", 0.0, 0.0], ["10:00", 7.694407, 0, "", 0.0, 0.0], ["10:30", 1.762121, 0, "", 0.0, 0.0], ["11:00", -4.163867, 0, "", 0.0, 0.0], ["11:30", -10.044323, 0, "", 0.0, 0.0], ["12:00", -15.836955, 0, "", 0.0, 0.0]];
+        const data = [["22:00", -6.006365, 0, "", 0.0, 0.0], ["22:30", -0.090315, 0, "", 0.0, 0.0], ["23:00", 5.844145, 0, "", 0.0, 0.0], ["23:30", 11.758058, 0, "", 0.0, 0.0], ["00:00", 17.610202, 0, "", 0.0, 0.0], ["00:30", 23.35358, 0, "", 0.0, 0.0], ["01:00", 28.931161, 0, "", 0.0, 0.0], ["01:30", 34.270417, 0, "", 0.0, 0.0], ["02:00", 39.276411, 1, "", 0.0, 0.0], ["02:30", 43.82382, 1, "", 0.0, 0.0], ["03:00", 47.750219, 1, "", 0.0, 0.0], ["03:30", 50.856995, 1, "", 0.0, 0.0], ["04:00", 52.929209, 1, "", 0.0, 0.0], ["04:30", 53.783702, 1, "", 0.0, 0.0], ["05:00", 53.333268, 1, "", 0.0, 0.0], ["05:30", 51.624811, 1, "", 0.0, 0.0], ["06:00", 48.818213, 1, "", 0.0, 0.0], ["06:30", 45.124964, 1, "", 0.0, 0.0], ["07:00", 40.752147, 1, "", 0.0, 0.0], ["07:30", 35.874212, 1, "", 0.0, 0.0], ["08:00", 30.627527, 0, "", 0.0, 0.0], ["08:30", 25.115648, 0, "", 0.0, 0.0], ["09:00", 19.417286, 0, "", 0.0, 0.0], ["09:30", 13.593659, 0, "", 0.0, 0.0], ["10:00", 7.694391, 0, "", 0.0, 0.0], ["10:30", 1.762105, 0, "", 0.0, 0.0], ["11:00", -4.163883, 0, "", 0.0, 0.0], ["11:30", -10.044338, 0, "", 0.0, 0.0], ["12:00", -15.836971, 0, "", 0.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -182,6 +184,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   </body>

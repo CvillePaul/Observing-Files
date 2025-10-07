@@ -15,6 +15,8 @@
     <a href="../Categorical Priorities 2025-11-22.html" id="categorical">Categorical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">
@@ -140,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["22:00", 31.270204, 0, "", 0.0, 0.0], ["22:30", 34.733654, 0, "", 0.0, 0.0], ["23:00", 38.30572, 1, "", 0.0, 0.0], ["23:30", 41.951246, 1, "Ba", 1.0, 1.0], ["00:00", 45.630696, 1, "Ba", 1.0, 1.0], ["00:30", 49.297704, 1, "Ba", 1.0, 1.0], ["01:00", 52.895459, 1, "Ba", 1.0, 1.0], ["01:30", 56.351535, 1, "Ba", 1.0, 1.0], ["02:00", 59.571027, 1, "Ba", 1.0, 1.0], ["02:30", 62.428986, 1, "Ba", 1.0, 1.0], ["03:00", 64.766422, 1, "Ba", 1.0, 1.0], ["03:30", 66.400207, 1, "Ba", 1.0, 1.0], ["04:00", 67.160455, 1, "Ba", 1.0, 1.0], ["04:30", 66.952597, 1, "Ba", 1.0, 1.0], ["05:00", 65.803603, 1, "Ba", 1.0, 1.0], ["05:30", 63.847955, 1, "Ba", 1.0, 1.0], ["06:00", 61.267797, 1, "Ba", 1.0, 1.0], ["06:30", 58.238707, 1, "Ba", 1.0, 1.0], ["07:00", 54.90529, 1, "Ba", 1.0, 1.0], ["07:30", 51.378874, 1, "Ba", 1.0, 1.0], ["08:00", 47.743877, 1, "Ba", 1.0, 1.0], ["08:30", 44.065343, 1, "Ba", 1.0, 1.0], ["09:00", 40.395111, 1, "Ba", 1.0, 1.0], ["09:30", 36.776279, 1, "", 0.0, 0.0], ["10:00", 33.246276, 0, "", 0.0, 0.0], ["10:30", 29.838928, 0, "", 0.0, 0.0], ["11:00", 26.585802, 0, "", 0.0, 0.0], ["11:30", 23.517039, 0, "", 0.0, 0.0]];
+        const data = [["22:00", 31.270222, 0, "", 0.0, 0.0], ["22:30", 34.733672, 0, "", 0.0, 0.0], ["23:00", 38.305739, 1, "", 0.0, 0.0], ["23:30", 41.951265, 1, "Ba", 1.0, 1.0], ["00:00", 45.630715, 1, "Ba", 1.0, 1.0], ["00:30", 49.297723, 1, "Ba", 1.0, 1.0], ["01:00", 52.895477, 1, "Ba", 1.0, 1.0], ["01:30", 56.351552, 1, "Ba", 1.0, 1.0], ["02:00", 59.571043, 1, "Ba", 1.0, 1.0], ["02:30", 62.428999, 1, "Ba", 1.0, 1.0], ["03:00", 64.766432, 1, "Ba", 1.0, 1.0], ["03:30", 66.400213, 1, "Ba", 1.0, 1.0], ["04:00", 67.160456, 1, "Ba", 1.0, 1.0], ["04:30", 66.952593, 1, "Ba", 1.0, 1.0], ["05:00", 65.803595, 1, "Ba", 1.0, 1.0], ["05:30", 63.847943, 1, "Ba", 1.0, 1.0], ["06:00", 61.267781, 1, "Ba", 1.0, 1.0], ["06:30", 58.238689, 1, "Ba", 1.0, 1.0], ["07:00", 54.905272, 1, "Ba", 1.0, 1.0], ["07:30", 51.378855, 1, "Ba", 1.0, 1.0], ["08:00", 47.743857, 1, "Ba", 1.0, 1.0], ["08:30", 44.065323, 1, "Ba", 1.0, 1.0], ["09:00", 40.395092, 1, "Ba", 1.0, 1.0], ["09:30", 36.77626, 1, "", 0.0, 0.0], ["10:00", 33.246257, 0, "", 0.0, 0.0], ["10:30", 29.83891, 0, "", 0.0, 0.0], ["11:00", 26.585785, 0, "", 0.0, 0.0], ["11:30", 23.517023, 0, "", 0.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -182,6 +184,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   </body>

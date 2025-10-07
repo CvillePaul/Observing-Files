@@ -15,6 +15,8 @@
     <a href="../Categorical Priorities 2025-12-12.html" id="categorical">Categorical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">
@@ -140,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["22:00", -33.473874, 0, "", 0.0, 0.0], ["22:30", -28.501126, 0, "", 0.0, 0.0], ["23:00", -23.20589, 0, "", 0.0, 0.0], ["23:30", -17.672039, 0, "", 0.0, 0.0], ["00:00", -11.965788, 0, "", 0.0, 0.0], ["00:30", -6.14071, 0, "", 0.0, 0.0], ["01:00", -0.241989, 0, "", 0.0, 0.0], ["01:30", 5.689989, 0, "", 0.0, 0.0], ["02:00", 11.616456, 0, "", 0.0, 0.0], ["02:30", 17.497137, 0, "", 0.0, 0.0], ["03:00", 23.28682, 0, "", 0.0, 0.0], ["03:30", 28.931177, 0, "", 0.0, 0.0], ["04:00", 34.361351, 0, "", 0.0, 0.0], ["04:30", 39.486881, 1, "", 0.0, 0.0], ["05:00", 44.187001, 1, "", 0.0, 0.0], ["05:30", 48.302039, 1, "", 0.0, 0.0], ["06:00", 51.630634, 1, "", 0.0, 0.0], ["06:30", 53.944805, 1, "", 0.0, 0.0], ["07:00", 55.036421, 1, "", 0.0, 0.0], ["07:30", 54.788912, 1, "", 0.0, 0.0], ["08:00", 53.229879, 1, "", 0.0, 0.0], ["08:30", 50.517833, 1, "", 0.0, 0.0], ["09:00", 46.875719, 1, "", 0.0, 0.0], ["09:30", 42.525304, 1, "", 0.0, 0.0], ["10:00", 37.653166, 1, "", 0.0, 0.0], ["10:30", 32.403917, 0, "", 0.0, 0.0], ["11:00", 26.88616, 0, "", 0.0, 0.0], ["11:30", 21.181513, 0, "", 0.0, 0.0]];
+        const data = [["22:00", -33.473857, 0, "", 0.0, 0.0], ["22:30", -28.501107, 0, "", 0.0, 0.0], ["23:00", -23.20587, 0, "", 0.0, 0.0], ["23:30", -17.672018, 0, "", 0.0, 0.0], ["00:00", -11.965767, 0, "", 0.0, 0.0], ["00:30", -6.140688, 0, "", 0.0, 0.0], ["01:00", -0.241968, 0, "", 0.0, 0.0], ["01:30", 5.69001, 0, "", 0.0, 0.0], ["02:00", 11.616477, 0, "", 0.0, 0.0], ["02:30", 17.497158, 0, "", 0.0, 0.0], ["03:00", 23.28684, 0, "", 0.0, 0.0], ["03:30", 28.931197, 0, "", 0.0, 0.0], ["04:00", 34.36137, 0, "", 0.0, 0.0], ["04:30", 39.486899, 1, "", 0.0, 0.0], ["05:00", 44.187017, 1, "", 0.0, 0.0], ["05:30", 48.302053, 1, "", 0.0, 0.0], ["06:00", 51.630644, 1, "", 0.0, 0.0], ["06:30", 53.944812, 1, "", 0.0, 0.0], ["07:00", 55.036422, 1, "", 0.0, 0.0], ["07:30", 54.788908, 1, "", 0.0, 0.0], ["08:00", 53.229871, 1, "", 0.0, 0.0], ["08:30", 50.517821, 1, "", 0.0, 0.0], ["09:00", 46.875705, 1, "", 0.0, 0.0], ["09:30", 42.525287, 1, "", 0.0, 0.0], ["10:00", 37.653148, 1, "", 0.0, 0.0], ["10:30", 32.403898, 0, "", 0.0, 0.0], ["11:00", 26.88614, 0, "", 0.0, 0.0], ["11:30", 21.181493, 0, "", 0.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -182,6 +184,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   </body>

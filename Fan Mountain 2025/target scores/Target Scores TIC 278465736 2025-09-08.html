@@ -6,7 +6,7 @@
     <span style="display: inline-block; width: 20px;"></span>
     <a href="Target Scores TIC 278465736 2025-09-09.html" id="nextDay">Next Day-&gt;</a>
     <span style="display: inline-block; width: 20px;"></span>
-    <span>&lt;-Prev Target</span>
+    <a href="Target Scores TIC 344541836 2025-09-08.html" id="prevTarget">&lt;-Prev Target</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="Target Scores TIC 470710327 2025-09-08.html" id="nextTarget">Next Target-&gt;</a>
     <span style="display: inline-block; width: 20px;"></span>
@@ -15,6 +15,8 @@
     <a href="../Categorical Priorities 2025-09-08.html" id="categorical">Categorical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">
@@ -140,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["00:00", 48.79083, 1, "", 0.0, 0.0], ["00:30", 53.473678, 1, "", 0.0, 0.0], ["01:00", 58.135117, 1, "", 0.0, 0.0], ["01:30", 62.70519, 1, "", 0.0, 0.0], ["02:00", 67.072183, 1, "Ab", 1.0, 1.0], ["02:30", 71.041102, 1, "Ab", 1.0, 1.0], ["03:00", 74.259327, 1, "Ab", 1.0, 1.0], ["03:30", 76.156004, 1, "Ab", 1.0, 1.0], ["04:00", 76.158376, 1, "Ab", 1.0, 1.0], ["04:30", 74.265569, 1, "Ab", 1.0, 1.0], ["05:00", 71.049688, 1, "Ab", 1.0, 1.0], ["05:30", 67.082031, 1, "Ab", 1.0, 1.0], ["06:00", 62.715696, 1, "", 0.0, 0.0], ["06:30", 58.145943, 1, "", 0.0, 0.0], ["07:00", 53.484621, 1, "", 0.0, 0.0], ["07:30", 48.801757, 1, "", 0.0, 0.0], ["08:00", 44.146139, 1, "", 0.0, 0.0], ["08:30", 39.555615, 1, "", 0.0, 0.0], ["09:00", 35.062503, 1, "", 0.0, 0.0], ["09:30", 30.696609, 0, "Aa", 1.0, 0.0], ["10:00", 26.486989, 0, "Aa", 1.0, 0.0]];
+        const data = [["00:00", 48.790829, 1, "", 0.0, 0.0], ["00:30", 53.473677, 1, "", 0.0, 0.0], ["01:00", 58.135117, 1, "", 0.0, 0.0], ["01:30", 62.705189, 1, "", 0.0, 0.0], ["02:00", 67.072182, 1, "Ab", 1.0, 1.0], ["02:30", 71.041102, 1, "Ab", 1.0, 1.0], ["03:00", 74.259327, 1, "Ab", 1.0, 1.0], ["03:30", 76.156004, 1, "Ab", 1.0, 1.0], ["04:00", 76.158376, 1, "Ab", 1.0, 1.0], ["04:30", 74.265569, 1, "Ab", 1.0, 1.0], ["05:00", 71.049689, 1, "Ab", 1.0, 1.0], ["05:30", 67.082032, 1, "Ab", 1.0, 1.0], ["06:00", 62.715697, 1, "", 0.0, 0.0], ["06:30", 58.145944, 1, "", 0.0, 0.0], ["07:00", 53.484622, 1, "", 0.0, 0.0], ["07:30", 48.801758, 1, "", 0.0, 0.0], ["08:00", 44.14614, 1, "", 0.0, 0.0], ["08:30", 39.555616, 1, "", 0.0, 0.0], ["09:00", 35.062504, 1, "", 0.0, 0.0], ["09:30", 30.69661, 0, "Aa", 1.0, 0.0], ["10:00", 26.48699, 0, "Aa", 1.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -182,6 +184,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   </body>

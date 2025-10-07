@@ -15,6 +15,8 @@
     <a href="../Categorical Priorities 2025-09-11.html" id="categorical">Categorical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">
@@ -140,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["00:00", -15.49486, 0, "Bb", 1.0, 0.0], ["00:30", -14.077538, 0, "Bb", 1.0, 0.0], ["01:00", -12.062096, 0, "Bb", 1.0, 0.0], ["01:30", -9.494451, 0, "Bb", 1.0, 0.0], ["02:00", -6.426776, 0, "Bb", 1.0, 0.0], ["02:30", -2.91346, 0, "Bb", 1.0, 0.0], ["03:00", 0.992068, 0, "Bb", 1.0, 0.0], ["03:30", 5.239493, 0, "Bb", 1.0, 0.0], ["04:00", 9.782837, 0, "", 0.0, 0.0], ["04:30", 14.58096, 0, "", 0.0, 0.0], ["05:00", 19.597563, 0, "", 0.0, 0.0], ["05:30", 24.800891, 0, "", 0.0, 0.0], ["06:00", 30.163268, 0, "", 0.0, 0.0], ["06:30", 35.660576, 1, "", 0.0, 0.0], ["07:00", 41.271706, 1, "", 0.0, 0.0], ["07:30", 46.97802, 1, "", 0.0, 0.0], ["08:00", 52.762793, 1, "", 0.0, 0.0], ["08:30", 58.610571, 1, "", 0.0, 0.0], ["09:00", 64.506212, 1, "", 0.0, 0.0], ["09:30", 70.432835, 1, "", 0.0, 0.0], ["10:00", 76.365217, 1, "", 0.0, 0.0]];
+        const data = [["00:00", -15.49486, 0, "Bb", 1.0, 0.0], ["00:30", -14.077538, 0, "Bb", 1.0, 0.0], ["01:00", -12.062096, 0, "Bb", 1.0, 0.0], ["01:30", -9.494451, 0, "Bb", 1.0, 0.0], ["02:00", -6.426776, 0, "Bb", 1.0, 0.0], ["02:30", -2.913461, 0, "Bb", 1.0, 0.0], ["03:00", 0.992067, 0, "Bb", 1.0, 0.0], ["03:30", 5.239492, 0, "Bb", 1.0, 0.0], ["04:00", 9.782836, 0, "", 0.0, 0.0], ["04:30", 14.580958, 0, "", 0.0, 0.0], ["05:00", 19.597562, 0, "", 0.0, 0.0], ["05:30", 24.800889, 0, "", 0.0, 0.0], ["06:00", 30.163267, 0, "", 0.0, 0.0], ["06:30", 35.660575, 1, "", 0.0, 0.0], ["07:00", 41.271705, 1, "", 0.0, 0.0], ["07:30", 46.978018, 1, "", 0.0, 0.0], ["08:00", 52.762791, 1, "", 0.0, 0.0], ["08:30", 58.610569, 1, "", 0.0, 0.0], ["09:00", 64.50621, 1, "", 0.0, 0.0], ["09:30", 70.432833, 1, "", 0.0, 0.0], ["10:00", 76.365215, 1, "", 0.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -182,6 +184,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   </body>

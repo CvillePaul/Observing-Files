@@ -6,7 +6,7 @@
     <span style="display: inline-block; width: 20px;"></span>
     <a href="Target Scores TIC 278465736 2025-11-06.html" id="nextDay">Next Day-&gt;</a>
     <span style="display: inline-block; width: 20px;"></span>
-    <span>&lt;-Prev Target</span>
+    <a href="Target Scores TIC 344541836 2025-11-05.html" id="prevTarget">&lt;-Prev Target</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="Target Scores TIC 470710327 2025-11-05.html" id="nextTarget">Next Target-&gt;</a>
     <span style="display: inline-block; width: 20px;"></span>
@@ -15,6 +15,8 @@
     <a href="../Categorical Priorities 2025-11-05.html" id="categorical">Categorical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">
@@ -140,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["23:00", 73.500312, 1, "", 0.0, 0.0], ["23:30", 75.814007, 1, "", 0.0, 0.0], ["00:00", 76.354271, 1, "", 0.0, 0.0], ["00:30", 74.924835, 1, "", 0.0, 0.0], ["01:00", 71.998615, 1, "", 0.0, 0.0], ["01:30", 68.188902, 1, "Ab", 1.0, 1.0], ["02:00", 63.905441, 1, "Ab", 1.0, 1.0], ["02:30", 59.37699, 1, "Ab", 1.0, 1.0], ["03:00", 54.732386, 1, "Ab", 1.0, 1.0], ["03:30", 50.050196, 1, "Ab", 1.0, 1.0], ["04:00", 45.383585, 1, "Ab", 1.0, 1.0], ["04:30", 40.772655, 1, "Ab", 1.0, 1.0], ["05:00", 36.250842, 1, "Ab", 1.0, 1.0], ["05:30", 31.848413, 0, "", 0.0, 0.0], ["06:00", 27.594499, 0, "", 0.0, 0.0], ["06:30", 23.518313, 0, "", 0.0, 0.0], ["07:00", 19.649866, 0, "", 0.0, 0.0], ["07:30", 16.020328, 0, "", 0.0, 0.0], ["08:00", 12.662083, 0, "", 0.0, 0.0], ["08:30", 9.608482, 0, "Aa", 1.0, 0.0], ["09:00", 6.893277, 0, "Aa", 1.0, 0.0], ["09:30", 4.549723, 0, "Aa", 1.0, 0.0], ["10:00", 2.609377, 0, "Aa", 1.0, 0.0], ["10:30", 1.100638, 0, "Aa", 1.0, 0.0], ["11:00", 0.047171, 0, "Ba", 1.0, 0.0]];
+        const data = [["23:00", 73.500329, 1, "", 0.0, 0.0], ["23:30", 75.814015, 1, "", 0.0, 0.0], ["00:00", 76.354268, 1, "", 0.0, 0.0], ["00:30", 74.924821, 1, "", 0.0, 0.0], ["01:00", 71.998594, 1, "", 0.0, 0.0], ["01:30", 68.188877, 1, "Ab", 1.0, 1.0], ["02:00", 63.905415, 1, "Ab", 1.0, 1.0], ["02:30", 59.376963, 1, "Ab", 1.0, 1.0], ["03:00", 54.732359, 1, "Ab", 1.0, 1.0], ["03:30", 50.050168, 1, "Ab", 1.0, 1.0], ["04:00", 45.383557, 1, "Ab", 1.0, 1.0], ["04:30", 40.772628, 1, "Ab", 1.0, 1.0], ["05:00", 36.250816, 1, "Ab", 1.0, 1.0], ["05:30", 31.848387, 0, "", 0.0, 0.0], ["06:00", 27.594474, 0, "", 0.0, 0.0], ["06:30", 23.518289, 0, "", 0.0, 0.0], ["07:00", 19.649843, 0, "", 0.0, 0.0], ["07:30", 16.020307, 0, "", 0.0, 0.0], ["08:00", 12.662064, 0, "", 0.0, 0.0], ["08:30", 9.608465, 0, "Aa", 1.0, 0.0], ["09:00", 6.893261, 0, "Aa", 1.0, 0.0], ["09:30", 4.54971, 0, "Aa", 1.0, 0.0], ["10:00", 2.609367, 0, "Aa", 1.0, 0.0], ["10:30", 1.10063, 0, "Aa", 1.0, 0.0], ["11:00", 0.047166, 0, "Ba", 1.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -182,6 +184,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   </body>

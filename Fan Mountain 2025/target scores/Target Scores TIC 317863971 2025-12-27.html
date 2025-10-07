@@ -15,6 +15,8 @@
     <a href="../Categorical Priorities 2025-12-27.html" id="categorical">Categorical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">
@@ -140,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["22:00", -23.391956, 0, "", 0.0, 0.0], ["22:30", -17.865072, 0, "", 0.0, 0.0], ["23:00", -12.163763, 0, "", 0.0, 0.0], ["23:30", -6.341957, 0, "", 0.0, 0.0], ["00:00", -0.445065, 0, "", 0.0, 0.0], ["00:30", 5.486418, 0, "", 0.0, 0.0], ["01:00", 11.413719, 0, "", 0.0, 0.0], ["01:30", 17.296669, 0, "", 0.0, 0.0], ["02:00", 23.090288, 0, "", 0.0, 0.0], ["02:30", 28.740639, 0, "", 0.0, 0.0], ["03:00", 34.179471, 0, "", 0.0, 0.0], ["03:30", 39.317197, 1, "", 0.0, 0.0], ["04:00", 44.034241, 1, "", 0.0, 0.0], ["04:30", 48.172371, 1, "", 0.0, 0.0], ["05:00", 51.53155, 1, "", 0.0, 0.0], ["05:30", 53.884151, 1, "", 0.0, 0.0], ["06:00", 55.020246, 1, "", 0.0, 0.0], ["06:30", 54.818989, 1, "", 0.0, 0.0], ["07:00", 53.302839, 1, "", 0.0, 0.0], ["07:30", 50.626761, 1, "", 0.0, 0.0], ["08:00", 47.012713, 1, "", 0.0, 0.0], ["08:30", 42.683253, 1, "Ab", 1.0, 1.0], ["09:00", 37.826385, 1, "Ab", 1.0, 1.0], ["09:30", 32.588095, 0, "Ab", 1.0, 0.0], ["10:00", 27.078071, 0, "Ab", 1.0, 0.0], ["10:30", 21.378711, 0, "Ab", 1.0, 0.0], ["11:00", 15.553356, 0, "Ab", 1.0, 0.0], ["11:30", 9.652782, 0, "Ab", 1.0, 0.0], ["12:00", 3.720147, 0, "Ab", 1.0, 0.0]];
+        const data = [["22:00", -23.391941, 0, "", 0.0, 0.0], ["22:30", -17.865057, 0, "", 0.0, 0.0], ["23:00", -12.163747, 0, "", 0.0, 0.0], ["23:30", -6.341941, 0, "", 0.0, 0.0], ["00:00", -0.445049, 0, "", 0.0, 0.0], ["00:30", 5.486434, 0, "", 0.0, 0.0], ["01:00", 11.413735, 0, "", 0.0, 0.0], ["01:30", 17.296685, 0, "", 0.0, 0.0], ["02:00", 23.090303, 0, "", 0.0, 0.0], ["02:30", 28.740655, 0, "", 0.0, 0.0], ["03:00", 34.179486, 0, "", 0.0, 0.0], ["03:30", 39.31721, 1, "", 0.0, 0.0], ["04:00", 44.034254, 1, "", 0.0, 0.0], ["04:30", 48.172381, 1, "", 0.0, 0.0], ["05:00", 51.531557, 1, "", 0.0, 0.0], ["05:30", 53.884156, 1, "", 0.0, 0.0], ["06:00", 55.020247, 1, "", 0.0, 0.0], ["06:30", 54.818986, 1, "", 0.0, 0.0], ["07:00", 53.302833, 1, "", 0.0, 0.0], ["07:30", 50.626752, 1, "", 0.0, 0.0], ["08:00", 47.012702, 1, "", 0.0, 0.0], ["08:30", 42.68324, 1, "Ab", 1.0, 1.0], ["09:00", 37.826371, 1, "Ab", 1.0, 1.0], ["09:30", 32.58808, 0, "Ab", 1.0, 0.0], ["10:00", 27.078055, 0, "Ab", 1.0, 0.0], ["10:30", 21.378695, 0, "Ab", 1.0, 0.0], ["11:00", 15.55334, 0, "Ab", 1.0, 0.0], ["11:30", 9.652766, 0, "Ab", 1.0, 0.0], ["12:00", 3.720131, 0, "Ab", 1.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -182,6 +184,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   </body>

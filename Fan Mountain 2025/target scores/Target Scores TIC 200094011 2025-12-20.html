@@ -15,6 +15,8 @@
     <a href="../Categorical Priorities 2025-12-20.html" id="categorical">Categorical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">
@@ -140,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["22:00", -12.432539, 0, "Bb", 1.0, 0.0], ["22:30", -6.554318, 0, "Bb", 1.0, 0.0], ["23:00", -0.629095, 0, "Bb", 1.0, 0.0], ["23:30", 5.303524, 0, "Bb", 1.0, 0.0], ["00:00", 11.204417, 0, "Bb", 1.0, 0.0], ["00:30", 17.031786, 0, "Bb", 1.0, 0.0], ["01:00", 22.737657, 0, "Bb", 1.0, 0.0], ["01:30", 28.263669, 0, "Bb", 1.0, 0.0], ["02:00", 33.535787, 0, "Bb", 1.0, 0.0], ["02:30", 38.457807, 1, "Bb", 1.0, 1.0], ["03:00", 42.904293, 1, "Bb", 1.0, 1.0], ["03:30", 46.715501, 1, "Bb", 1.0, 1.0], ["04:00", 49.700503, 1, "", 0.0, 0.0], ["04:30", 51.658356, 1, "", 0.0, 0.0], ["05:00", 52.423593, 1, "", 0.0, 0.0], ["05:30", 51.922573, 1, "Ab", 1.0, 1.0], ["06:00", 50.204129, 1, "Ab", 1.0, 1.0], ["06:30", 47.418861, 1, "Ab", 1.0, 1.0], ["07:00", 43.764782, 1, "Ab", 1.0, 1.0], ["07:30", 39.437482, 1, "Ab", 1.0, 1.0], ["08:00", 34.603967, 0, "Ab", 1.0, 0.0], ["08:30", 29.39662, 0, "Ab", 1.0, 0.0], ["09:00", 23.917217, 0, "Ab", 1.0, 0.0], ["09:30", 18.243882, 0, "Ab", 1.0, 0.0], ["10:00", 12.437794, 0, "", 0.0, 0.0], ["10:30", 6.548729, 0, "", 0.0, 0.0], ["11:00", 0.619478, 0, "", 0.0, 0.0], ["11:30", -5.310543, 0, "", 0.0, 0.0], ["12:00", -11.202087, 0, "", 0.0, 0.0]];
+        const data = [["22:00", -12.432521, 0, "Bb", 1.0, 0.0], ["22:30", -6.5543, 0, "Bb", 1.0, 0.0], ["23:00", -0.629077, 0, "Bb", 1.0, 0.0], ["23:30", 5.303542, 0, "Bb", 1.0, 0.0], ["00:00", 11.204435, 0, "Bb", 1.0, 0.0], ["00:30", 17.031804, 0, "Bb", 1.0, 0.0], ["01:00", 22.737674, 0, "Bb", 1.0, 0.0], ["01:30", 28.263686, 0, "Bb", 1.0, 0.0], ["02:00", 33.535803, 0, "Bb", 1.0, 0.0], ["02:30", 38.457821, 1, "Bb", 1.0, 1.0], ["03:00", 42.904305, 1, "Bb", 1.0, 1.0], ["03:30", 46.715512, 1, "Bb", 1.0, 1.0], ["04:00", 49.700511, 1, "", 0.0, 0.0], ["04:30", 51.65836, 1, "", 0.0, 0.0], ["05:00", 52.423593, 1, "", 0.0, 0.0], ["05:30", 51.922569, 1, "Ab", 1.0, 1.0], ["06:00", 50.204122, 1, "Ab", 1.0, 1.0], ["06:30", 47.418851, 1, "Ab", 1.0, 1.0], ["07:00", 43.76477, 1, "Ab", 1.0, 1.0], ["07:30", 39.437468, 1, "Ab", 1.0, 1.0], ["08:00", 34.603952, 0, "Ab", 1.0, 0.0], ["08:30", 29.396604, 0, "Ab", 1.0, 0.0], ["09:00", 23.9172, 0, "Ab", 1.0, 0.0], ["09:30", 18.243865, 0, "Ab", 1.0, 0.0], ["10:00", 12.437776, 0, "", 0.0, 0.0], ["10:30", 6.548711, 0, "", 0.0, 0.0], ["11:00", 0.61946, 0, "", 0.0, 0.0], ["11:30", -5.310561, 0, "", 0.0, 0.0], ["12:00", -11.202105, 0, "", 0.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -182,6 +184,7 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   </body>
