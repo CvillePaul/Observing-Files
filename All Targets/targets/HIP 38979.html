@@ -4,6 +4,8 @@
     <title>HIP 38979</title>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">HIP 38979 Target Details</h1>
@@ -13,7 +15,7 @@
         <td>Telluric Standard</td>
       </tr>
       <tr>
-        <td>Source</td>
+        <td>Target Source</td>
         <td>srm4n email 2024-11-14</td>
       </tr>
     </table>
@@ -316,7 +318,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["2024-12-22", "10:30:25.632", "07:58:34.87", "+43:30:14.10", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "60.0 s", "2460666.938143889", "pepsib.20241222.006.dxt.bwl", 5, "NaN", "", "NaN", "", "NaN"], ["2024-12-22", "10:30:25.636", "07:58:34.87", "+43:30:14.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460666.938143935", "pepsir.20241222.002.dxt.bwl", 5, "NaN", "", "NaN", "", "NaN"], ["2025-04-08", "04:22:35.941", "07:58:34.87", "+43:30:14.10", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "60.0 s", "2460773.682707651", "pepsib.20250408.067.dxt.bwl", 5, "NaN", "", "NaN", "", "NaN"], ["2025-04-08", "04:22:35.946", "07:58:34.87", "+43:30:14.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460773.682707708", "pepsir.20250408.055.dxt.bwl", 5, "NaN", "", "NaN", "", "NaN"]];
+        const data = [["2024-12-22", "10:30:25.632", "07:58:34.87", "+43:30:14.10", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "60.0 s", "2460666.938143889", "pepsib.20241222.006.dxt.bwl", 5.0, "NaN", "", "NaN", "", "NaN"], ["2024-12-22", "10:30:25.636", "07:58:34.87", "+43:30:14.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460666.938143935", "pepsir.20241222.002.dxt.bwl", 5.0, "NaN", "", "NaN", "", "NaN"], ["2025-04-08", "04:22:35.941", "07:58:34.87", "+43:30:14.10", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "60.0 s", "2460773.682707651", "pepsib.20250408.067.dxt.bwl", 5.0, "NaN", "", "NaN", "", "NaN"], ["2025-04-08", "04:22:35.946", "07:58:34.87", "+43:30:14.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460773.682707708", "pepsir.20250408.055.dxt.bwl", 5.0, "NaN", "", "NaN", "", "NaN"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -358,9 +360,10 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2025-09-03 21:34:22-04:00 on Dell-XPS15-Paul</p>
+    <p style="text-align: left; font-style: italic;">Created 2025-11-01 17:26:50-04:00 on Dell-XPS15-Paul</p>
   </body>
 </html>

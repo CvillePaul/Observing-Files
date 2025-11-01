@@ -4,6 +4,8 @@
     <title>HD 102870</title>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">HD 102870 Target Details</h1>
@@ -13,7 +15,7 @@
         <td>RV Standard</td>
       </tr>
       <tr>
-        <td>Source</td>
+        <td>Target Source</td>
         <td>srm4n email 2024-11-14</td>
       </tr>
     </table>
@@ -316,7 +318,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["2025-04-08", "04:28:12.310", "11:50:41.72", "+01:45:53.00", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "60.0 s", "2460773.68660081", "pepsib.20250408.068.dxt.bwl", 4, "NaN", "", "NaN", "", "NaN"], ["2025-04-08", "04:28:12.307", "11:50:41.72", "+01:45:53.00", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460773.686600775", "pepsir.20250408.056.dxt.bwl", 5, "NaN", "", "NaN", "", "NaN"]];
+        const data = [["2025-04-08", "04:28:12.310", "11:50:41.72", "+01:45:53.00", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "60.0 s", "2460773.68660081", "pepsib.20250408.068.dxt.bwl", 4.0, "NaN", "", "NaN", "", "NaN"], ["2025-04-08", "04:28:12.307", "11:50:41.72", "+01:45:53.00", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "60.0 s", "2460773.686600775", "pepsir.20250408.056.dxt.bwl", 5.0, "NaN", "", "NaN", "", "NaN"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -358,9 +360,10 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2025-09-03 21:34:22-04:00 on Dell-XPS15-Paul</p>
+    <p style="text-align: left; font-style: italic;">Created 2025-11-01 17:26:50-04:00 on Dell-XPS15-Paul</p>
   </body>
 </html>

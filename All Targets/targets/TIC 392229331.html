@@ -4,6 +4,8 @@
     <title>TIC 392229331</title>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">TIC 392229331 Target Details</h1>
@@ -13,8 +15,8 @@
         <td>QuadEB</td>
       </tr>
       <tr>
-        <td>Source</td>
-        <td>Kostov 2022 arXiv:2202.05790</td>
+        <td>Target Source</td>
+        <td>Kostov 2022 doi.org/10.3847/1538-4365/ac5458</td>
       </tr>
       <tr>
         <td>List Memberships</td>
@@ -631,7 +633,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["2024-09-20", "10:53:46.620", "03:39:04.30", "+61:03:51.10", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "960.0 s", "2460573.959567361", "pepsib.20240920.078.dxt.bwl", 5, "T|R", "Aa", "0.48466907251592284", "", "NaN"], ["2024-09-20", "10:53:46.617", "03:39:04.30", "+61:03:51.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "960.0 s", "2460573.959567327", "pepsir.20240920.021.dxt.bwl", 5, "T|R", "Aa", "0.4846688458940964", "", "NaN"]];
+        const data = [["2024-09-20", "10:53:46.620", "03:39:04.30", "+61:03:51.10", "LBT", "PEPSI", "Blue", "3: 4800 - 5441", "300", "960.0 s", "2460573.959567361", "pepsib.20240920.078.dxt.bwl", 5.0, "T|R", "Aa", "0.48466907251592284", "", "NaN"], ["2024-09-20", "10:53:46.617", "03:39:04.30", "+61:03:51.10", "LBT", "PEPSI", "Red", "6: 7419 - 9067", "300", "960.0 s", "2460573.959567327", "pepsir.20240920.021.dxt.bwl", 5.0, "T|R", "Aa", "0.4846688458940964", "", "NaN"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -673,9 +675,10 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2025-09-03 21:34:20-04:00 on Dell-XPS15-Paul</p>
+    <p style="text-align: left; font-style: italic;">Created 2025-11-01 17:26:49-04:00 on Dell-XPS15-Paul</p>
   </body>
 </html>

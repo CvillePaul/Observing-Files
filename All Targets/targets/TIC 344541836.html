@@ -4,6 +4,8 @@
     <title>TIC 344541836</title>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
   </head>
   <body>
     <h1 style="text-align: center">TIC 344541836 Target Details</h1>
@@ -13,12 +15,12 @@
         <td>QuadEB</td>
       </tr>
       <tr>
-        <td>Source</td>
-        <td>Kostov 2022 arXiv:2202.05790</td>
+        <td>Target Source</td>
+        <td>Kostov 2022 doi.org/10.3847/1538-4365/ac5458</td>
       </tr>
       <tr>
         <td>List Memberships</td>
-        <td>Kostov 2022, Speckle Resolved, Table 1 Targets</td>
+        <td>Kostov 2022, Resolved 2025-09-30, Speckle Resolved, Table 1 Targets</td>
       </tr>
     </table>
     <div style="margin-bottom: 40px;"></div>
@@ -787,7 +789,7 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["2024-02-20", "12:44:58.295", "21:11:24.18", "+57:37:13.50", "VATT", "PEPSI", "Blue", "3: 4800 - 5441", "130L", "1615.432 s", "2460361.045326001", "pepsib.20240220.014.sxt.bwl", 0, "T|T", "", "NaN", "Ba", "0.7614944048491449"], ["2024-02-20", "12:44:58.292", "21:11:24.18", "+57:37:13.50", "VATT", "PEPSI", "Red", "6: 7419 - 9067", "130L", "1569.466 s", "2460361.045327581", "pepsir.20240220.010.sxt.bwl", 3, "T|T", "", "NaN", "Ba", "0.7615019887951344"]];
+        const data = [["2024-02-20", "12:44:58.295", "21:11:24.18", "+57:37:13.50", "VATT", "PEPSI", "Blue", "3: 4800 - 5441", "130L", "1615.432 s", "2460361.045326001", "pepsib.20240220.014.sxt.bwl", 0.0, "T|T", "", "NaN", "Ba", "0.7614944048491449"], ["2024-02-20", "12:44:58.292", "21:11:24.18", "+57:37:13.50", "VATT", "PEPSI", "Red", "6: 7419 - 9067", "130L", "1569.466 s", "2460361.045327581", "pepsir.20240220.010.sxt.bwl", 3.0, "T|T", "", "NaN", "Ba", "0.7615019887951344"]];
 
         // Define the dt_args
         let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "autowidth": false, "float": "left", "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
@@ -980,9 +982,10 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "t")          { document.getElementById("targets").click(); }
     if (event.key === "j")          { document.getElementById("nextTarget").click(); }
     if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2025-09-03 21:34:20-04:00 on Dell-XPS15-Paul</p>
+    <p style="text-align: left; font-style: italic;">Created 2025-11-01 17:26:48-04:00 on Dell-XPS15-Paul</p>
   </body>
 </html>
