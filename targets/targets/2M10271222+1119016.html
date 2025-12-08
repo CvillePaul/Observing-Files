@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2M10271222+1119016</title>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../index.html" id="summary">Summary Page</a>
+    <span style="display: inline-block; width: 20px;"></span>
+    <a href="../../index.html" id="home">Home</a>
+  </head>
+  <body>
+    <h1 style="text-align: center">2M10271222+1119016 Target Details</h1>
+    <table cellpadding="10">
+      <tr>
+        <td>Target Type</td>
+        <td>White Dwarf Binary</td>
+      </tr>
+      <tr>
+        <td>Target Source</td>
+        <td>Steve</td>
+      </tr>
+    </table>
+    <div style="margin-bottom: 40px;"></div>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>RA</th>
+        <th>Dec</th>
+        <th>RA HMS</th>
+        <th>Dec DMS</th>
+        <th>Vmag</th>
+        <th>Teff</th>
+      </tr>
+      <tr>
+        <td>156.80091666666664</td>
+        <td>11.31711111111111</td>
+        <td>10:27:12.22</td>
+        <td>+11:19:01.6</td>
+        <td>nan</td>
+        <td>nan</td>
+      </tr>
+    </table>
+    <script>
+document.addEventListener("keydown", function(event) {
+    const el = event.target;
+    if (
+        el.tagName === 'INPUT' ||
+        el.tagName === 'TEXTAREA' ||
+        el.isContentEditable
+    ) {
+        return;  // Ignore keys typed into text fields or editable elements
+    }
+    if (event.key === "ArrowRight") { document.getElementById("nextDay").click(); }
+    if (event.key === "ArrowLeft")  { document.getElementById("prevDay").click(); }
+    if (event.key === "s")          { document.getElementById("summary").click(); }
+    if (event.key === "c")          { document.getElementById("categorical").click(); }
+    if (event.key === "n")          { document.getElementById("numerical").click(); }
+    if (event.key === "t")          { document.getElementById("targets").click(); }
+    if (event.key === "j")          { document.getElementById("nextTarget").click(); }
+    if (event.key === "k")          { document.getElementById("prevTarget").click(); }
+    if (event.key === "h")          { document.getElementById("home").click(); }
+});
+</script>
+  
+    <p style="text-align: left; font-style: italic;">Created 2025-12-08 11:14:00-05:00 on Dell-XPS15-Paul</p>
+  </body>
+</html>

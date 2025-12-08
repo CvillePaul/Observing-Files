@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html name="PEPSI Observations for TIC 454140642">
+  <head>
+    <title>PEPSI Observations for TIC 454140642</title>
+    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="flikity-cell">
+        <img src="PEPSI SpectrumPlot.2023-12-06~05_17_12.738~Red.png">
+      </div>
+      <div class="flikity-cell">
+        <img src="PEPSI SpectrumPlot.2024-11-23~07_23_30.175~Red.png">
+      </div>
+      <div class="flikity-cell">
+        <img src="PEPSI SpectrumPlot.2025-10-18~07_24_48.235~Red.png">
+      </div>
+    </div></div>
+    <style>.flickity-cell {width: 100%}</style>
+    <script>
+                    var flkty = new Flickity('.carousel', {
+                        wrapAround: false,
+                        pageDots: false,
+                    });
+
+                    flkty.on( 'change', function( index ) {
+                        flkty.select(index, false, true);
+                    }); 
+                    flkty.focus();
+                    </script>
+  </body>
+</html>
