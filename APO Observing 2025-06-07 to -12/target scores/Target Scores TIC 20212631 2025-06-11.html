@@ -4,11 +4,11 @@
     <title>2025-06-11 Target Scores for TIC 20212631</title>
     <a href="Target Scores TIC 20212631 2025-06-10.html" id="prevDay">&lt;-Prev Day</a>
     <span style="display: inline-block; width: 20px;"></span>
-    <a href="Target Scores TIC 20212631 2025-06-12.html" id="nextDay">Next Day-&gt;</a>
+    <span>Next Day-&gt;</span>
     <span style="display: inline-block; width: 20px;"></span>
     <span>&lt;-Prev Target</span>
     <span style="display: inline-block; width: 20px;"></span>
-    <a href="Target Scores TIC 219469945 2025-06-11.html" id="nextTarget">Next Target-&gt;</a>
+    <span>Next Target-&gt;</span>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../Numerical Priorities 2025-06-11.html" id="numerical">Numerical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
@@ -21,8 +21,8 @@
       <a href="../targets/TIC 20212631.html" id="targets">TIC 20212631</a>
       <span style="display: inline-block; width: 10px;"></span>Target Scores for 2025-06-11 UTC
     </h1>
-    <p><table id="Target_Scores" class="compact cell-border hover" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
-<caption style="white-space: nowrap; overflow: hidden">Created 2025-03-26 12:16:56-04:00 on Dell-XPS15-Paul</caption><thead>
+    <p><table id="Target_Scores" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
+<thead>
     <tr style="text-align: right;">
       <th></th>
       <th>Altitude Value</th>
@@ -142,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["03:00", 66.16741, 1, "", 0.0, "", 0.0, 0.0], ["03:30", 71.805891, 1, "", 0.0, "", 0.0, 0.0], ["04:00", 77.137221, 1, "", 0.0, "", 0.0, 0.0], ["04:30", 81.496624, 1, "", 0.0, "", 0.0, 0.0], ["05:00", 82.777297, 1, "", 0.0, "", 0.0, 0.0], ["05:30", 79.745537, 1, "", 0.0, "", 0.0, 0.0], ["06:00", 74.803182, 1, "Aa", 1.0, "", 0.5, 0.5], ["06:30", 69.293581, 1, "Aa", 1.0, "", 0.5, 0.5], ["07:00", 63.592897, 1, "", 0.0, "", 0.0, 0.0], ["07:30", 57.829939, 1, "", 0.0, "", 0.0, 0.0], ["08:00", 52.063743, 1, "", 0.0, "", 0.0, 0.0], ["08:30", 46.329414, 1, "", 0.0, "", 0.0, 0.0], ["09:00", 40.65296, 1, "", 0.0, "", 0.0, 0.0], ["09:30", 35.057157, 1, "", 0.0, "", 0.0, 0.0], ["10:00", 29.564336, 0, "", 0.0, "", 0.0, 0.0], ["10:30", 24.197978, 0, "", 0.0, "", 0.0, 0.0], ["11:00", 18.983807, 0, "", 0.0, "", 0.0, 0.0]];
+        const data = [["03:00", 66.1674, 1, "", 0.0, "", 0.0, 0.0], ["03:30", 71.8059, 1, "", 0.0, "", 0.0, 0.0], ["04:00", 77.1372, 1, "", 0.0, "", 0.0, 0.0], ["04:30", 81.4966, 1, "", 0.0, "", 0.0, 0.0], ["05:00", 82.7773, 1, "", 0.0, "", 0.0, 0.0], ["05:30", 79.7455, 1, "", 0.0, "", 0.0, 0.0], ["06:00", 74.8032, 1, "", 0.0, "", 0.0, 0.0], ["06:30", 69.2936, 1, "Aa", 1.0, "B", 1.0, 1.0], ["07:00", 63.5929, 1, "", 0.0, "", 0.0, 0.0], ["07:30", 57.8299, 1, "", 0.0, "", 0.0, 0.0], ["08:00", 52.0637, 1, "", 0.0, "", 0.0, 0.0], ["08:30", 46.3294, 1, "", 0.0, "", 0.0, 0.0], ["09:00", 40.653, 1, "", 0.0, "", 0.0, 0.0], ["09:30", 35.0571, 1, "", 0.0, "", 0.0, 0.0], ["10:00", 29.5643, 0, "", 0.0, "", 0.0, 0.0], ["10:30", 24.198, 0, "", 0.0, "", 0.0, 0.0], ["11:00", 18.9838, 0, "", 0.0, "", 0.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": false, "layout": {"topStart": null, "topEnd": null, "bottomStart": null, "bottomEnd": null}, "sort": false, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -154,15 +154,23 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #Target_Scores th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
 }
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
+}
 caption {
     text-align: left;
     font-style: italic;
+}
+button.exportButton,
+a.exportButton {
+    padding: 0px 4px !important;
+    font-size: 12px !important;
 }
 </style>
 </p>

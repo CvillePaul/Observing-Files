@@ -8,7 +8,7 @@
     <span style="display: inline-block; width: 20px;"></span>
     <span>&lt;-Prev Target</span>
     <span style="display: inline-block; width: 20px;"></span>
-    <a href="Target Scores TIC 270360534 2025-06-10.html" id="nextTarget">Next Target-&gt;</a>
+    <span>Next Target-&gt;</span>
     <span style="display: inline-block; width: 20px;"></span>
     <a href="../Numerical Priorities 2025-06-10.html" id="numerical">Numerical Priorities</a>
     <span style="display: inline-block; width: 20px;"></span>
@@ -21,8 +21,8 @@
       <a href="../targets/TIC 20212631.html" id="targets">TIC 20212631</a>
       <span style="display: inline-block; width: 10px;"></span>Target Scores for 2025-06-10 UTC
     </h1>
-    <p><table id="Target_Scores" class="compact cell-border hover" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
-<caption style="white-space: nowrap; overflow: hidden">Created 2025-03-26 12:16:56-04:00 on Dell-XPS15-Paul</caption><thead>
+    <p><table id="Target_Scores" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
+<thead>
     <tr style="text-align: right;">
       <th></th>
       <th>Altitude Value</th>
@@ -142,10 +142,10 @@ Loading ITables v2.2.3 from the internet...
             return;
 
         // Define the table data
-        const data = [["03:00", 65.418144, 1, "", 0.0, "", 0.0, 0.0], ["03:30", 71.077894, 1, "", 0.0, "", 0.0, 0.0], ["04:00", 76.470596, 1, "", 0.0, "", 0.0, 0.0], ["04:30", 81.035333, 1, "", 0.0, "", 0.0, 0.0], ["05:00", 82.883803, 1, "", 0.0, "", 0.0, 0.0], ["05:30", 80.302002, 1, "", 0.0, "", 0.0, 0.0], ["06:00", 75.497143, 1, "", 0.0, "", 0.0, 0.0], ["06:30", 70.030857, 1, "", 0.0, "", 0.0, 0.0], ["07:00", 64.345367, 1, "", 0.0, "", 0.0, 0.0], ["07:30", 58.586392, 1, "", 0.0, "", 0.0, 0.0], ["08:00", 52.818313, 1, "", 0.0, "", 0.0, 0.0], ["08:30", 47.078205, 1, "Aa", 1.0, "", 0.5, 0.5], ["09:00", 41.392831, 1, "Aa", 1.0, "", 0.5, 0.5], ["09:30", 35.785191, 1, "Aa", 1.0, "", 0.5, 0.5], ["10:00", 30.277569, 0, "", 0.0, "", 0.0, 0.0], ["10:30", 24.893225, 0, "", 0.0, "", 0.0, 0.0], ["11:00", 19.657537, 0, "", 0.0, "", 0.0, 0.0]];
+        const data = [["03:00", 65.4182, 1, "", 0.0, "", 0.0, 0.0], ["03:30", 71.0779, 1, "", 0.0, "", 0.0, 0.0], ["04:00", 76.4706, 1, "", 0.0, "", 0.0, 0.0], ["04:30", 81.0353, 1, "", 0.0, "", 0.0, 0.0], ["05:00", 82.8838, 1, "", 0.0, "", 0.0, 0.0], ["05:30", 80.302, 1, "", 0.0, "", 0.0, 0.0], ["06:00", 75.4971, 1, "", 0.0, "", 0.0, 0.0], ["06:30", 70.0308, 1, "", 0.0, "", 0.0, 0.0], ["07:00", 64.3454, 1, "", 0.0, "", 0.0, 0.0], ["07:30", 58.5864, 1, "", 0.0, "", 0.0, 0.0], ["08:00", 52.8183, 1, "", 0.0, "", 0.0, 0.0], ["08:30", 47.0782, 1, "", 0.0, "", 0.0, 0.0], ["09:00", 41.3928, 1, "Aa", 1.0, "B", 1.0, 1.0], ["09:30", 35.7852, 1, "Aa", 1.0, "B", 1.0, 1.0], ["10:00", 30.2776, 0, "", 0.0, "", 0.0, 0.0], ["10:30", 24.8932, 0, "", 0.0, "", 0.0, 0.0], ["11:00", 19.6575, 0, "", 0.0, "", 0.0, 0.0]];
 
         // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": false, "layout": {"topStart": null, "topEnd": null, "bottomStart": null, "bottomEnd": null}, "sort": false, "order": [], "warn_on_selected_rows_not_rendered": true};
+        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": null, "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
         dt_args["data"] = data;
 
         
@@ -154,15 +154,23 @@ Loading ITables v2.2.3 from the internet...
 </script>
 
 <style>
-td {text-align: center}
 #Target_Scores th {
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
 }
+#{table_id} td {
+    text-align: center;
+    word-wrap: normal;
+}
 caption {
     text-align: left;
     font-style: italic;
+}
+button.exportButton,
+a.exportButton {
+    padding: 0px 4px !important;
+    font-size: 12px !important;
 }
 </style>
 </p>

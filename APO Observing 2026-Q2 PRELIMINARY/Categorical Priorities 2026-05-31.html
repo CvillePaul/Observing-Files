@@ -13,18 +13,11 @@
     <a href="../index.html" id="home">Home</a>
   </head>
   <body>
-    <h1 style="text-align: center">Categorical Priorities, 2026-05-31 UTC</h1><table id="Categorical_Priority" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
-<thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>TIC 2021...</th>
-      <th>TIC 2820...</th>
-      <th>TIC 3872...</th>
-    </tr>
-  </thead><tbody><tr>
-<td style="vertical-align:middle; text-align:left">
-<div style="float:left; margin-right: 10px;">
-<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    <h1 style="text-align: center">Categorical Priorities, 2026-05-31 UTC</h1><!--| quarto-html-table-processing: none -->
+<table id="Categorical_Priority">
+  <tbody>
+    <tr>
+      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
     <g style="fill:#d9d7fc">
         <path d="M100,400H500V357H100Z" />
@@ -114,30 +107,34 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
     </g>
 </svg>
 </a>
-</div>
-<div>
-Loading ITables v2.2.3 from the internet...
-(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
-</div>
-</tr></tbody>
+        Loading ITables v2.7.1 from the internet...
+        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
+      </td>
+    </tr>
+  </tbody>
 </table>
-<link href="https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.css" rel="stylesheet">
+<link href="https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.css" rel="stylesheet">
 <script type="module">
-    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.js';
 
     document.querySelectorAll("#Categorical_Priority:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
-        // Define the table data
-        const data = [["RA", "15:08:09", "19:57:15", "20:38:19"], ["Dec", "+39:58:12", "+27:18:47", "+69:21:44"], ["Vmag", "10.6", "11.8", "12.8"], ["03:00", "", "", ""], ["03:30", "", "", ""], ["04:00", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", ""], ["04:30", "<span style=\"background-color: #EBF4FA\">* * *</span>", "", ""], ["05:00", "", "", ""], ["05:30", "", "", ""], ["06:00", "", "", "<span style=\"background-color: #EBF4FA\">* * *</span>"], ["06:30", "", "<span style=\"background-color: #EBF4FA\">* * *</span>", "<span style=\"background-color: #EBF4FA\">* * *</span>"]];
-
-        // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": null, "topEnd": null, "bottomStart": null, "bottomEnd": null}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
-        dt_args["data"] = data;
-
-        
-        new DataTable(table, dt_args);
+        let dt_args = {
+          "autoWidth": true,
+          "classes": ["compact", "cell-border", "hover"],
+          "columnDefs": {},
+          "data_json": "[[\"RA\", \"15:08:09\", \"19:57:15\", \"20:38:19\"], [\"Dec\", \"+39:58:12\", \"+27:18:47\", \"+69:21:44\"], [\"Vmag\", \"10.6\", \"11.8\", \"12.8\"], [\"03:00\", \"\", \"\", \"\"], [\"03:30\", \"\", \"\", \"\"], [\"04:00\", \"<span style=\\\"background-color: #EBF4FA\\\">* * *</span>\", \"\", \"\"], [\"04:30\", \"<span style=\\\"background-color: #EBF4FA\\\">* * *</span>\", \"\", \"\"], [\"05:00\", \"\", \"\", \"\"], [\"05:30\", \"\", \"\", \"\"], [\"06:00\", \"\", \"\", \"<span style=\\\"background-color: #EBF4FA\\\">* * *</span>\"], [\"06:30\", \"\", \"<span style=\\\"background-color: #EBF4FA\\\">* * *</span>\", \"<span style=\\\"background-color: #EBF4FA\\\">* * *</span>\"]]",
+          "layout": {"bottomEnd": null, "bottomStart": null, "topEnd": null, "topStart": null},
+          "order": [],
+          "paging": false,
+          "sort": false,
+          "style": {"caption-side": "bottom", "float": "left", "width": "auto"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>TIC 2021...</th>\n      <th>TIC 2820...</th>\n      <th>TIC 3872...</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
     });
 </script>
 

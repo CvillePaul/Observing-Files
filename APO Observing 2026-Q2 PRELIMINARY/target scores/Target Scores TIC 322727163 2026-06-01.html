@@ -23,20 +23,11 @@
       <a href="../targets/TIC 322727163.html" id="targets">TIC 322727163</a>
       <span style="display: inline-block; width: 10px;"></span>Target Scores for 2026-06-01 UTC
     </h1>
-    <p><table id="Target_Scores" class="compact cell-border hover" data-quarto-disable-processing="true" style="width: auto; float: left; caption-side:bottom;">
-<thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Altitude Value</th>
-      <th>Altitude Priority</th>
-      <th>Eclipse Sequence</th>
-      <th>Eclipse Priority</th>
-      <th>Overall Priority</th>
-    </tr>
-  </thead><tbody><tr>
-<td style="vertical-align:middle; text-align:left">
-<div style="float:left; margin-right: 10px;">
-<a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    <p><!--| quarto-html-table-processing: none -->
+<table id="Target_Scores">
+  <tbody>
+    <tr>
+      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
     <g style="fill:#d9d7fc">
         <path d="M100,400H500V357H100Z" />
@@ -126,30 +117,35 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
     </g>
 </svg>
 </a>
-</div>
-<div>
-Loading ITables v2.2.3 from the internet...
-(need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td>
-</div>
-</tr></tbody>
+        Loading ITables v2.7.1 from the internet...
+        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
+      </td>
+    </tr>
+  </tbody>
 </table>
-<link href="https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.css" rel="stylesheet">
+<link href="https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.css" rel="stylesheet">
 <script type="module">
-    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.js';
 
     document.querySelectorAll("#Target_Scores:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
-        // Define the table data
-        const data = [["03:00", 8.164112, 0, "", 0.0, 0.0], ["03:30", 11.784525, 0, "", 0.0, 0.0], ["04:00", 15.672229, 0, "", 0.0, 0.0], ["04:30", 19.790483, 0, "", 0.0, 0.0], ["05:00", 24.104211, 0, "", 0.0, 0.0], ["05:30", 28.57968, 0, "", 0.0, 0.0], ["06:00", 33.183784, 0, "", 0.0, 0.0], ["06:30", 37.882864, 1, "", 0.0, 0.0], ["07:00", 42.640877, 1, "Bb", 1.0, 1.0], ["07:30", 47.416486, 1, "Bb", 1.0, 1.0], ["08:00", 52.158288, 1, "Bb", 1.0, 1.0], ["08:30", 56.796655, 1, "Bb", 1.0, 1.0], ["09:00", 61.229432, 1, "Bb", 1.0, 1.0], ["09:30", 65.297315, 1, "Bb", 1.0, 1.0], ["10:00", 68.746641, 1, "Bb", 1.0, 1.0], ["10:30", 71.199038, 1, "Bb", 1.0, 1.0], ["11:00", 72.21476, 1, "Bb", 1.0, 1.0], ["11:30", 71.547011, 1, "Bb", 1.0, 1.0]];
-
-        // Define the dt_args
-        let dt_args = {"paging": false, "autoWidth": true, "layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": {"buttons": [{"extend": "csvHtml5", "className": "exportButton"}, {"extend": "copyHtml5", "className": "exportButton"}]}, "bottomEnd": "paging"}, "sort": false, "columnDefs": {}, "order": [], "warn_on_selected_rows_not_rendered": true};
-        dt_args["data"] = data;
-
-        
-        new DataTable(table, dt_args);
+        let dt_args = {
+          "autoWidth": true,
+          "classes": ["compact", "cell-border", "hover"],
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [1, 4, 5]}],
+          "data_json": "[[\"03:00\", [\"8.164113\", 8.164112837302904], 0, \"\", [\"0.0\", 0.0], [\"0.0\", 0.0]], [\"03:30\", [\"11.784525\", 11.784525253630404], 0, \"\", [\"0.0\", 0.0], [\"0.0\", 0.0]], [\"04:00\", [\"15.672230\", 15.672229911560905], 0, \"\", [\"0.0\", 0.0], [\"0.0\", 0.0]], [\"04:30\", [\"19.790483\", 19.790483265451552], 0, \"\", [\"0.0\", 0.0], [\"0.0\", 0.0]], [\"05:00\", [\"24.104211\", 24.10421140225798], 0, \"\", [\"0.0\", 0.0], [\"0.0\", 0.0]], [\"05:30\", [\"28.579681\", 28.579681002106483], 0, \"\", [\"0.0\", 0.0], [\"0.0\", 0.0]], [\"06:00\", [\"33.183785\", 33.18378473735971], 0, \"\", [\"0.0\", 0.0], [\"0.0\", 0.0]], [\"06:30\", [\"37.882865\", 37.88286490457786], 1, \"\", [\"0.0\", 0.0], [\"0.0\", 0.0]], [\"07:00\", [\"42.640878\", 42.640877513131656], 1, \"Bb\", [\"1.0\", 1.0], [\"1.0\", 1.0]], [\"07:30\", [\"47.416487\", 47.41648650798166], 1, \"Bb\", [\"1.0\", 1.0], [\"1.0\", 1.0]], [\"08:00\", [\"52.158289\", 52.15828913979543], 1, \"Bb\", [\"1.0\", 1.0], [\"1.0\", 1.0]], [\"08:30\", [\"56.796656\", 56.79665551359099], 1, \"Bb\", [\"1.0\", 1.0], [\"1.0\", 1.0]], [\"09:00\", [\"61.229433\", 61.22943307537396], 1, \"Bb\", [\"1.0\", 1.0], [\"1.0\", 1.0]], [\"09:30\", [\"65.297316\", 65.29731604692161], 1, \"Bb\", [\"1.0\", 1.0], [\"1.0\", 1.0]], [\"10:00\", [\"68.746642\", 68.74664176026644], 1, \"Bb\", [\"1.0\", 1.0], [\"1.0\", 1.0]], [\"10:30\", [\"71.199038\", 71.19903811502712], 1, \"Bb\", [\"1.0\", 1.0], [\"1.0\", 1.0]], [\"11:00\", [\"72.214761\", 72.21476050766587], 1, \"Bb\", [\"1.0\", 1.0], [\"1.0\", 1.0]], [\"11:30\", [\"71.547012\", 71.54701186631935], 1, \"Bb\", [\"1.0\", 1.0], [\"1.0\", 1.0]]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
+          "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": "search", "topStart": "pageLength"},
+          "order": [],
+          "paging": false,
+          "sort": false,
+          "style": {"caption-side": "bottom", "float": "left", "width": "auto"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Altitude Value</th>\n      <th>Altitude Priority</th>\n      <th>Eclipse Sequence</th>\n      <th>Eclipse Priority</th>\n      <th>Overall Priority</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
     });
 </script>
 
