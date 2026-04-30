@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html name="PEPSI Observations for TIC 322727163">
+  <head>
+    <title>PEPSI Observations for TIC 322727163</title>
+    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="flikity-cell">
+        <img src="PEPSI SpectrumPlot.2023-05-02~10_04_49.654~Red.png">
+      </div>
+      <div class="flikity-cell">
+        <img src="PEPSI SpectrumPlot.2023-06-14~10_41_11.667~Red.png">
+      </div>
+      <div class="flikity-cell">
+        <img src="PEPSI SpectrumPlot.2023-09-15~09_06_28.557~Red.png">
+      </div>
+      <div class="flikity-cell">
+        <img src="PEPSI SpectrumPlot.2023-11-02~02_23_57.963~Red.png">
+      </div>
+      <div class="flikity-cell">
+        <img src="PEPSI SpectrumPlot.2024-12-23~00_56_06.157~Red.png">
+      </div>
+      <div class="flikity-cell">
+        <img src="PEPSI SpectrumPlot.2025-10-19~03_20_01.085~Red.png">
+      </div>
+    </div></div>
+    <style>.flickity-cell {width: 100%}</style>
+    <script>
+                    var flkty = new Flickity('.carousel', {
+                        wrapAround: false,
+                        pageDots: false,
+                    });
+
+                    flkty.on( 'change', function( index ) {
+                        flkty.select(index, false, true);
+                    }); 
+                    flkty.focus();
+                    </script>
+  </body>
+</html>
