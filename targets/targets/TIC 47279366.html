@@ -741,14 +741,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [2, 3]}],
-          "data_json": "[[\"2025-11-05 09:55:00\", \"692.0 nm\", [\"2.460985e+06\", 2460984.9131944445], [\"0.04\", 0.04], \"0.58 arcsec\", \"331.1 deg\", \"0.2148 arcsec\", \"0.49 mag\", \"h300172.fa\", \"None\"], [\"2025-11-05 09:55:00\", \"880.0 nm\", [\"2.460985e+06\", 2460984.9131944445], [\"0.02\", 0.02], \"0.57 arcsec\", \"329.3 deg\", \"0.2159 arcsec\", \"0.71 mag\", \"h300172.fb\", \"None\"]]",
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [3, 4]}],
+          "data_json": "[[\"2025-11-05 09:55:00~TIC 47279366~692, 880\", \"2025-11-05 09:55:00\", \"692.0 nm\", [\"2.460985e+06\", 2460984.9131944445], [\"0.04\", 0.04], \"0.58 arcsec\", \"331.1 deg\", \"0.2148 arcsec\", \"0.49 mag\", \"h300172.fa\", \"None\"], [\"2025-11-05 09:55:00~TIC 47279366~692, 880\", \"2025-11-05 09:55:00\", \"880.0 nm\", [\"2.460985e+06\", 2460984.9131944445], [\"0.02\", 0.02], \"0.57 arcsec\", \"329.3 deg\", \"0.2159 arcsec\", \"0.71 mag\", \"h300172.fb\", \"None\"]]",
           "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Filter</th>\n      <th>Mid JD</th>\n      <th>Reduced Chisq</th>\n      <th>Seeing</th>\n      <th>Position Angle</th>\n      <th>Separation</th>\n      <th>Delta Mag</th>\n      <th>Filename</th>\n      <th>Notes</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>DSSI Observation ID</th>\n      <th>Mid UTC</th>\n      <th>Filter</th>\n      <th>Mid JD</th>\n      <th>Reduced Chisq</th>\n      <th>Seeing</th>\n      <th>Position Angle</th>\n      <th>Separation</th>\n      <th>Delta Mag</th>\n      <th>Filename</th>\n      <th>Notes</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -798,6 +798,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-04-30 16:35:28-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-05-08 14:30:13-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>
