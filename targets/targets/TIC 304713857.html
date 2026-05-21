@@ -16,7 +16,7 @@
       </tr>
       <tr>
         <td>Target Source</td>
-        <td>Kostov 2023 doi.org/10.1093/mnras/stad2947</td>
+        <td>Kostov 2024 doi.org/10.1093/mnras/stad2947</td>
       </tr>
       <tr>
         <td>List Memberships</td>
@@ -741,14 +741,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [3, 4]}],
-          "data_json": "[[\"2023-10-28 02:03:30~TIC 304713857~692, 880\", \"2023-10-28 02:03:30\", \"692.0 nm\", [\"2.460246e+06\", 2460245.585763889], [\"0.03\", 0.03], \"0.99 arcsec\", \"288.3 deg\", \"0.2564 arcsec\", \"1.41 mag\", \"h300137.fa\", \"304713857\"], [\"2023-10-28 02:03:30~TIC 304713857~692, 880\", \"2023-10-28 02:03:30\", \"880.0 nm\", [\"2.460246e+06\", 2460245.585763889], [\"0.01\", 0.01], \"0.89 arcsec\", \"285.2 deg\", \"0.2542 arcsec\", \"0.96 mag\", \"h300137.fb\", \"304713857\"]]",
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [4, 5]}],
+          "data_json": "[[\"2023-10-28 02:03:30~TIC 304713857~692, 880\", \"DSSI\", \"2023-10-28 02:03:30\", \"692.0 nm\", [\"2.460246e+06\", 2460245.585763889], [\"0.03\", 0.03], \"0.99 arcsec\", \"288.3 deg\", \"0.2564 arcsec\", \"1.41 mag\", \"h300137.fa\", \"304713857\"], [\"2023-10-28 02:03:30~TIC 304713857~692, 880\", \"DSSI\", \"2023-10-28 02:03:30\", \"880.0 nm\", [\"2.460246e+06\", 2460245.585763889], [\"0.01\", 0.01], \"0.89 arcsec\", \"285.2 deg\", \"0.2542 arcsec\", \"0.96 mag\", \"h300137.fb\", \"304713857\"]]",
           "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>DSSI Observation ID</th>\n      <th>Mid UTC</th>\n      <th>Filter</th>\n      <th>Mid JD</th>\n      <th>Reduced Chisq</th>\n      <th>Seeing</th>\n      <th>Position Angle</th>\n      <th>Separation</th>\n      <th>Delta Mag</th>\n      <th>Filename</th>\n      <th>Notes</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Observation ID</th>\n      <th>Instrument</th>\n      <th>Mid UTC</th>\n      <th>Filter</th>\n      <th>Mid JD</th>\n      <th>Reduced Chisq</th>\n      <th>Seeing</th>\n      <th>Position Angle</th>\n      <th>Separation</th>\n      <th>Delta Mag</th>\n      <th>Filename</th>\n      <th>Notes</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -798,6 +798,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-05-08 14:30:14-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-05-21 09:33:30-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>

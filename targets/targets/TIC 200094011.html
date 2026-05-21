@@ -742,13 +742,13 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
           "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [1]}],
-          "data_json": "[[\"2023-11-24 07:05:31.200\", [\"2460272.7955\", 2460272.7955], \"I\", 2, \"B\"]]",
+          "data_json": "[[\"2023-11-24 07:05:31.200\", [\"2460272.7955\", 2460272.7955], \"I\", 2, \"B\", \"q\"]]",
           "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>UTC</th>\n      <th>JD</th>\n      <th>F</th>\n      <th>N</th>\n      <th>B</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>UTC</th>\n      <th>JD</th>\n      <th>F</th>\n      <th>N</th>\n      <th>B</th>\n      <th>X</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -776,7 +776,7 @@ a.exportButton {
 }
 </style>
 
-    <h2>Speckle Detections (8)</h2><!--| quarto-html-table-processing: none -->
+    <h2>Speckle Detections (9)</h2><!--| quarto-html-table-processing: none -->
 <table id="Speckle_Detections">
   <tbody>
     <tr>
@@ -886,14 +886,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [3, 4]}],
-          "data_json": "[[\"2025-11-04 08:28:30~TIC 200094011~692, 880\", \"2025-11-04 08:28:30\", \"692.0 nm\", [\"2.460984e+06\", 2460983.8531250004], [\"1.83\", 1.83], \"0.88 arcsec\", \"207.9 deg\", \"0.5366 arcsec\", \"1.0 mag\", \"h300026.fa\", \"None\"], [\"2025-11-04 08:28:30~TIC 200094011~692, 880\", \"2025-11-04 08:28:30\", \"880.0 nm\", [\"2.460984e+06\", 2460983.8531250004], [\"1.61\", 1.61], \"0.86 arcsec\", \"207.9 deg\", \"0.5346 arcsec\", \"0.98 mag\", \"h300026.fb\", \"None\"], [\"2025-11-04 09:28:00~TIC 200094011~692, 880\", \"2025-11-04 09:28:00\", \"692.0 nm\", [\"2.460984e+06\", 2460983.894444444], [\"2.10\", 2.1], \"0.5 arcsec\", \"207.9 deg\", \"0.5361 arcsec\", \"0.97 mag\", \"h300026.fa\", \"None\"], [\"2025-11-04 09:28:00~TIC 200094011~692, 880\", \"2025-11-04 09:28:00\", \"880.0 nm\", [\"2.460984e+06\", 2460983.894444444], [\"2.69\", 2.69], \"0.5 arcsec\", \"207.9 deg\", \"0.5348 arcsec\", \"0.96 mag\", \"h300026.fb\", \"None\"], [\"2025-11-04 11:08:00~TIC 200094011~692, 880\", \"2025-11-04 11:08:00\", \"692.0 nm\", [\"2.460984e+06\", 2460983.963888889], [\"1.66\", 1.66], \"0.44 arcsec\", \"208.1 deg\", \"0.5346 arcsec\", \"0.97 mag\", \"h300026.fa\", \"None\"], [\"2025-11-04 11:08:00~TIC 200094011~692, 880\", \"2025-11-04 11:08:00\", \"880.0 nm\", [\"2.460984e+06\", 2460983.963888889], [\"2.35\", 2.35], \"0.41 arcsec\", \"208.1 deg\", \"0.5338 arcsec\", \"0.94 mag\", \"h300026.fb\", \"None\"], [\"2022-09-27 12:28:00~TIC 200094011~692, 880\", \"2022-09-27 12:28:00\", \"692.0 nm\", [\"2.459850e+06\", 2459850.019444444], [\"4.25\", 4.25], \"1.0 arcsec\", \"208.6 deg\", \"0.5439 arcsec\", \"1.1 mag\", \"h300051.fa\", \"200094011\"], [\"2022-09-27 12:28:00~TIC 200094011~692, 880\", \"2022-09-27 12:28:00\", \"880.0 nm\", [\"2.459850e+06\", 2459850.019444444], [\"3.86\", 3.86], \"0.92 arcsec\", \"208.7 deg\", \"0.5438 arcsec\", \"1.1 mag\", \"h300051.fb\", \"200094011\"]]",
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [4, 5]}],
+          "data_json": "[[\"2025-11-04 08:28:30~TIC 200094011~692, 880\", \"DSSI\", \"2025-11-04 08:28:30\", \"692.0 nm\", [\"2.460984e+06\", 2460983.8531250004], [\"1.83\", 1.83], \"0.88 arcsec\", \"207.9 deg\", \"0.5366 arcsec\", \"1.0 mag\", \"h300026.fa\", \"None\"], [\"2025-11-04 08:28:30~TIC 200094011~692, 880\", \"DSSI\", \"2025-11-04 08:28:30\", \"880.0 nm\", [\"2.460984e+06\", 2460983.8531250004], [\"1.61\", 1.61], \"0.86 arcsec\", \"207.9 deg\", \"0.5346 arcsec\", \"0.98 mag\", \"h300026.fb\", \"None\"], [\"2025-11-04 09:28:00~TIC 200094011~692, 880\", \"DSSI\", \"2025-11-04 09:28:00\", \"692.0 nm\", [\"2.460984e+06\", 2460983.894444444], [\"2.10\", 2.1], \"0.5 arcsec\", \"207.9 deg\", \"0.5361 arcsec\", \"0.97 mag\", \"h300026.fa\", \"None\"], [\"2025-11-04 09:28:00~TIC 200094011~692, 880\", \"DSSI\", \"2025-11-04 09:28:00\", \"880.0 nm\", [\"2.460984e+06\", 2460983.894444444], [\"2.69\", 2.69], \"0.5 arcsec\", \"207.9 deg\", \"0.5348 arcsec\", \"0.96 mag\", \"h300026.fb\", \"None\"], [\"2025-11-04 11:08:00~TIC 200094011~692, 880\", \"DSSI\", \"2025-11-04 11:08:00\", \"692.0 nm\", [\"2.460984e+06\", 2460983.963888889], [\"1.66\", 1.66], \"0.44 arcsec\", \"208.1 deg\", \"0.5346 arcsec\", \"0.97 mag\", \"h300026.fa\", \"None\"], [\"2025-11-04 11:08:00~TIC 200094011~692, 880\", \"DSSI\", \"2025-11-04 11:08:00\", \"880.0 nm\", [\"2.460984e+06\", 2460983.963888889], [\"2.35\", 2.35], \"0.41 arcsec\", \"208.1 deg\", \"0.5338 arcsec\", \"0.94 mag\", \"h300026.fb\", \"None\"], [\"2022-09-27 12:28:00~TIC 200094011~692, 880\", \"DSSI\", \"2022-09-27 12:28:00\", \"692.0 nm\", [\"2.459850e+06\", 2459850.019444444], [\"4.25\", 4.25], \"1.0 arcsec\", \"208.6 deg\", \"0.5439 arcsec\", \"1.1 mag\", \"h300051.fa\", \"200094011\"], [\"2022-09-27 12:28:00~TIC 200094011~692, 880\", \"DSSI\", \"2022-09-27 12:28:00\", \"880.0 nm\", [\"2.459850e+06\", 2459850.019444444], [\"3.86\", 3.86], \"0.92 arcsec\", \"208.7 deg\", \"0.5438 arcsec\", \"1.1 mag\", \"h300051.fb\", \"200094011\"], [\"2023-11-24 07:05:31.200~TIC 200094011\", \"HRCam\", \"2023-11-24 07:05:31.200\", \"824.0 nm\", [\"2.460273e+06\", 2460272.7955], [\"-1.00\", -1.0], \"-1.0 arcsec\", \"208.4 deg\", \"0.5435 arcsec\", \"1.0 mag\", \" \", \" \"]]",
           "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>DSSI Observation ID</th>\n      <th>Mid UTC</th>\n      <th>Filter</th>\n      <th>Mid JD</th>\n      <th>Reduced Chisq</th>\n      <th>Seeing</th>\n      <th>Position Angle</th>\n      <th>Separation</th>\n      <th>Delta Mag</th>\n      <th>Filename</th>\n      <th>Notes</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Observation ID</th>\n      <th>Instrument</th>\n      <th>Mid UTC</th>\n      <th>Filter</th>\n      <th>Mid JD</th>\n      <th>Reduced Chisq</th>\n      <th>Seeing</th>\n      <th>Position Angle</th>\n      <th>Separation</th>\n      <th>Delta Mag</th>\n      <th>Filename</th>\n      <th>Notes</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -1235,6 +1235,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-05-08 14:30:15-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-05-21 09:33:31-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>

@@ -598,13 +598,13 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
           "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [1]}],
-          "data_json": "[[\"2023-06-28 02:00:14.400\", [\"2460123.5835\", 2460123.5835], \"I\", 2, \"S\"]]",
+          "data_json": "[[\"2023-06-28 02:00:14.400\", [\"2460123.5835\", 2460123.5835], \"I\", 2, \"S\", \"None\"]]",
           "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>UTC</th>\n      <th>JD</th>\n      <th>F</th>\n      <th>N</th>\n      <th>B</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>UTC</th>\n      <th>JD</th>\n      <th>F</th>\n      <th>N</th>\n      <th>B</th>\n      <th>X</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -798,6 +798,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-05-08 14:30:16-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-05-21 09:33:32-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>
