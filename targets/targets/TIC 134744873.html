@@ -53,152 +53,7 @@
         <td>11227.0</td>
       </tr>
     </table>
-    <h2>TESS (1)</h2><!--| quarto-html-table-processing: none -->
-<table id="TESS">
-  <tbody>
-    <tr>
-      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
-    <g style="fill:#d9d7fc">
-        <path d="M100,400H500V357H100Z" />
-        <path d="M100,300H400V257H100Z" />
-        <path d="M0,200H400V157H0Z" />
-        <path d="M100,100H500V57H100Z" />
-        <path d="M100,350H500V307H100Z" />
-        <path d="M100,250H400V207H100Z" />
-        <path d="M0,150H400V107H0Z" />
-        <path d="M100,50H500V7H100Z" />
-    </g>
-    <g style="fill:#1a1366;stroke:#1a1366;">
-   <rect x="100" y="7" width="400" height="43">
-    <animate
-      attributeName="width"
-      values="0;400;0"
-      dur="5s"
-      repeatCount="indefinite" />
-      <animate
-      attributeName="x"
-      values="100;100;500"
-      dur="5s"
-      repeatCount="indefinite" />
-  </rect>
-        <rect x="0" y="107" width="400" height="43">
-    <animate
-      attributeName="width"
-      values="0;400;0"
-      dur="3.5s"
-      repeatCount="indefinite" />
-    <animate
-      attributeName="x"
-      values="0;0;400"
-      dur="3.5s"
-      repeatCount="indefinite" />
-  </rect>
-        <rect x="100" y="207" width="300" height="43">
-    <animate
-      attributeName="width"
-      values="0;300;0"
-      dur="3s"
-      repeatCount="indefinite" />
-    <animate
-      attributeName="x"
-      values="100;100;400"
-      dur="3s"
-      repeatCount="indefinite" />
-  </rect>
-        <rect x="100" y="307" width="400" height="43">
-    <animate
-      attributeName="width"
-      values="0;400;0"
-      dur="4s"
-      repeatCount="indefinite" />
-      <animate
-      attributeName="x"
-      values="100;100;500"
-      dur="4s"
-      repeatCount="indefinite" />
-  </rect>
-        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
-            <g transform="translate(45 50) rotate(-45)">
-                <circle r="33" cx="0" cy="0" />
-                <rect x="-8" y="32" width="16" height="30" />
-            </g>
-
-            <g transform="translate(450 152)">
-                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
-                <rect x="-15" y="-40" width="60" height="60" />
-            </g>
-
-            <g transform="translate(50 352)">
-                <polygon points="-35,-5 0,-40 35,-5" />
-                <polygon points="-35,10 0,45 35,10" />
-            </g>
-
-            <g transform="translate(75 250)">
-                <polyline points="-30,30 -60,0 -30,-30" />
-                <polyline points="0,30 -30,0 0,-30" />
-            </g>
-
-            <g transform="translate(425 250) rotate(180)">
-                <polyline points="-30,30 -60,0 -30,-30" />
-                <polyline points="0,30 -30,0 0,-30" />
-            </g>
-        </g>
-    </g>
-</svg>
-</a>
-        Loading ITables v2.7.1 from the internet...
-        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
-      </td>
-    </tr>
-  </tbody>
-</table>
-<link href="https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.css" rel="stylesheet">
-<script type="module">
-    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.js';
-
-    document.querySelectorAll("#TESS:not(.dataTable)").forEach(table => {
-        if (!(table instanceof HTMLTableElement))
-            return;
-
-        let dt_args = {
-          "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [1, 2, 4, 8, 10, 11, 12, 15, 16, 18, 19, 20, 21, 23, 24, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83, 84, 86, 87, 88, 89, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 104, 105, 107, 108, 109, 110, 111, 116, 117, 118, 119, 120, 121, 122, 123]}],
-          "data_json": "[[134744873, [\"12.617\", 12.617], [\"11227.0\", 11227.0], 20190415, [\"NaN\", \"___NaN___\"], \"7660-03460-1\", \"262-025289\", \"08103442-3745015\", [\"NaN\", \"___NaN___\"], \"J081034.42-374501.5\", [\"5.541042e+18\", 5.541042243215653e+18], [\"17910157.0\", 17910157.0], [\"NaN\", \"___NaN___\"], \"STAR\", \"tmgaia2\", [\"122.643434\", 122.643434178962], [\"-37.750415\", -37.7504152242206], \"tmgaia2\", [\"-4.04974\", -4.04974], [\"0.041745\", 0.0417453], [\"5.13069\", 5.13069], [\"0.044832\", 0.0448315], \"gaia2\", [\"0.434618\", 0.434618], [\"0.026447\", 0.0264469], \"gaia2\", [\"254.80366\", 254.803660421755], [\"-2.348593\", -2.34859292753518], [\"139.263492\", 139.263491986602], [\"-55.744952\", -55.7449517128129], [\"13.017\", 13.017], [\"0.507\", 0.507], [\"0.036\", 0.036], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"11.602\", 11.602], [\"0.026\", 0.026], [\"11.517\", 11.517], [\"0.027\", 0.027], [\"11.439\", 11.439], [\"0.024\", 0.024], \"AAA-222-111-000-0-0\", \"None\", [\"11.364\", 11.364], [\"0.023\", 0.023], [\"11.413\", 11.413], [\"0.021\", 0.021], [\"11.277\", 11.277], [\"0.127\", 0.127], [\"8.534\", 8.534], [\"NaN\", \"___NaN___\"], [\"12.4036\", 12.4036], [\"0.000455\", 0.000455], [\"12.187\", 12.187], [\"0.0172\", 0.0172], \"rered\", \"gaia2\", [\"530.383\", 530.383], [\"3.73678\", 3.73678], [\"0.081959\", 0.0819594], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"3.84428\", 3.84428], [\"0.226128\", 0.226128], [\"2.94\", 2.94], [\"0.412664\", 0.412664], [\"0.051749\", 0.0517491], [\"0.01151\", 0.0115097], \"DWARF\", [\"211.533691\", 211.533691], [\"50.46835\", 50.46835], [\"2160.86\", 2160.86], [\"126.68\", 126.68], [\"0.468719\", 0.468719], [\"0.021994\", 0.02199385], [\"1151.0\", 1151.0], [\"1.009603\", 1.0096029], \"None\", [\"NaN\", \"___NaN___\"], [\"0.000008\", 8.075266e-06], [\"0.026265\", 0.0262648], [\"0.017723\", 0.0177229], \"schlegel\", [\"0.376283\", 0.376283], [\"0.449045\", 0.449045], [\"0.210396\", 0.210396], [\"0.24186\", 0.24186], [\"0.00902\", 0.00901981], [\"0.014\", 0.0139996], [\"0.072529\", 0.0725288], [\"0.09139\", 0.0913899], [\"63.0854\", 63.0854], [\"37.8513\", 37.8513], [\"119.42\", 119.42], [\"133.94\", 133.94], \"bj2018\", [\"297.729\", 297.729], [\"763.037\", 763.037], \"dered\", [\"12.5881\", 12.5881], [\"0.003144\", 0.003144], [\"12.0679\", 12.0679], [\"0.002749\", 0.002749], [\"1.0\", 1.0], \"None\", \"tycho2v3\", \"tycho2b3\", \"None\", [\"0.684085\", 0.684084704231811], [\"0.695302\", 0.695302030779737], [\"122.643412\", 122.643412126719], [\"-37.750393\", -37.7503931337516], [\"0.018867\", 0.0188670221283602], [\"0.023984\", 0.0239840367403879], [\"1.0\", 1.0], [\"0.0\", 0.0], 629112506]]",
-          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
-          "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
-          "order": [],
-          "paging": false,
-          "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Tic</th>\n      <th>Vmag</th>\n      <th>Teff</th>\n      <th>Version</th>\n      <th>Hip</th>\n      <th>Tyc</th>\n      <th>Ucac</th>\n      <th>Twomass</th>\n      <th>Sdss</th>\n      <th>Allwise</th>\n      <th>Gaia</th>\n      <th>Apass</th>\n      <th>Kic</th>\n      <th>Objtype</th>\n      <th>Typesrc</th>\n      <th>Tess RA</th>\n      <th>Tess Dec</th>\n      <th>Posflag</th>\n      <th>PMra</th>\n      <th>E PMra</th>\n      <th>PMdec</th>\n      <th>E PMdec</th>\n      <th>PMflag</th>\n      <th>Plx</th>\n      <th>E Plx</th>\n      <th>Parflag</th>\n      <th>Gallong</th>\n      <th>Gallat</th>\n      <th>Eclong</th>\n      <th>Eclat</th>\n      <th>Bmag</th>\n      <th>E Bmag</th>\n      <th>E Vmag</th>\n      <th>Umag</th>\n      <th>E Umag</th>\n      <th>Gmag</th>\n      <th>E Gmag</th>\n      <th>Rmag</th>\n      <th>E Rmag</th>\n      <th>Imag</th>\n      <th>E Imag</th>\n      <th>Zmag</th>\n      <th>E Zmag</th>\n      <th>Jmag</th>\n      <th>E Jmag</th>\n      <th>Hmag</th>\n      <th>E Hmag</th>\n      <th>Kmag</th>\n      <th>E Kmag</th>\n      <th>Twomflag</th>\n      <th>Prox</th>\n      <th>W1Mag</th>\n      <th>E W1Mag</th>\n      <th>W2Mag</th>\n      <th>E W2Mag</th>\n      <th>W3Mag</th>\n      <th>E W3Mag</th>\n      <th>W4Mag</th>\n      <th>E W4Mag</th>\n      <th>Gaiamag</th>\n      <th>E Gaiamag</th>\n      <th>Tmag</th>\n      <th>E Tmag</th>\n      <th>Tessflag</th>\n      <th>Spflag</th>\n      <th>E Teff</th>\n      <th>Logg</th>\n      <th>E Logg</th>\n      <th>Mh</th>\n      <th>E Mh</th>\n      <th>RAd</th>\n      <th>E RAd</th>\n      <th>Mass</th>\n      <th>E Mass</th>\n      <th>Rho</th>\n      <th>E Rho</th>\n      <th>Lumclass</th>\n      <th>Lum</th>\n      <th>E Lum</th>\n      <th>D</th>\n      <th>E D</th>\n      <th>Ebv</th>\n      <th>E Ebv</th>\n      <th>Numcont</th>\n      <th>Contratio</th>\n      <th>Disposition</th>\n      <th>Duplicate ID</th>\n      <th>Priority</th>\n      <th>Eneg Ebv</th>\n      <th>Epos Ebv</th>\n      <th>Ebvflag</th>\n      <th>Eneg Mass</th>\n      <th>Epos Mass</th>\n      <th>Eneg RAd</th>\n      <th>Epos RAd</th>\n      <th>Eneg Rho</th>\n      <th>Epos Rho</th>\n      <th>Eneg Logg</th>\n      <th>Epos Logg</th>\n      <th>Eneg Lum</th>\n      <th>Epos Lum</th>\n      <th>Eneg Dist</th>\n      <th>Epos Dist</th>\n      <th>Distflag</th>\n      <th>Eneg Teff</th>\n      <th>Epos Teff</th>\n      <th>Teffflag</th>\n      <th>Gaiabp</th>\n      <th>E Gaiabp</th>\n      <th>Gaiarp</th>\n      <th>E Gaiarp</th>\n      <th>Gaiaqflag</th>\n      <th>Starchareflag</th>\n      <th>Vmagflag</th>\n      <th>Bmagflag</th>\n      <th>Splists</th>\n      <th>E RA</th>\n      <th>E Dec</th>\n      <th>RA Orig</th>\n      <th>Dec Orig</th>\n      <th>E RA Orig</th>\n      <th>E Dec Orig</th>\n      <th>RAddflag</th>\n      <th>Wdflag</th>\n      <th>Objid</th>\n    </tr>\n  </thead></table>",
-          "text_in_header_can_be_selected": true
-        };
-        new ITable(table, dt_args);
-    });
-</script>
-
-<style>
-#TESS th {
-    white-space: normal;
-    word-wrap: break-word;
-    text-align: center;
-}
-#TESS td {
-    text-align: center;
-    word-wrap: normal;
-}
-caption {
-    text-align: left;
-    font-style: italic;
-}
-button.exportButton,
-a.exportButton {
-    padding: 0px 4px !important;
-    font-size: 12px !important;
-}
-</style>
-
-    <h2>Catalog Membership (3)</h2><!--| quarto-html-table-processing: none -->
+    <h2>Catalog Membership (4)</h2><!--| quarto-html-table-processing: none -->
 <table id="Catalog_Membership">
   <tbody>
     <tr>
@@ -309,7 +164,7 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
           "columnDefs": {},
-          "data_json": "[[\"TESS TICv8\", \"134744873\"], [\"GAIA DR2\", \" 5541042243215652864.0\"], [\"twomass\", \"08103442-3745015\"]]",
+          "data_json": "[[\"TESS TICv8\", \"134744873\"], [\"Gaia DR3\", \"5541042243215652864\"], [\"Gaia DR2\", \" 5541042243215652864.0\"], [\"twomass\", \"08103442-3745015\"]]",
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
@@ -487,6 +342,441 @@ a.exportButton {
 }
 </style>
 
+    <h2>TESS (1)</h2><!--| quarto-html-table-processing: none -->
+<table id="TESS">
+  <tbody>
+    <tr>
+      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+        Loading ITables v2.7.1 from the internet...
+        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.js';
+
+    document.querySelectorAll("#TESS:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {
+          "classes": ["compact", "cell-border", "hover"],
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [1, 2, 4, 8, 10, 11, 12, 15, 16, 18, 19, 20, 21, 23, 24, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83, 84, 86, 87, 88, 89, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 104, 105, 107, 108, 109, 110, 111, 116, 117, 118, 119, 120, 121, 122, 123]}],
+          "data_json": "[[134744873, [\"12.617\", 12.617], [\"11227.0\", 11227.0], 20190415, [\"NaN\", \"___NaN___\"], \"7660-03460-1\", \"262-025289\", \"08103442-3745015\", [\"NaN\", \"___NaN___\"], \"J081034.42-374501.5\", [\"5.541042e+18\", 5.541042243215653e+18], [\"17910157.0\", 17910157.0], [\"NaN\", \"___NaN___\"], \"STAR\", \"tmgaia2\", [\"122.643434\", 122.643434178962], [\"-37.750415\", -37.7504152242206], \"tmgaia2\", [\"-4.04974\", -4.04974], [\"0.041745\", 0.0417453], [\"5.13069\", 5.13069], [\"0.044832\", 0.0448315], \"gaia2\", [\"0.434618\", 0.434618], [\"0.026447\", 0.0264469], \"gaia2\", [\"254.80366\", 254.803660421755], [\"-2.348593\", -2.34859292753518], [\"139.263492\", 139.263491986602], [\"-55.744952\", -55.7449517128129], [\"13.017\", 13.017], [\"0.507\", 0.507], [\"0.036\", 0.036], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"11.602\", 11.602], [\"0.026\", 0.026], [\"11.517\", 11.517], [\"0.027\", 0.027], [\"11.439\", 11.439], [\"0.024\", 0.024], \"AAA-222-111-000-0-0\", \"None\", [\"11.364\", 11.364], [\"0.023\", 0.023], [\"11.413\", 11.413], [\"0.021\", 0.021], [\"11.277\", 11.277], [\"0.127\", 0.127], [\"8.534\", 8.534], [\"NaN\", \"___NaN___\"], [\"12.4036\", 12.4036], [\"0.000455\", 0.000455], [\"12.187\", 12.187], [\"0.0172\", 0.0172], \"rered\", \"gaia2\", [\"530.383\", 530.383], [\"3.73678\", 3.73678], [\"0.081959\", 0.0819594], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"3.84428\", 3.84428], [\"0.226128\", 0.226128], [\"2.94\", 2.94], [\"0.412664\", 0.412664], [\"0.051749\", 0.0517491], [\"0.01151\", 0.0115097], \"DWARF\", [\"211.533691\", 211.533691], [\"50.46835\", 50.46835], [\"2160.86\", 2160.86], [\"126.68\", 126.68], [\"0.468719\", 0.468719], [\"0.021994\", 0.02199385], [\"1151.0\", 1151.0], [\"1.009603\", 1.0096029], \"None\", [\"NaN\", \"___NaN___\"], [\"0.000008\", 8.075266e-06], [\"0.026265\", 0.0262648], [\"0.017723\", 0.0177229], \"schlegel\", [\"0.376283\", 0.376283], [\"0.449045\", 0.449045], [\"0.210396\", 0.210396], [\"0.24186\", 0.24186], [\"0.00902\", 0.00901981], [\"0.014\", 0.0139996], [\"0.072529\", 0.0725288], [\"0.09139\", 0.0913899], [\"63.0854\", 63.0854], [\"37.8513\", 37.8513], [\"119.42\", 119.42], [\"133.94\", 133.94], \"bj2018\", [\"297.729\", 297.729], [\"763.037\", 763.037], \"dered\", [\"12.5881\", 12.5881], [\"0.003144\", 0.003144], [\"12.0679\", 12.0679], [\"0.002749\", 0.002749], [\"1.0\", 1.0], \"None\", \"tycho2v3\", \"tycho2b3\", \"None\", [\"0.684085\", 0.684084704231811], [\"0.695302\", 0.695302030779737], [\"122.643412\", 122.643412126719], [\"-37.750393\", -37.7503931337516], [\"0.018867\", 0.0188670221283602], [\"0.023984\", 0.0239840367403879], [\"1.0\", 1.0], [\"0.0\", 0.0], 629112506]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
+          "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
+          "order": [],
+          "paging": false,
+          "style": {"caption-side": "bottom", "width": "auto"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Tic</th>\n      <th>Vmag</th>\n      <th>Teff</th>\n      <th>Version</th>\n      <th>Hip</th>\n      <th>Tyc</th>\n      <th>Ucac</th>\n      <th>Twomass</th>\n      <th>Sdss</th>\n      <th>Allwise</th>\n      <th>Gaia</th>\n      <th>Apass</th>\n      <th>Kic</th>\n      <th>Objtype</th>\n      <th>Typesrc</th>\n      <th>Tess RA</th>\n      <th>Tess Dec</th>\n      <th>Posflag</th>\n      <th>PMra</th>\n      <th>E PMra</th>\n      <th>PMdec</th>\n      <th>E PMdec</th>\n      <th>PMflag</th>\n      <th>Plx</th>\n      <th>E Plx</th>\n      <th>Parflag</th>\n      <th>Gallong</th>\n      <th>Gallat</th>\n      <th>Eclong</th>\n      <th>Eclat</th>\n      <th>Bmag</th>\n      <th>E Bmag</th>\n      <th>E Vmag</th>\n      <th>Umag</th>\n      <th>E Umag</th>\n      <th>Gmag</th>\n      <th>E Gmag</th>\n      <th>Rmag</th>\n      <th>E Rmag</th>\n      <th>Imag</th>\n      <th>E Imag</th>\n      <th>Zmag</th>\n      <th>E Zmag</th>\n      <th>Jmag</th>\n      <th>E Jmag</th>\n      <th>Hmag</th>\n      <th>E Hmag</th>\n      <th>Kmag</th>\n      <th>E Kmag</th>\n      <th>Twomflag</th>\n      <th>Prox</th>\n      <th>W1Mag</th>\n      <th>E W1Mag</th>\n      <th>W2Mag</th>\n      <th>E W2Mag</th>\n      <th>W3Mag</th>\n      <th>E W3Mag</th>\n      <th>W4Mag</th>\n      <th>E W4Mag</th>\n      <th>Gaiamag</th>\n      <th>E Gaiamag</th>\n      <th>Tmag</th>\n      <th>E Tmag</th>\n      <th>Tessflag</th>\n      <th>Spflag</th>\n      <th>E Teff</th>\n      <th>Logg</th>\n      <th>E Logg</th>\n      <th>Mh</th>\n      <th>E Mh</th>\n      <th>RAd</th>\n      <th>E RAd</th>\n      <th>Mass</th>\n      <th>E Mass</th>\n      <th>Rho</th>\n      <th>E Rho</th>\n      <th>Lumclass</th>\n      <th>Lum</th>\n      <th>E Lum</th>\n      <th>D</th>\n      <th>E D</th>\n      <th>Ebv</th>\n      <th>E Ebv</th>\n      <th>Numcont</th>\n      <th>Contratio</th>\n      <th>Disposition</th>\n      <th>Duplicate ID</th>\n      <th>Priority</th>\n      <th>Eneg Ebv</th>\n      <th>Epos Ebv</th>\n      <th>Ebvflag</th>\n      <th>Eneg Mass</th>\n      <th>Epos Mass</th>\n      <th>Eneg RAd</th>\n      <th>Epos RAd</th>\n      <th>Eneg Rho</th>\n      <th>Epos Rho</th>\n      <th>Eneg Logg</th>\n      <th>Epos Logg</th>\n      <th>Eneg Lum</th>\n      <th>Epos Lum</th>\n      <th>Eneg Dist</th>\n      <th>Epos Dist</th>\n      <th>Distflag</th>\n      <th>Eneg Teff</th>\n      <th>Epos Teff</th>\n      <th>Teffflag</th>\n      <th>Gaiabp</th>\n      <th>E Gaiabp</th>\n      <th>Gaiarp</th>\n      <th>E Gaiarp</th>\n      <th>Gaiaqflag</th>\n      <th>Starchareflag</th>\n      <th>Vmagflag</th>\n      <th>Bmagflag</th>\n      <th>Splists</th>\n      <th>E RA</th>\n      <th>E Dec</th>\n      <th>RA Orig</th>\n      <th>Dec Orig</th>\n      <th>E RA Orig</th>\n      <th>E Dec Orig</th>\n      <th>RAddflag</th>\n      <th>Wdflag</th>\n      <th>Objid</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
+    });
+</script>
+
+<style>
+#TESS th {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+}
+#TESS td {
+    text-align: center;
+    word-wrap: normal;
+}
+caption {
+    text-align: left;
+    font-style: italic;
+}
+button.exportButton,
+a.exportButton {
+    padding: 0px 4px !important;
+    font-size: 12px !important;
+}
+</style>
+
+    <h2>Gaia DR3 (1)</h2><!--| quarto-html-table-processing: none -->
+<table id="Gaia_DR3">
+  <tbody>
+    <tr>
+      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+        Loading ITables v2.7.1 from the internet...
+        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.js';
+
+    document.querySelectorAll("#Gaia_DR3:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {
+          "classes": ["compact", "cell-border", "hover"],
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43, 44, 47, 51, 52, 55, 56, 57, 58, 59, 60, 61, 62, 63, 66, 67, 68, 69, 71, 72, 73, 74, 76, 77, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 92, 93, 94, 95, 96, 97, 98, 101, 102]}],
+          "data_json": "[[1636042515805110273, \"Gaia EDR3 5541042243215652864\", 5541042243215652864, 880730180, [\"2016.0\", 2016.0], [\"122.643411\", 122.64341143266276], [\"0.009175\", 0.0091754961758852], [\"-37.750392\", -37.75039235022174], [\"0.011114\", 0.0111143756657838], [\"0.443953\", 0.4439527627376466], [\"0.01287\", 0.0128699028864502], [\"34.495426\", 34.495426177978516], [\"6.453341\", 6.453340530395508], [\"-3.959041\", -3.959041361384789], [\"0.011938\", 0.0119378631934523], [\"5.096234\", 5.0962335357984605], [\"0.014223\", 0.0142232412472367], [\"0.158265\", 0.1582648605108261], [\"0.034158\", 0.0341576635837554], [\"0.033622\", 0.0336218066513538], [\"0.024436\", 0.0244359243661165], [\"0.256487\", 0.2564869523048401], [\"0.042668\", 0.0426676645874977], [\"-0.145008\", -0.1450084894895553], [\"0.025921\", 0.0259212348610162], [\"0.021582\", 0.0215817838907241], [\"0.079753\", 0.0797528699040412], 414, 414, 414, 0, [\"3.195678\", 3.195678472518921], [\"887.885803\", 887.8858032226562], [\"0.095821\", 0.0958211496472358], [\"13.555991\", 13.555991172790527], 31, \"0\", [\"1.628096\", 1.6280958652496338], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], 48, 26, [\"0.019878\", 0.0198783762753009], 49, 17, 0, [\"0.013497\", 0.0134974876418709], [\"124.829262\", 124.82926177978516], 0, 0, [\"1.112945\", 1.1129451990127563], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], \"0\", 353, [\"207661.853801\", 207661.85380059527], [\"83.684799\", 83.68479919433594], [\"2481.476318\", 2481.476318359375], [\"12.393975\", 12.393975257873535], 39, [\"127154.555019\", 127154.55501899752], [\"100.174988\", 100.17498779296876], [\"1269.324341\", 1269.3243408203125], [\"12.577712\", 12.577712059020996], 38, [\"119544.302602\", 119544.30260223296], [\"114.591789\", 114.59178924560548], [\"1043.21875\", 1043.21875], [\"12.054073\", 12.054073333740234], [\"0.0\", 0.0], [\"0.0\", 0.0], [\"0.0\", 0.0], [\"0.0\", 0.0], 0, [\"1.187984\", 1.187983512878418], [\"0.523639\", 0.5236387252807617], [\"0.183737\", 0.1837368011474609], [\"0.339902\", 0.3399019241333008], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], 0, [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"NaN\", \"___NaN___\"], [\"254.803625\", 254.8036253254571], [\"-2.348595\", -2.3485953092749146], [\"139.263459\", 139.26345886906975], [\"-55.744937\", -55.74493688348112], 5541042243215652864, 5541042243215652864, [\"0.272619\", 0.2726186215877533], [\"-0.009576\", -0.0095758438110351], \"1\"]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
+          "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
+          "order": [],
+          "paging": false,
+          "style": {"caption-side": "bottom", "width": "auto"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Solution ID</th>\n      <th>Designation</th>\n      <th>Source ID</th>\n      <th>RAndom Index</th>\n      <th>Ref Epoch</th>\n      <th>RA</th>\n      <th>RA Error</th>\n      <th>Dec</th>\n      <th>Dec Error</th>\n      <th>Parallax</th>\n      <th>Parallax Error</th>\n      <th>Parallax Over Error</th>\n      <th>PM</th>\n      <th>PMra</th>\n      <th>PMra Error</th>\n      <th>PMdec</th>\n      <th>PMdec Error</th>\n      <th>RA Dec Corr</th>\n      <th>RA Parallax Corr</th>\n      <th>RA PMra Corr</th>\n      <th>RA PMdec Corr</th>\n      <th>Dec Parallax Corr</th>\n      <th>Dec PMra Corr</th>\n      <th>Dec PMdec Corr</th>\n      <th>Parallax PMra Corr</th>\n      <th>Parallax PMdec Corr</th>\n      <th>PMra PMdec Corr</th>\n      <th>Astrometric N Obs Al</th>\n      <th>Astrometric N Obs Ac</th>\n      <th>Astrometric N Good Obs Al</th>\n      <th>Astrometric N Bad Obs Al</th>\n      <th>Astrometric Gof Al</th>\n      <th>Astrometric Chi2 Al</th>\n      <th>Astrometric Excess Noise</th>\n      <th>Astrometric Excess Noise Sig</th>\n      <th>Astrometric Params Solved</th>\n      <th>Astrometric Primary Flag</th>\n      <th>Nu Eff Used In Astrometry</th>\n      <th>Pseudocolour</th>\n      <th>Pseudocolour Error</th>\n      <th>RA Pseudocolour Corr</th>\n      <th>Dec Pseudocolour Corr</th>\n      <th>Parallax Pseudocolour Corr</th>\n      <th>PMra Pseudocolour Corr</th>\n      <th>PMdec Pseudocolour Corr</th>\n      <th>Astrometric Matched Transits</th>\n      <th>Visibility Periods Used</th>\n      <th>Astrometric Sigma5D Max</th>\n      <th>Matched Transits</th>\n      <th>New Matched Transits</th>\n      <th>Matched Transits Removed</th>\n      <th>Ipd Gof Harmonic Amplitude</th>\n      <th>Ipd Gof Harmonic Phase</th>\n      <th>Ipd Frac Multi Peak</th>\n      <th>Ipd Frac Odd Win</th>\n      <th>Ruwe</th>\n      <th>Scan Direction Strength K1</th>\n      <th>Scan Direction Strength K2</th>\n      <th>Scan Direction Strength K3</th>\n      <th>Scan Direction Strength K4</th>\n      <th>Scan Direction Mean K1</th>\n      <th>Scan Direction Mean K2</th>\n      <th>Scan Direction Mean K3</th>\n      <th>Scan Direction Mean K4</th>\n      <th>Duplicated Source</th>\n      <th>Phot G N Obs</th>\n      <th>Phot G Mean Flux</th>\n      <th>Phot G Mean Flux Error</th>\n      <th>Phot G Mean Flux Over Error</th>\n      <th>Phot G Mean Mag</th>\n      <th>Phot Bp N Obs</th>\n      <th>Phot Bp Mean Flux</th>\n      <th>Phot Bp Mean Flux Error</th>\n      <th>Phot Bp Mean Flux Over Error</th>\n      <th>Phot Bp Mean Mag</th>\n      <th>Phot Rp N Obs</th>\n      <th>Phot Rp Mean Flux</th>\n      <th>Phot Rp Mean Flux Error</th>\n      <th>Phot Rp Mean Flux Over Error</th>\n      <th>Phot Rp Mean Mag</th>\n      <th>Phot Bp N Contaminated Transits</th>\n      <th>Phot Bp N Blended Transits</th>\n      <th>Phot Rp N Contaminated Transits</th>\n      <th>Phot Rp N Blended Transits</th>\n      <th>Phot Proc Mode</th>\n      <th>Phot Bp Rp Excess Factor</th>\n      <th>Bp Rp</th>\n      <th>Bp G</th>\n      <th>G Rp</th>\n      <th>Dr2 RAdial Velocity</th>\n      <th>Dr2 RAdial Velocity Error</th>\n      <th>Dr2 RV Nb Transits</th>\n      <th>Dr2 RV Template Teff</th>\n      <th>Dr2 RV Template Logg</th>\n      <th>Dr2 RV Template Fe H</th>\n      <th>L</th>\n      <th>B</th>\n      <th>Ecl Lon</th>\n      <th>Ecl Lat</th>\n      <th>Dr2 Source ID</th>\n      <th>DR3 Source ID</th>\n      <th>Angular Distance</th>\n      <th>Magnitude Difference</th>\n      <th>Proper Motion Propagation</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
+    });
+</script>
+
+<style>
+#Gaia_DR3 th {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+}
+#Gaia_DR3 td {
+    text-align: center;
+    word-wrap: normal;
+}
+caption {
+    text-align: left;
+    font-style: italic;
+}
+button.exportButton,
+a.exportButton {
+    padding: 0px 4px !important;
+    font-size: 12px !important;
+}
+</style>
+
+    <h2>Gaia Bailer Jones (1)</h2><!--| quarto-html-table-processing: none -->
+<table id="Gaia_Bailer_Jones">
+  <tbody>
+    <tr>
+      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+        Loading ITables v2.7.1 from the internet...
+        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.js';
+
+    document.querySelectorAll("#Gaia_Bailer_Jones:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {
+          "classes": ["compact", "cell-border", "hover"],
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [0]}],
+          "data_json": "[[[\"2105.445557\", 2105.445556640625]]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
+          "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
+          "order": [],
+          "paging": false,
+          "style": {"caption-side": "bottom", "width": "auto"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>R Med Geo</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
+    });
+</script>
+
+<style>
+#Gaia_Bailer_Jones th {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+}
+#Gaia_Bailer_Jones td {
+    text-align: center;
+    word-wrap: normal;
+}
+caption {
+    text-align: left;
+    font-style: italic;
+}
+button.exportButton,
+a.exportButton {
+    padding: 0px 4px !important;
+    font-size: 12px !important;
+}
+</style>
+
     <script>
 document.addEventListener("keydown", function(event) {
     const el = event.target;
@@ -509,6 +799,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-05-21 09:33:30-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-06-30 06:17:07-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>
