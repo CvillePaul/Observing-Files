@@ -450,14 +450,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [12]}],
-          "data_json": "[[\"2025-04-08\", \"04:28:12.310\", \"Blue\", \"11:50:41.72\", \"+01:45:53.00\", \"LBT\", \"PEPSI\", \"3: 4800 - 5441\", \"300\", \"60.0 s\", \"2460773.68660081\", \"pepsib.20250408.068.dxt.bwl\", [\"4.0\", 4.0], \"NaN\", \"\", \"<a href=\\\"file:///Users/paul/Dropbox/Astro/Observing Files/targets/spectrum_plots/PEPSI SpectrumPlot.2025-04-08~04_28_12.310~Blue.png\\\" target=\\\"_blank\\\">Plot</a>\"], [\"2025-04-08\", \"04:28:12.307\", \"Red\", \"11:50:41.72\", \"+01:45:53.00\", \"LBT\", \"PEPSI\", \"6: 7419 - 9067\", \"300\", \"60.0 s\", \"2460773.686600775\", \"pepsir.20250408.056.dxt.bwl\", [\"5.0\", 5.0], \"NaN\", \"\", \"<a href=\\\"file:///Users/paul/Dropbox/Astro/Observing Files/targets/spectrum_plots/PEPSI SpectrumPlot.2025-04-08~04_28_12.307~Red.png\\\" target=\\\"_blank\\\">Plot</a>\"]]",
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [12, 13]}],
+          "data_json": "[[\"2025-04-08\", \"04:28:12.310\", \"Blue\", \"11:50:41.72\", \"+01:45:53.00\", \"LBT\", \"PEPSI\", \"3: 4800 - 5441\", \"300\", \"60.0 s\", \"2460773.68660081\", \"pepsib.20250408.068.dxt.bwl\", [\"38.400587\", 38.40058669580772], [\"4.0\", 4.0], \"NaN\", \"\", \"<a href=\\\"file:///Users/paul/Dropbox/Astro/Observing Files/targets/spectrum_plots/PEPSI SpectrumPlot.2025-04-08~04_28_12.310~Blue.png\\\" target=\\\"_blank\\\">Plot</a>\"], [\"2025-04-08\", \"04:28:12.307\", \"Red\", \"11:50:41.72\", \"+01:45:53.00\", \"LBT\", \"PEPSI\", \"6: 7419 - 9067\", \"300\", \"60.0 s\", \"2460773.686600775\", \"pepsir.20250408.056.dxt.bwl\", [\"38.400594\", 38.400593641738105], [\"5.0\", 5.0], \"NaN\", \"\", \"<a href=\\\"file:///Users/paul/Dropbox/Astro/Observing Files/targets/spectrum_plots/PEPSI SpectrumPlot.2025-04-08~04_28_12.307~Red.png\\\" target=\\\"_blank\\\">Plot</a>\"]]",
           "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Date UTC</th>\n      <th>Exposure Start UTC</th>\n      <th>Arm</th>\n      <th>RA</th>\n      <th>Dec</th>\n      <th>Observatory</th>\n      <th>Instrument</th>\n      <th>Cross Disperser</th>\n      <th>Fiber</th>\n      <th>Exposure Time</th>\n      <th>Mid JD</th>\n      <th>Spectrum File</th>\n      <th>Evaluation</th>\n      <th>RV Status</th>\n      <th>Member Phases</th>\n      <th>Plot</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Date UTC</th>\n      <th>Exposure Start UTC</th>\n      <th>Arm</th>\n      <th>RA</th>\n      <th>Dec</th>\n      <th>Observatory</th>\n      <th>Instrument</th>\n      <th>Cross Disperser</th>\n      <th>Fiber</th>\n      <th>Exposure Time</th>\n      <th>Mid JD</th>\n      <th>Spectrum File</th>\n      <th>Zenith Distance</th>\n      <th>Evaluation</th>\n      <th>RV Status</th>\n      <th>Member Phases</th>\n      <th>Plot</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -507,6 +507,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-07-29 12:53:51-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-08-31 20:49:40-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>
