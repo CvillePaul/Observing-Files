@@ -742,13 +742,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": {},
-          "data_json": "[[\"2023-09-02 09:10:30\", \"692, 880\", 1218, \"2460189.875\", \"2460189.8822916667\", \"2460189.8895833334\", 13, \"Aa: 0.83 Ab: 0.48 Ba: 0.18 Bb: 0.91\"], [\"2023-10-20 09:09:00\", \"692, 880\", 1527, \"2460237.8756944444\", \"2460237.88125\", \"2460237.886805556\", 9, \"Aa: 0.12 Ab: 0.77 Ba: 0.27 Bb: 1.00\"], [\"2024-11-15 06:25:30\", \"692, 880\", 2840, \"2460629.7631944446\", \"2460629.767708333\", \"2460629.7722222223\", 9, \"Aa: 0.75 Ab: 0.40 Ba: 0.97 Bb: 0.70\"], [\"2022-09-28 09:19:30\", \"692, 880\", 200, \"2459850.8840277777\", \"2459850.888541667\", \"2459850.8930555554\", 9, \"Aa: 0.55 Ab: 0.21 Ba: 0.79 Bb: 0.52\"]]",
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [8]}],
+          "data_json": "[[\"2023-09-02 09:10:30\", \"692, 880\", \"APO\", 2447, \"2460189.875\", \"2460189.8822916667\", \"2460189.8895833334\", 13, [\"33.960293\", 33.96029288717827], \"Aa: 0.83 Ab: 0.48 Ba: 0.18 Bb: 0.91\"], [\"2023-10-20 09:09:00\", \"692, 880\", \"APO\", 2119, \"2460237.8756944444\", \"2460237.88125\", \"2460237.886805556\", 9, [\"36.214852\", 36.214851946158205], \"Aa: 0.12 Ab: 0.77 Ba: 0.27 Bb: 1.00\"], [\"2024-11-15 06:25:30\", \"692, 880\", \"APO\", 1776, \"2460629.7631944446\", \"2460629.767708333\", \"2460629.7722222223\", 9, [\"32.959496\", 32.959495629139774], \"Aa: 0.75 Ab: 0.40 Ba: 0.97 Bb: 0.70\"], [\"2022-09-28 09:19:30\", \"692, 880\", \"APO\", 3128, \"2459850.8840277777\", \"2459850.888541667\", \"2459850.8930555554\", 9, [\"32.404148\", 32.40414757270058], \"Aa: 0.55 Ab: 0.21 Ba: 0.79 Bb: 0.52\"]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>Observatory</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Zenith Distance</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -798,6 +799,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-08-31 20:49:42-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-09-05 12:41:37-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>

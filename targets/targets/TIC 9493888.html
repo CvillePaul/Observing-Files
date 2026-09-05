@@ -742,13 +742,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": {},
-          "data_json": "[[\"2023-09-04 12:13:30\", \"1500\", 1295, \"2460192.002083333\", \"2460192.009375\", \"2460192.0166666666\", 4, \"Aa: 0.45 Ab: 0.95 Ba: 0.48 Bb: 0.98\"], [\"2023-09-04 12:13:30\", \"692, 880\", 1295, \"2460192.002083333\", \"2460192.009375\", \"2460192.0166666666\", 16, \"Aa: 0.45 Ab: 0.95 Ba: 0.48 Bb: 0.98\"], [\"2022-09-29 10:15:30\", \"692, 880\", 313, \"2459851.9229166666\", \"2459851.927430555\", \"2459851.9319444443\", 9, \"Aa: 0.42 Ab: 0.92 Ba: 0.81 Bb: 0.31\"]]",
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [8]}],
+          "data_json": "[[\"2023-09-04 12:13:30\", \"1500\", \"APO\", 2302, \"2460192.002083333\", \"2460192.009375\", \"2460192.0166666666\", 4, [\"23.849164\", 23.849163541874375], \"Aa: 0.45 Ab: 0.95 Ba: 0.48 Bb: 0.98\"], [\"2023-09-04 12:13:30\", \"692, 880\", \"APO\", 2302, \"2460192.002083333\", \"2460192.009375\", \"2460192.0166666666\", 16, [\"23.849164\", 23.849163541874375], \"Aa: 0.45 Ab: 0.95 Ba: 0.48 Bb: 0.98\"], [\"2022-09-29 10:15:30\", \"692, 880\", \"APO\", 3099, \"2459851.9229166666\", \"2459851.927430555\", \"2459851.9319444443\", 9, [\"24.909841\", 24.9098408249871], \"Aa: 0.42 Ab: 0.92 Ba: 0.81 Bb: 0.31\"]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>Observatory</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Zenith Distance</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -798,6 +799,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-08-31 20:49:43-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-09-05 12:41:38-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>

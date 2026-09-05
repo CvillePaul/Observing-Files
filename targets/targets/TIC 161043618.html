@@ -742,13 +742,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": {},
-          "data_json": "[[\"2022-05-11 08:39:00\", \"692, 880\", 61, \"2459710.855555556\", \"2459710.8604166666\", \"2459710.865277778\", 9, \"Aa: 0.53 Ab: 0.03 Ba: 0.81 Bb: 0.30\"], [\"2024-02-23 08:34:00\", \"692, 880\", 1677, \"2460363.85625\", \"2460363.8569444446\", \"2460363.857638889\", 2, \"Aa: 0.14 Ab: 0.64 Ba: 0.50 Bb: 1.00\"], [\"2024-02-23 08:55:00\", \"692, 880\", 1679, \"2460363.863888889\", \"2460363.871527778\", \"2460363.879166667\", 7, \"Aa: 0.15 Ab: 0.65 Ba: 0.51 Bb: 0.01\"], [\"2024-02-23 12:22:30\", \"692, 880\", 1737, \"2460364.00625\", \"2460364.015625\", \"2460364.025\", 9, \"Aa: 0.26 Ab: 0.76 Ba: 0.61 Bb: 0.11\"], [\"2023-05-09 07:03:30\", \"692, 880\", 895, \"2460073.788888889\", \"2460073.7940972224\", \"2460073.7993055554\", 9, \"Aa: 0.32 Ab: 0.82 Ba: 0.63 Bb: 0.13\"]]",
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [8]}],
+          "data_json": "[[\"2022-05-11 08:39:00\", \"692, 880\", \"APO\", 2685, \"2459710.855555556\", \"2459710.8604166666\", \"2459710.865277778\", 9, [\"28.988173\", 28.988173014735096], \"Aa: 0.53 Ab: 0.03 Ba: 0.81 Bb: 0.30\"], [\"2024-02-23 08:34:00\", \"692, 880\", \"APO\", 3417, \"2460363.85625\", \"2460363.8569444446\", \"2460363.857638889\", 2, [\"39.602465\", 39.60246547491364], \"Aa: 0.14 Ab: 0.64 Ba: 0.50 Bb: 1.00\"], [\"2024-02-23 08:55:00\", \"692, 880\", \"APO\", 3419, \"2460363.863888889\", \"2460363.871527778\", \"2460363.879166667\", 7, [\"36.489457\", 36.489456747008], \"Aa: 0.15 Ab: 0.65 Ba: 0.51 Bb: 0.01\"], [\"2024-02-23 12:22:30\", \"692, 880\", \"APO\", 3477, \"2460364.00625\", \"2460364.015625\", \"2460364.025\", 9, [\"20.886634\", 20.8866344360534], \"Aa: 0.26 Ab: 0.76 Ba: 0.61 Bb: 0.11\"], [\"2023-05-09 07:03:30\", \"692, 880\", \"APO\", 2619, \"2460073.788888889\", \"2460073.7940972224\", \"2460073.7993055554\", 9, [\"19.981097\", 19.9810972088421], \"Aa: 0.32 Ab: 0.82 Ba: 0.63 Bb: 0.13\"]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>Observatory</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Zenith Distance</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -1234,6 +1235,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-08-31 20:49:42-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-09-05 12:41:37-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>

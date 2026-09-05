@@ -742,13 +742,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": {},
-          "data_json": "[[\"2022-11-15 07:07:00\", \"692, 880\", 528, \"2459898.7819444444\", \"2459898.796527778\", \"2459898.811111111\", 15, \"Aa: 0.07 Ab: 0.57 Ba: 0.30\"], [\"2023-10-20 12:19:30\", \"692, 880\", 1568, \"2460238.00625\", \"2460238.013541667\", \"2460238.0208333335\", 9, \"Aa: 0.85 Ab: 0.35 Ba: 0.40\"], [\"2025-11-04 11:33:30\", \"692, 880\", 121, \"2460983.976388889\", \"2460983.9815972224\", \"2460983.9868055554\", 9, \"Aa: 0.51 Ab: 0.01 Ba: 0.37\"]]",
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [8]}],
+          "data_json": "[[\"2022-11-15 07:07:00\", \"692, 880\", \"APO\", 2892, \"2459898.7819444444\", \"2459898.796527778\", \"2459898.811111111\", 15, [\"28.603132\", 28.603132008442323], \"Aa: 0.07 Ab: 0.57 Ba: 0.30\"], [\"2023-10-20 12:19:30\", \"692, 880\", \"APO\", 2160, \"2460238.00625\", \"2460238.013541667\", \"2460238.0208333335\", 9, [\"15.032352\", 15.03235228142222], \"Aa: 0.85 Ab: 0.35 Ba: 0.40\"], [\"2025-11-04 11:33:30\", \"692, 880\", \"APO\", 819, \"2460983.976388889\", \"2460983.9815972224\", \"2460983.9868055554\", 9, [\"18.082090\", 18.08208989897389], \"Aa: 0.51 Ab: 0.01 Ba: 0.37\"]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>Observatory</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Zenith Distance</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -798,6 +799,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-08-31 20:49:42-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-09-05 12:41:37-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>

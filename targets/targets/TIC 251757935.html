@@ -632,7 +632,7 @@ a.exportButton {
 }
 </style>
 
-    <h2>DSSI Observations (2)</h2><!--| quarto-html-table-processing: none -->
+    <h2>DSSI Observations (3)</h2><!--| quarto-html-table-processing: none -->
 <table id="DSSI_Observations">
   <tbody>
     <tr>
@@ -742,13 +742,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": {},
-          "data_json": "[[\"2022-09-28 11:32:00\", \"692, 880\", 222, \"2459850.976388889\", \"2459850.980555556\", \"2459850.984722222\", 9, \"Aa: 0.75 Ba: 0.98 Bb: 0.48\"], [\"2025-08-08 11:38:30\", \"692, 880\", 108, \"2460895.980555556\", \"2460895.9850694444\", \"2460895.9895833335\", 9, \"Aa: 0.97 Ba: 0.25 Bb: 0.75\"]]",
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [8]}],
+          "data_json": "[[\"2023-10-20 10:29:30\", \"692, 880\", \"APO\", 2129, \"2460237.9319444443\", \"2460237.937152778\", \"2460237.9423611113\", 9, [\"31.483169\", 31.483168898057485], \"Aa: 0.24 Ba: 0.73 Bb: 0.23\"], [\"2022-09-28 11:32:00\", \"692, 880\", \"APO\", 3150, \"2459850.976388889\", \"2459850.980555556\", \"2459850.984722222\", 9, [\"28.661176\", 28.66117606878455], \"Aa: 0.75 Ba: 0.98 Bb: 0.48\"], [\"2025-08-08 11:38:30\", \"692, 880\", \"APO\", 385, \"2460895.980555556\", \"2460895.9850694444\", \"2460895.9895833335\", 9, [\"26.199088\", 26.199088491113486], \"Aa: 0.97 Ba: 0.25 Bb: 0.75\"]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>Observatory</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Zenith Distance</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -798,6 +799,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-08-31 20:49:42-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-09-05 12:41:37-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>

@@ -742,13 +742,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": {},
-          "data_json": "[[\"2024-02-24 01:45:00\", \"692, 880\", 1746, \"2460364.566666667\", \"2460364.572916667\", \"2460364.5791666666\", 9, \"Aa: 0.10 Ab: 0.59 Ba: 0.46 Bb: 0.96\"], [\"2022-09-28 11:48:00\", \"692, 880\", 224, \"2459850.9895833335\", \"2459850.9916666667\", \"2459850.99375\", 5, \"Aa: 0.27 Ab: 0.76 Ba: 0.80 Bb: 0.30\"]]",
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [8]}],
+          "data_json": "[[\"2024-02-24 01:45:00\", \"692, 880\", \"APO\", 3486, \"2460364.566666667\", \"2460364.572916667\", \"2460364.5791666666\", 9, [\"30.827128\", 30.827128418855878], \"Aa: 0.10 Ab: 0.59 Ba: 0.46 Bb: 0.96\"], [\"2022-09-28 11:48:00\", \"692, 880\", \"APO\", 3152, \"2459850.9895833335\", \"2459850.9916666667\", \"2459850.99375\", 5, [\"32.082333\", 32.08233287378965], \"Aa: 0.27 Ab: 0.76 Ba: 0.80 Bb: 0.30\"]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>Observatory</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Zenith Distance</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -1089,6 +1090,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-08-31 20:49:42-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-09-05 12:41:37-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>

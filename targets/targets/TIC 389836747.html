@@ -777,7 +777,7 @@ a.exportButton {
 }
 </style>
 
-    <h2>DSSI Observations (3)</h2><!--| quarto-html-table-processing: none -->
+    <h2>DSSI Observations (6)</h2><!--| quarto-html-table-processing: none -->
 <table id="DSSI_Observations">
   <tbody>
     <tr>
@@ -887,13 +887,14 @@ width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
 
         let dt_args = {
           "classes": ["compact", "cell-border", "hover"],
-          "columnDefs": {},
-          "data_json": "[[\"2025-08-09 07:25:00\", \"692, 880\", 162, \"2460896.80486111\", \"2460896.80902778\", \"2460896.81319444\", 9, \"Aa: 0.82 Ab: 0.33 Ba: 0.99\"], [\"2025-08-09 08:24:30\", \"692, 880\", 169, \"2460896.84583333\", \"2460896.85034722\", \"2460896.85486111\", 9, \"Aa: 0.84 Ab: 0.34 Ba: 0.00\"], [\"2025-08-09 10:01:30\", \"692, 880\", 192, \"2460896.91319444\", \"2460896.91770833\", \"2460896.92222222\", 9, \"Aa: 0.87 Ab: 0.37 Ba: 0.03\"]]",
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [8]}],
+          "data_json": "[[\"2022-11-13 05:25:00\", \"692, 880\", \"APO\", 3015, \"2459896.720138889\", \"2459896.7256944445\", \"2459896.73125\", 10, [\"29.042755\", 29.042754751595034], \"Aa: 0.24 Ab: 0.74 Ba: 0.71\"], [\"2022-09-28 08:01:00\", \"692, 880\", \"APO\", 3126, \"2459850.834027778\", \"2459850.834027778\", \"2459850.834027778\", 1, [\"28.954512\", 28.95451185631962], \"Aa: 0.36 Ab: 0.86 Ba: 0.90\"], [\"2022-09-28 09:05:30\", \"692, 880\", \"APO\", 3127, \"2459850.877083333\", \"2459850.878819444\", \"2459850.8805555557\", 4, [\"30.293037\", 30.293037434102764], \"Aa: 0.38 Ab: 0.88 Ba: 0.92\"], [\"2025-08-09 07:25:00\", \"692, 880\", \"APO\", 439, \"2460896.804861111\", \"2460896.809027778\", \"2460896.8131944444\", 9, [\"47.588427\", 47.58842695531244], \"Aa: 0.82 Ab: 0.33 Ba: 0.99\"], [\"2025-08-09 08:24:30\", \"692, 880\", \"APO\", 446, \"2460896.845833333\", \"2460896.850347222\", \"2460896.854861111\", 9, [\"40.814724\", 40.814724383320716], \"Aa: 0.84 Ab: 0.34 Ba: 0.00\"], [\"2025-08-09 10:01:30\", \"692, 880\", \"APO\", 469, \"2460896.9131944445\", \"2460896.9177083336\", \"2460896.922222222\", 9, [\"31.933046\", 31.933045552373294], \"Aa: 0.87 Ab: 0.37 Ba: 0.03\"]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
           "layout": {"bottomEnd": "paging", "bottomStart": {"buttons": [{"className": "exportButton", "extend": "csvHtml5"}, {"className": "exportButton", "extend": "copyHtml5"}]}, "topEnd": null, "topStart": "pageLength"},
           "order": [],
           "paging": false,
           "style": {"caption-side": "bottom", "width": "auto"},
-          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Mid UTC</th>\n      <th>Wavelengths</th>\n      <th>Observatory</th>\n      <th>DSSI Session</th>\n      <th>Start JD</th>\n      <th>Mid JD</th>\n      <th>End JD</th>\n      <th>Num Sequences</th>\n      <th>Zenith Distance</th>\n      <th>Member Phases</th>\n    </tr>\n  </thead></table>",
           "text_in_header_can_be_selected": true
         };
         new ITable(table, dt_args);
@@ -1381,6 +1382,6 @@ document.addEventListener("keydown", function(event) {
 });
 </script>
   
-    <p style="text-align: left; font-style: italic;">Created 2026-08-31 20:49:42-04:00 on Pauls-MacBook-Pro</p>
+    <p style="text-align: left; font-style: italic;">Created 2026-09-05 12:41:37-04:00 on Pauls-MacBook-Pro</p>
   </body>
 </html>
